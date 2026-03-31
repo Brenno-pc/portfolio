@@ -1,0 +1,31 @@
+/*ESTILO DO SITE == PROGRAMAÇÃO*/
+
+
+
+@charset "utf-8";
+
+/*fonts*/
+/*
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+*/
+
+
+
+/*global settings*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
