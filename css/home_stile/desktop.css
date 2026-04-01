@@ -4,7 +4,7 @@
 
 @charset "utf-8";
 
-/*fonts*/
+/*fonts externals*/
 /*
 @font-face {
     font-family: ;
@@ -21,6 +21,37 @@
 */
 
 
+/*font pallete*/
+:root {
+    --font_1: black;
+    --font_2: black;
+    --font_3: black;
+    --font_4: black;
+    --font_5: black;
+    --font_6: black;
+    --font_7: black;
+    --font_8: black;
+}
+
+
+
+
+
+/*color pallete*/
+:root {
+    --color_1: black;
+    --color_2: black;
+    --color_3: black;
+    --color_4: black;
+    --color_5: black;
+    --color_6: black;
+    --color_7: black;
+    --color_8: black;
+}
+
+
+
+
 
 /*global settings*/
 * {
@@ -29,14 +60,35 @@
     padding: 0px;
 
 }
-
+/*
 html {
     width: 100vw;
     height: 100vh;
 }
+*/
 
+
+
+
+
+/*width and height of document*/
 body {
     width: 100%;
-    height: 100%;
-    background-color: red;
+    height: 100vh;
 }
+
+
+
+
+
+/*style settings header*/
+header {
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+}
+
+/*style settings main*/
+
+
+/*style settings footer*/
