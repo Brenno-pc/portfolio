@@ -3,7 +3,6 @@
 @charset "utf-8";
 
 /*fonts externals*/
-/*
 @font-face {
     font-family: ;
     src: url();
@@ -20,31 +19,61 @@
 
 
 /*font pallete*/
+/*pallete 1*/
 :root {
     --font_1: black;
     --font_2: black;
-    --font_3: black;
-    --font_4: black;
-    --font_5: black;
-    --font_6: black;
-    --font_7: black;
-    --font_8: black;
 }
 
 
 
 
-
 /*color pallete*/
+/*pallete 1 == Dracula Theme*/
 :root {
-    --color_1: black;
-    --color_2: black;
-    --color_3: black;
-    --color_4: black;
-    --color_5: black;
-    --color_6: black;
-    --color_7: black;
-    --color_8: black;
+    --color_1: #282B37;
+    --color_2: #FF79C6;
+    --color_3: #50FB7A;
+    --color_4: #F1FB8D;
+    --color_5: #6BE4FC;
+    --color_6: #AB87E0;
+    --color_7: #F8F9F3;
+}
+
+
+/*pallete 2 == Sla Theme*/
+:root {
+    --cor1:#937dba;
+    --cor2:#d8955d;
+    --cor3:#d16172;
+    --cor4:#93969a;
+    --cor5:#262626;
+    --cor6:#ffffff;
+    --cor7:#000000;
+}
+
+
+/*pallete 3 == One Dark Pro*/
+:root {
+    --cor1: #292C35;
+    --cor2: #E06D74;
+    --cor3: #D09B66;
+    --cor4: #99C279;
+    --cor5: #AAB2BE;
+    --cor6: #ffffff;
+    --cor7: #000000;
+}
+
+
+/*pallete 4 == Arc Dark*/
+:root {
+    --cor1: #2E353F;
+    --cor2: #CC684D;
+    --cor3: #7486A6;
+    --cor4: #8E9C6A;
+    --cor5: #CCCCCC;
+    --cor6: #ffffff;
+    --cor7: #000000;
 }
 
 
