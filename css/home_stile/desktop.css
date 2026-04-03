@@ -3,26 +3,33 @@
 @charset "utf-8";
 
 /*fonts externals*/
+/*Inter*/
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: 'Inter Regular';
+    src: url(../../fonts/inter/Inter-Regular.otf) format(OpenType);
+}
+
+
+
+/*JetBrains*/
+@font-face {
+    font-family: 'JetB Regular';
+    src: url(../../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf) format(TrueType);
 }
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: 'JetB NL Regular';
+    src: url(../../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMonoNL-Regular.ttf) format(TrueType);
 }
-@font-face {
-    font-family: ;
-    src: url();
-}
-*/
+
+
 
 
 /*font pallete*/
 /*pallete 1*/
 :root {
-    --font_1: black;
-    --font_2: black;
+    --font_1: 'Inter Regular';
+    --font_2: 'JetB Regular';
+    --font_3: 'JetB NL Regular';
 }
 
 
@@ -43,6 +50,17 @@
 
 /*pallete 2 == Sla Theme*/
 :root {
+    --cor1:#5eadc7;
+    --cor2:#966DA9;
+    --cor3:#BF7950;
+    --cor4:#D6D98F;
+    --cor5:#A4B0BF;
+    --cor6:#262626;
+    
+
+    
+    --cor7:#ffffff;
+    --cor8:#000000;
     --cor1:#937dba;
     --cor2:#d8955d;
     --cor3:#d16172;
@@ -85,9 +103,8 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-
+    font-family: var(--font_1);
     font-size: 16px;
-
 }
 
 
@@ -118,7 +135,6 @@ header {
     min-height: 100%;
     grid-row: 1/2;
     grid-column: 2/3;
-    background-color: violet;
 }
 
 
@@ -132,14 +148,10 @@ nav {
     min-height: 100%;
     grid-row: 1/2;
     grid-column: 1/2;
-
     position: fixed;
     top: 0px;
     left: 0px;
-    
-    background-color: rgb(0, 94, 255);
 }
-
 
 
 
@@ -150,10 +162,8 @@ main {
     width: 100%;
     height: 100%;
     min-height: 100%;
-
     grid-row: 2/3;
     grid-column: 2/3;
-    background-color: rgb(34, 255, 0);
 }
 
 
@@ -165,7 +175,6 @@ footer {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-color: blue;    
     grid-row: 3/4;
     grid-column: 2/3;
 }
