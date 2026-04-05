@@ -26,21 +26,23 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <section id="about_me">
+            <h2 class="visually__hidden">Sobre mim</h2>
+
             <div class="about_me__introduction">
                 <h1 class="main__title">$_Olá mundo!</h1>
                 <p class="about_me__text">Sou Breno_Gomes(): {Trabalho no desenvolvimento de websites e/ou sistemas, conhecido como programador full stack.}</p>
             </div>
 
-            <div class="about_me__technologies">
-                <div class="technology_html"></div>
-                <div class="technology_css"></div>
-                <div class="technology_js"></div>
-                <div class="technology_git"></div>
-                <div class="technology_python"></div>
-                <div class="technology_mysql"></div>
-            </div>
+            <ul class="about_me__technologies">
+                <li class="technology_html"> </li>
+                <li class="technology_css"> </li>
+                <li class="technology_js"> </li>
+                <li class="technology_git"> </li>
+                <li class="technology_python"> </li>
+                <li class="technology_mysql"> </li>
+            </ul>
         </section>
     </header>
 
@@ -65,12 +67,24 @@
 
 
 
-    <main>
-        <section id="conteiner_projects">
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
+    <main class="main">  
+        <section id="container__projects">
+            <h2 class="container__projects__title">Todos os meus projetos</h2>
+
+            <ul class="list__all__projects">
+                <li class="project">
+                    <div class="name_project"></div>
+                </li>
+                <li class="project">
+                    <div class="name_project"></div>
+                </li>
+                <li class="project">
+                    <div class="name_project"></div>
+                </li>
+                <li class="project">
+                    <div class="name_project"></div>
+                </li>
+            </ul>
         </section>
             <!--
                 deve conter:
@@ -85,8 +99,28 @@
 
 
 
-    <footer>
+    <footer class="footer">
+        <section class="footer__section">
+            <h2 class="footer__title">Contato</h2>
 
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <div class="footer__contact-name"></div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__contact-name"></div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__contact-name"></div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__contact-name"></div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__contact-name"></div>
+                </li>
+            </ul>
+        </section>
             <!--
                 deve conter:
                     -contatos:
@@ -99,6 +133,8 @@
                         =linkedin
             -->
     </footer> 
+
+
     <script>
     </script>
 </body>
