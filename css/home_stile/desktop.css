@@ -154,6 +154,13 @@ header.header {
         div.about_me__introduction {
             width: 100%;
             height: 100%;
+
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: 1fr;
+
+            padding: 50px;
+
             background-color: red;
         }
         ul.about_me__technologies {
