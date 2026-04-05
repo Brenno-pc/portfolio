@@ -21,40 +21,45 @@
 
     <title>portfólio</title>
 
-
+    <!--ESTUDE SOBRE BEM (BLOCK - ELEMENT - MODIFIER)-->
 </head>
 
 <body>
 
     <header>
         <section id="about_me">
-            <article class="my_introduction">
-                <p>Sou Breno_Gomes(): {Trabalho no desenvolvimento de websites e/ou sistemas, conhecido como programador full stack.}</p>
-            </article>
+            <div class="about_me__introduction">
+                <h1 class="main__title">$_Olá mundo!</h1>
+                <p class="about_me__text">Sou Breno_Gomes(): {Trabalho no desenvolvimento de websites e/ou sistemas, conhecido como programador full stack.}</p>
+            </div>
 
-            <article class="all_my_technologies">
+            <div class="about_me__technologies">
                 <div class="technology_html"></div>
                 <div class="technology_css"></div>
                 <div class="technology_js"></div>
                 <div class="technology_git"></div>
                 <div class="technology_python"></div>
                 <div class="technology_mysql"></div>
-            </article>
+            </div>
         </section>
     </header>
 
-    <nav>
-        <section id="introduction_website">
-            <h1>$_Hello world! Olá mundo!</h1>
-            <div class="menu">
-                <a href="#"> >_ about me</a> <br>
-                <a href="#"> >_ projects</a> <br>
-                <a href="#"> >_ contact</a> <br>
-                <a href="#"> >_ social media</a> <br>
-            </div>
-            <p> _Nice to meet you!</p>
-            <p> _Have a good day!</p>
-        </section>
+    <nav class="menu">
+        <div class="menu__header">
+            <h2 class="menu__title">~/home/MENU</h2>
+        </div>
+
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#"> >_ about me</a></li>
+            <li class="menu__item"><a href="#"> >_ projects</a></li>
+            <li class="menu__item"><a href="#"> >_ contact</a></li>
+            <li class="menu__item"><a href="#"> >_ social media</a></li>
+        </ul>
+
+        <div class="menu__footer">
+            <p class="menu__text"> _Nice to meet you!</p>
+            <p class="menu__text"> _Have a good day!</p>
+        </div>
     </nav>
 
 
