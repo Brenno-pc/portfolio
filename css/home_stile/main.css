@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 /*imports .css*/
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
+@import url(global__settings.css);
+@import url(header.css);
+@import url(menu.css);
+@import url(main__projects.css);
+@import url(footer.css);
 
 
 /*MOBILE VERSION*/

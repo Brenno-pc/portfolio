@@ -22,7 +22,7 @@
 
 
 /*pallete: color and font*/
-/*pallete 1 == Dracula Theme*/
+/*Dracula Theme*/
 :root {
     --color_1: #282B37;
     --color_2: #FF79C6;
@@ -37,8 +37,7 @@
     --font_3: 'JetB NL Regular';
 }
 
-
-/*pallete 2 == Sla Theme*/
+/*Sla Theme*/
 :root {
     --cor1:#5eadc7;
     --cor2:#966DA9;
@@ -65,8 +64,7 @@
     --font_3: 'JetB NL Regular';
 }
 
-
-/*pallete 3 == One Dark Pro*/
+/*One Dark Pro*/
 :root {
     --cor1: #292C35;
     --cor2: #E06D74;
@@ -83,8 +81,7 @@
     --font_3: 'JetB NL Regular';
 }
 
-
-/*pallete 4 == Arc Dark*/
+/*Arc Dark*/
 :root {
     --cor1: #2E353F;
     --cor2: #CC684D;
@@ -100,18 +97,6 @@
     --font_2: 'JetB Regular';
     --font_3: 'JetB NL Regular';
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
