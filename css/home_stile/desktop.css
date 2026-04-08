@@ -110,8 +110,6 @@
     background-color: none;
 }
 
-
-/*document settings*/
 html {
     width: auto;
     height: 100vh;
@@ -126,6 +124,8 @@ body {
     grid-template-columns: 16% 84%;
     grid-template-rows: repeat(3, 100%);
 }
+
+
 
 /*header settings*/
 header.header {
