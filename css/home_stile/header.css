@@ -2,5 +2,5 @@
 
 
 body {
-    background-color: var();
+    background-color: var(--c);
 }
