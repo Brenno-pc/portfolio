@@ -1,9 +1,62 @@
 @charset "utf-8";
-
+/*procure sempre padronizar no uso das medidas px e vh*/
 /*MOBILE [0px - 480px]*/
 header.header {
-    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    display: grid;
+    grid-template-rows: minmax(130px, 12vh) 1fr;
+    grid-template-columns: 1fr;
+
+    background-color: gray;
 }
+    section.sla_mude_esse_nome_depois_KKK {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        bac
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*TABLET [481px - 1024px]*/
 @media screen and (min-width: 481px) {

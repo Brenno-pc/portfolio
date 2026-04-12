@@ -22,6 +22,7 @@
 
 
 /*pallete: color and font*/
+/* #272B32 */
 /*Dracula Theme*/
 :root {
     --color_1: #282B37;
@@ -111,12 +112,12 @@
     font-family: var(--font_1);
     font-size: 16px;
 
-    background-color: none;
+    background-color: black; /*alterar*/
 }
 
 html, body {
     width: auto;
-    min-height: 100vh;
+    min-height: 100svh;
 } 
 
 /*MOBILE [0px - 480px]*/
