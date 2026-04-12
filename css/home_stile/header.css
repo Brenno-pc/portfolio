@@ -50,7 +50,7 @@ header.header {
             }
 
 
-            
+
     section.container__menu {
         display: none;
         position: absolute;
@@ -96,6 +96,11 @@ header.header {
             div.container__technologies {
                 background-color: rgb(130, 144, 238);
             }
+                ul.about_me__technologies {
+                    background-color: seagreen
+                    ;
+                }
+
 
 
 
