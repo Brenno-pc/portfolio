@@ -1,0 +1,17 @@
+/*MOBILE [0px - 480px]*/
+
+
+/*TABLET [481px - 1024px]*/
+@media screen and (min-width: 481px) {
+
+}
+
+/*LAPTOP - DESKTOP [1025px - 1920px]*/
+@media screen and (min-width: 1025px) {
+
+}
+
+/*TV [1921px]*/
+@media screen and (min-width: 1921px) {
+
+}
