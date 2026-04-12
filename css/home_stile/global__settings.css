@@ -118,7 +118,8 @@ html, body {
     width: auto;
     min-height: 100svh;
     
-    background-color: gray; /*alterar*/
+    background-color: gray
+    ; /*alterar*/
 } 
 
 /*MOBILE [0px - 480px]*/
