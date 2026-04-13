@@ -83,6 +83,8 @@ header.header {
         }
 
         div.about_me__introduction {
+            height: 100%;
+            min-height: 450px;
             background-color: rgb(25, 100, 29);
         }
             div.container__text {
