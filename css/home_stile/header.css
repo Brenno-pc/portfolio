@@ -17,6 +17,8 @@ header.header {
         display: grid;
         grid-template-columns: minmax(50px, 20vw) 60vw minmax(50px, 20vw);
         grid-template-rows: 1fr;
+
+        background-color: black;
     }
         div.container__icon__menu {
             grid-row: 1/2;
@@ -68,6 +70,12 @@ header.header {
     section.about_me {
         grid-row: 2/3;
         grid-column: 1/2;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        background-color: black;
     }
         h2.visually__hidden {
             position: absolute;
@@ -82,12 +90,18 @@ header.header {
             border: 0;
         }
 
-        div.about_me__introduction {
-            height: 100%;
-            min-height: 450px;
-            background-color: rgb(25, 100, 29);
+
+
+        div.about_me__introduction { 
+            height: 450px;
+
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: 1fr;
         }
             div.container__text {
+                grid-row: 1/2;
+                grid-column: 1/2;
                 background-color: brown;
             }
                 p.about_me__text {
@@ -96,11 +110,12 @@ header.header {
 
 
             div.container__technologies {
+                grid-row: 2/3;
+                grid-column: 1/2;
                 background-color: rgb(130, 144, 238);
             }
                 ul.about_me__technologies {
-                    background-color: seagreen
-                    ;
+                    color: black;
                 }
 
 
