@@ -125,7 +125,7 @@ html, body {
 /*MOBILE [0px - 480px]*/
 body {
     display: grid;
-    grid-template-rows: repeat(3, 100vh);
+    grid-template-rows: repeat(3, minmax(100vh, 1fr));
     grid-template-columns: 1fr;
 }
 
