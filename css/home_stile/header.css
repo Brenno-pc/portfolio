@@ -20,26 +20,25 @@ header.header {
         display: grid;
         grid-template-columns: minmax(50px, 20vw) 60vw minmax(50px, 20vw);
         grid-template-rows: 1fr;
-
     }
         div.container__icon__menu {
             grid-row: 1/2;
             grid-column: 1/2;
 
+            /*
             position: sticky;
-
+            */
+            
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-
-
         }
             img.icon__menu {
                 flex-shrink: 0;
                 width: 50px;
 
-                color: white;
+                color: var(--color-writing);
             }
 
         div.container__main__title {
@@ -50,11 +49,9 @@ header.header {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-
-
         }
             h1 {
-                color: white;
+                color: var(--color-writing);
             }
 
 

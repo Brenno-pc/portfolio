@@ -18,16 +18,17 @@ Arc Dark
 
 
 
-Dracula Theme
+
+One Dark Pro
 :root {
-    --color_extra: #272B32;
-    --color_1: #282B37;
-    --color_2: #FF79C6;
-    --color_3: #50FB7A;
-    --color_4: #F1FB8D;
-    --color_5: #6BE4FC;
-    --color_6: #AB87E0;
-    --color_7: #F8F9F3;
+    --color-background: #292C35;
+    --color-tag: #E06D74;
+    --color-identifier: #D09B66;
+    --color-name-identifier: #99C279;
+    --color-writing: #AAB2BE;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
 
     --font_1: 'Inter Regular';
     --font_2: 'JetB Regular';
@@ -92,13 +93,19 @@ Sla Theme
 
 
 /*pallete: color and font*/
-/*One Dark Pro*/
+
+/*Dracula Theme*/
 :root {
-    --color-background: #292C35;
-    --color-tag: #E06D74;
-    --color-identifier: #D09B66;
-    --color-name-identifier: #99C279;
-    --color-writing: #AAB2BE;
+    --color_extra: #272B32;
+
+    --color-background: #282B37;
+    --color-tag: #FF79C6;
+    --color-identifier: #50FB7A;
+    --color-name-identifier: #F1FB8D;
+    --color-functionality: #6BE4FC;
+    --color-value-functionality: #AB87E0;
+    --color-writing: #F8F9F3;
+
     --color-white: #ffffff;
     --color-black: #000000;
 
@@ -146,6 +153,7 @@ body {
     /*
     grid-template-rows: repeat(3, minmax(100vh, 1fr)) minmax(50vh, 50vh);  footer ocupa apenas 50% da vh do dispositivo.
     */
+
     grid-template-columns: 1fr;
 }
 
