@@ -16,13 +16,15 @@ header.header {
     section.hero__header {
         grid-row: 1/2;
         grid-column: 1/2;
+        /*
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        */
 
-/*
-position: fixed;
-top: 0px;
-left: 0px;
-*/
-
+        /*
+        também há a possibilidade de desvincular o hero__header do header para que possa aplicar o position: sticky;
+        */
         display: grid;
         grid-template-columns: minmax(50px, 20vw) 60vw minmax(50px, 20vw);
         grid-template-rows: 1fr;
