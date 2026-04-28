@@ -17,6 +17,12 @@ header.header {
         grid-row: 1/2;
         grid-column: 1/2;
 
+/*
+position: fixed;
+top: 0px;
+left: 0px;
+*/
+
         display: grid;
         grid-template-columns: minmax(50px, 20vw) 60vw minmax(50px, 20vw);
         grid-template-rows: 1fr;
@@ -26,7 +32,7 @@ header.header {
             grid-column: 1/2;
 
             /*
-            position: sticky;
+            
             */
             
             display: flex;
