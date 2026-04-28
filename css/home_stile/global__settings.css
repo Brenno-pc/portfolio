@@ -1,3 +1,73 @@
+/*
+Arc Dark
+:root {
+    --cor1: #2E353F;
+    --cor2: #CC684D;
+    --cor3: #7486A6;
+    --cor4: #8E9C6A;
+    --cor5: #CCCCCC;
+    --cor6: #ffffff;
+    --cor7: #000000;
+
+
+
+    --font_1: 'Inter Regular';
+    --font_2: 'JetB Regular';
+    --font_3: 'JetB NL Regular';
+}
+
+
+
+Dracula Theme
+:root {
+    --color_extra: #272B32;
+    --color_1: #282B37;
+    --color_2: #FF79C6;
+    --color_3: #50FB7A;
+    --color_4: #F1FB8D;
+    --color_5: #6BE4FC;
+    --color_6: #AB87E0;
+    --color_7: #F8F9F3;
+
+    --font_1: 'Inter Regular';
+    --font_2: 'JetB Regular';
+    --font_3: 'JetB NL Regular';
+}
+
+
+
+Sla Theme
+:root {
+    --cor1:#5eadc7;
+    --cor2:#966DA9;
+    --cor3:#BF7950;
+    --cor4:#D6D98F;
+    --cor5:#A4B0BF;
+    --cor6:#262626;
+    --cor7:#ffffff;
+    --cor8:#000000;
+
+    --cor1:#937dba;
+    --cor2:#d8955d;
+    --cor3:#d16172;
+    --cor4:#93969a;
+    --cor5:#262626;
+    --cor6:#ffffff;
+    --cor7:#000000;
+
+
+    --font_1: 'Inter Regular';
+    --font_2: 'JetB Regular';
+    --font_3: 'JetB NL Regular';
+}
+*/
+
+
+
+
+
+
+
 /*ESTILO DO SITE == PROGRAMAÇÃO*/
 @charset "utf-8";
 
@@ -22,82 +92,25 @@
 
 
 /*pallete: color and font*/
-/* #272B32 */
-/*Dracula Theme*/
-:root {
-    --color_1: #282B37;
-    --color_2: #FF79C6;
-    --color_3: #50FB7A;
-    --color_4: #F1FB8D;
-    --color_5: #6BE4FC;
-    --color_6: #AB87E0;
-    --color_7: #F8F9F3;
-
-    --font_1: 'Inter Regular';
-    --font_2: 'JetB Regular';
-    --font_3: 'JetB NL Regular';
-}
-
-/*Sla Theme*/
-:root {
-    --cor1:#5eadc7;
-    --cor2:#966DA9;
-    --cor3:#BF7950;
-    --cor4:#D6D98F;
-    --cor5:#A4B0BF;
-    --cor6:#262626;
-    
-
-    
-    --cor7:#ffffff;
-    --cor8:#000000;
-    --cor1:#937dba;
-    --cor2:#d8955d;
-    --cor3:#d16172;
-    --cor4:#93969a;
-    --cor5:#262626;
-    --cor6:#ffffff;
-    --cor7:#000000;
-
-
-    --font_1: 'Inter Regular';
-    --font_2: 'JetB Regular';
-    --font_3: 'JetB NL Regular';
-}
-
 /*One Dark Pro*/
 :root {
-    --cor1: #292C35;
-    --cor2: #E06D74;
-    --cor3: #D09B66;
-    --cor4: #99C279;
-    --cor5: #AAB2BE;
-    --cor6: #ffffff;
-    --cor7: #000000;
-
-
-
-    --font_1: 'Inter Regular';
-    --font_2: 'JetB Regular';
-    --font_3: 'JetB NL Regular';
-}
-
-/*Arc Dark*/
-:root {
-    --cor1: #2E353F;
-    --cor2: #CC684D;
-    --cor3: #7486A6;
-    --cor4: #8E9C6A;
-    --cor5: #CCCCCC;
-    --cor6: #ffffff;
-    --cor7: #000000;
-
+    --color-background: #292C35;
+    --color-tag: #E06D74;
+    --color-identifier: #D09B66;
+    --color-name-identifier: #99C279;
+    --color-writing: #AAB2BE;
+    --color-white: #ffffff;
+    --color-black: #000000;
 
 
     --font_1: 'Inter Regular';
     --font_2: 'JetB Regular';
     --font_3: 'JetB NL Regular';
 }
+
+
+
+
 
 
 
