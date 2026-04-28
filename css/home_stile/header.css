@@ -21,7 +21,6 @@ header.header {
         grid-template-columns: minmax(50px, 20vw) 60vw minmax(50px, 20vw);
         grid-template-rows: 1fr;
 
-        background-color: black;
     }
         div.container__icon__menu {
             grid-row: 1/2;
@@ -34,11 +33,13 @@ header.header {
             justify-content: center;
             align-items: center;
 
-            background-color: purple;
+
         }
             img.icon__menu {
                 flex-shrink: 0;
                 width: 50px;
+
+                color: white;
             }
 
         div.container__main__title {
@@ -50,10 +51,10 @@ header.header {
             justify-content: center;
             align-items: center;
 
-            background-color: red;
+
         }
             h1 {
-                color: black;
+                color: white;
             }
 
 
