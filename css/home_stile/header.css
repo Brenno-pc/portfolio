@@ -34,10 +34,9 @@ header.header {
             justify-content: center;
             align-items: center;
         }
-            img.icon__menu {
+            svg.icon__menu {
                 flex-shrink: 0;
-                width: 50px;
-
+                width: 38px;
                 color: var(--color-writing);
             }
 
@@ -51,6 +50,8 @@ header.header {
             align-items: center;
         }
             h1 {
+                font-size: 22px;
+                font-style: italic;
                 color: var(--color-writing);
             }
 
