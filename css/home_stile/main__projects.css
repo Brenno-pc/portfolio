@@ -5,7 +5,7 @@
 
 /*MOBILE [0px - 480px]*/
 main.main__projects {
-    grid-row: 2/4;
+    grid-row: 3/5;
     grid-column: 1/2;
 
     display: grid;
