@@ -33,10 +33,6 @@ header.header {
         div.container__icon__menu {
             grid-row: 1/2;
             grid-column: 1/2;
-
-            /*
-            
-            */
             
             display: flex;
             flex-flow: row nowrap;
@@ -45,7 +41,7 @@ header.header {
         }
             svg.icon__menu {
                 flex-shrink: 0;
-                width: 38px;
+                width: 34px;
                 color: var(--color-writing);
             }
 
@@ -59,7 +55,7 @@ header.header {
             align-items: center;
         }
             h1 {
-                font-size: 22px;
+                font-size: 18px;
                 font-style: italic;
                 color: var(--color-writing);
             }
