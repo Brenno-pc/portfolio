@@ -1,17 +1,11 @@
 @charset "utf-8";
-
-/*imports .css*/
-@import url(global__settings.css);
-@import url(hero_header.css);
-@import url(header.css);
-@import url(menu.css);
-@import url(main__projects.css);
-@import url(footer.css);
-
+/*procure sempre padronizar no uso das medidas px e vh*/
 
 
 
 /*MOBILE [0px - 480px]*/
+
+
 
 
 /*TABLET [481px - 1024px]*/
@@ -28,4 +22,3 @@
 @media screen and (min-width: 1921px) {
 
 }
-
