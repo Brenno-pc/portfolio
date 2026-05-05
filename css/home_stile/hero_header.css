@@ -6,6 +6,7 @@
 /*MOBILE [0px - 480px]*/
 
 section.hero__header {
+
     grid-row: 1/2;
     grid-column: 1/2;
 
@@ -13,7 +14,7 @@ section.hero__header {
     top: 0px;
     left: 0px;
 
-    display: grid;
+    display: none;
     grid-template-columns: minmax(50px, 20vw) 60vw minmax(50px, 20vw);
     grid-template-rows: 1fr;
 
@@ -70,7 +71,7 @@ section.hero__header {
 
 
     div.container__language__changer {
-        background-color: white;
+        background-color: var(--color-background);
     }
 
 
