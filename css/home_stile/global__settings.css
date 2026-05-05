@@ -148,7 +148,7 @@ html, body {
 /*MOBILE [0px - 480px]*/
 body {
     display: grid;
-    grid-template-rows:  minmax(70px, 8vh) minmax(300px, 92vh) repeat(3, minmax(100vh, 1fr)); 
+    grid-template-rows:  minmax(50px, 2vh) minmax(300px, 92vh) repeat(3, minmax(100vh, 1fr)); 
     /*
     grid-template-rows: repeat(3, minmax(100vh, 1fr)) minmax(50vh, 50vh);  footer ocupa apenas 50% da vh do dispositivo.
     */
