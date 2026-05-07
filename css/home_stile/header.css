@@ -24,11 +24,12 @@ header.header {
         align-items: center;
     }
         h2 {
-            display: block;
             width: 100vw; /*se der erro de barra horizontal, o erro está aq KKK*/
             align-self: flex-start;
             justify-self: flex-start;
-            background-color: white;
+
+            font-size: 20px;
+            color: var(--color-title);
         }
 
     /*
@@ -46,31 +47,37 @@ header.header {
         }
     */
 
-
-
-
         div.about_me__introduction { 
             height: 450px;
+            margin-top: 20px;
 
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: 1fr;
         }
-            div.container__text {
+
+            div.about_me__text {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                background-color: brown;
+
             }
-                p.about_me__text {
-                    font-size: 28px;
-                    color: black;
+                span.name_developer {
+                    font-size: 28.5px;
+                    color: var();
                 }
-                    span.description_developer {
-                        font-size: 18px;
+                span.braces {
+                    font-size: 30px;
+                    color: var(--color-braces);
+                }
+                /*parei na alteração de cores do texto description_developer*/
+                div.description_developer {
+                    font-size: 20px;
+                    text-indent: 40px;
+                    margin: 5px 0px;
+                }
+                .description_developer > strong {
+                        font-size: inherit;
                     }
-                        .description_developer > strong {
-                            font-size: inherit;
-                        }
 
 
             div.container__technologies {

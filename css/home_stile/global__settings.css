@@ -93,23 +93,33 @@ Sla Theme
 
 
 /*pallete: color and font*/
-
-/*Dracula Theme*/
 :root {
-    --color_extra: #272B32;
+    /*Dracula Theme*/
 
-    --color-background: #282B37;
-    --color-tag: #FF79C6;
-    --color-identifier: #50FB7A;
-    --color-name-identifier: #F1FB8D;
-    --color-functionality: #6BE4FC;
-    --color-value-functionality: #AB87E0;
-    --color-writing: #F8F9F3;
-
+    /*Base*/
     --color-white: #ffffff;
     --color-black: #000000;
+    --color-background: #282B37;
 
 
+    /*typography*/
+    --color-title: #68718a;
+    --color-text: #F8F9F3;
+
+
+    /*extras*/
+    --color-braces: #d8b60f;
+
+    
+    /*Palete*/
+    --color-1: #FF79C6;
+    --color-2: #50FB7A;
+    --color-3: #F1FB8D;
+    --color-4: #6BE4FC;
+    --color-5: #AB87E0;
+
+
+    /*fonts*/
     --font_1: 'Inter Regular';
     --font_2: 'JetB Regular';
     --font_3: 'JetB NL Regular';
