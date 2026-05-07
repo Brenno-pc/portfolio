@@ -11,7 +11,6 @@ header.header {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-
 }
 
 
@@ -20,11 +19,19 @@ header.header {
         grid-column: 1/2;
 
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
+        justify-content: center;
         align-items: center;
-
-        background-color: black;
     }
+        h2 {
+            display: block;
+            width: 100vw; /*se der erro de barra horizontal, o erro está aq KKK*/
+            align-self: flex-start;
+            justify-self: flex-start;
+            background-color: white;
+        }
+
+    /*
         h2.visually__hidden {
             position: absolute;
             top: 0px;
@@ -37,11 +44,12 @@ header.header {
             white-space: nowrap;
             border: 0;
         }
+    */
+
 
 
 
         div.about_me__introduction { 
-            width: 100vw;
             height: 450px;
 
             display: grid;
