@@ -1,67 +1,3 @@
-/*
-Arc Dark
-:root {
-    --cor1: #2E353F;
-    --cor2: #CC684D;
-    --cor3: #7486A6;
-    --cor4: #8E9C6A;
-    --cor5: #CCCCCC;
-    --cor6: #ffffff;
-    --cor7: #000000;
-
-
-
-    --font_1: 'Inter Regular';
-    --font_2: 'JetB Regular';
-    --font_3: 'JetB NL Regular';
-}
-
-
-
-
-One Dark Pro
-:root {
-    --color-background: #292C35;
-    --color-tag: #E06D74;
-    --color-identifier: #D09B66;
-    --color-name-identifier: #99C279;
-    --color-writing: #AAB2BE;
-    --color-white: #ffffff;
-    --color-black: #000000;
-
-
-    --font_1: 'Inter Regular';
-    --font_2: 'JetB Regular';
-    --font_3: 'JetB NL Regular';
-}
-
-
-
-Sla Theme
-:root {
-    --cor1:#5eadc7;
-    --cor2:#966DA9;
-    --cor3:#BF7950;
-    --cor4:#D6D98F;
-    --cor5:#A4B0BF;
-    --cor6:#262626;
-    --cor7:#ffffff;
-    --cor8:#000000;
-
-    --cor1:#937dba;
-    --cor2:#d8955d;
-    --cor3:#d16172;
-    --cor4:#93969a;
-    --cor5:#262626;
-    --cor6:#ffffff;
-    --cor7:#000000;
-
-
-    --font_1: 'Inter Regular';
-    --font_2: 'JetB Regular';
-    --font_3: 'JetB NL Regular';
-}
-*/
 
 
 
@@ -97,26 +33,18 @@ Sla Theme
     /*Dracula Theme*/
 
     /*Base*/
-    --color-white: #ffffff;
-    --color-black: #000000;
-    --color-background: #282B37;
+    --color-white: ;
+    --color-black: ;
+    --color-background: ;
 
 
     /*typography*/
-    --color-title: #68718a;
-    --color-text: #F8F9F3;
+    --color-title: ;
+    --color-text: ;
 
-
-    /*extras*/
-    --color-braces: #d8b60f;
 
     
     /*Palete*/
-    --color-pink: #FF79C6;
-    --color-green: #50FB7A;
-    --color-yellow: #F1FB8D;
-    --color-light_blue: #6BE4FC;
-    --color-purple: #AB87E0;
 
 
     /*fonts*/
@@ -134,33 +62,14 @@ Sla Theme
 
 
 /*GLOBAL SETTINGS*/
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
 
-    font-family: var(--font_1);
-    font-size: 16px;
 
-}
-
-html, body {
-    width: auto;
-    min-height: 100svh;
-
-    background-color: var(--color-background);
-}
 
 
 
 
 
 /*MOBILE [0px - 480px]*/
-body {
-    display: grid;
-    grid-template-rows: repeat(4, minmax(100vh, 1fr)); 
-    grid-template-columns: 1fr;
-}
 
 
 
