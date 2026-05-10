@@ -62,21 +62,22 @@ header.header {
             }
                 span.name_developer {
                     font-size: 28.5px;
-                    color: var();
+                    color: var(--color-pink);
                 }
                 span.braces {
                     font-size: 30px;
                     color: var(--color-braces);
                 }
-                /*parei na alteração de cores do texto description_developer*/
                 div.description_developer {
                     font-size: 20px;
                     text-indent: 40px;
                     margin: 5px 0px;
+                    color: var(--color-light_blue);
                 }
                 .description_developer > strong {
-                        font-size: inherit;
-                    }
+                    font-size: inherit;
+                    color: var(--color-purple);
+                }
 
 
             div.container__technologies {
