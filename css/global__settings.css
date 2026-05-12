@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*GLOBAL SETTINGS*/
+
+/*procure sempre padronizar no uso das medidas px e vh*/
+
+
+
+/*fonts externals*/
+/*Inter*/
+@font-face {
+    font-family: 'Inter Regular';
+    src: url(../../fonts/inter/Inter-Regular.otf) format(OpenType);
+}
+
+/*JetBrains*/
+@font-face {
+    font-family: 'JetB Regular';
+    src: url(../../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf) format(TrueType);
+}
+@font-face {
+    font-family: 'JetB NL Regular';
+    src: url(../../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMonoNL-Regular.ttf) format(TrueType);
+}
+
+
+
+/*pallete: color and font*/
+:root {
+    /*Base*/
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-background: ;
+
+
+    /*typography*/
+    --color-text: ;
+
+
+    
+    /*Palete*/
+
+
+    /*fonts*/
+    --font_1: 'Inter Regular';
+    --font_2: 'JetB Regular';
+    --font_3: 'JetB NL Regular';
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /*Preciso deixar o scroll do site suave*/
+    /*Altere o coisinha do scroll tbm, veja qual estilo fica melhor para aplicar.*/
+}
+
+
+html, body {
+    width: auto;
+    height: 100svh;
+        /*caso dê b.o de altura, o problema está aqui.*/
+    min-height: 100svh; 
+    background-color: #ffffff;
+}
+
+
+
+
+
+/*LAPTOP - DESKTOP [1025px - 1920px]*/
+@media screen and (min-width: 1025px) {
+
+body {
+    display: grid;
+    grid-template-rows: repeat(5, minmax(100vh, 1fr)) ;
+    grid-template-columns: 1fr;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE [0px - 480px]*/
+
+
+
+/*TABLET [481px - 1024px]*/
+@media screen and (min-width: 481px) {
+
+}
+
+/*TV [1921px]*/
+@media screen and (min-width: 1921px) {
+
+}
+
+
+
+
+
+
+
