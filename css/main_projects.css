@@ -4,11 +4,36 @@
 
 
 
-@import url(global_settings.css);
-@import url(hero_header.css);
-@import url(header.css);
-@import url(main_projects.css);
-@import url(footer.css);
+
+
+
+/*LAPTOP - DESKTOP [1025px - 1920px]*/
+@media screen and (min-width: 1025px) {
+    main.main_projects {
+        grid-row: 3/6;
+        grid-column: 1/2;
+        background-color: yellow;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -23,11 +48,6 @@
 
 /*TABLET [481px - 1024px]*/
 @media screen and (min-width: 481px) {
-
-}
-
-/*LAPTOP - DESKTOP [1025px - 1920px]*/
-@media screen and (min-width: 1025px) {
 
 }
 
@@ -86,7 +106,37 @@
 
 
 
-/*@charset "utf-8";*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@charset "utf-8";
+*/
 /*procure sempre padronizar no uso das medidas px e vh/
 
 
