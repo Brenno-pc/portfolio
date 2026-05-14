@@ -64,8 +64,28 @@ html, body {
         /*caso dê b.o de altura, o problema está aqui.*/
     min-height: 100svh; 
     background-color: #ffffff;
+
+    /*Altera a scrollbar somente no firefox*/
+    scrollbar-width: /*altera a largura do scrollbar*/7px;
+    scrollbar-color: /*botão-cor*/ /*fundo-cor*/ red green;
 }
 
+/*Altera a scrollbar, exceto no firefox*/
+::-webkit-scrollbar {
+    /*altera a scrollbar inteira*/
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    /*altera o fundo do scrollbar*/
+    background-color: green;
+}
+
+::-webkit-scrollbar-thumb {
+    /*altera o "botão" do scroll*/
+    background-color: red;
+    border-radius: 5px;
+}
 
 
 
@@ -77,8 +97,9 @@ body {
     display: grid;
     grid-template-rows: minmax(100vh, 1fr) repeat(4, minmax(100vh, 1fr)) ;
     grid-template-columns: 1fr;
-}
 
+
+}
 
 }
 

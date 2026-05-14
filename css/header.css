@@ -4,7 +4,7 @@
 
 
 
-
+ 
 
 
 /*LAPTOP - DESKTOP [1025px - 1920px]*/
@@ -13,7 +13,18 @@
         grid-row: 1/2;
         grid-column: 1/2;
         background-color: purple;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
     }
+        section.about__me {
+            background-color: white;
+            width: 72vw;
+            border-radius: 15px;
+            min-height: 80vh;
+        }
 }
 
 
