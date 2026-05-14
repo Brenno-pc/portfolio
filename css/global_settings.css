@@ -75,7 +75,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template-rows: minmax(15vh, 1fr) minmax(85vh, 1fr) repeat(4, minmax(100vh, 1fr)) ;
+    grid-template-rows: minmax(100vh, 1fr) repeat(4, minmax(100vh, 1fr)) ;
     grid-template-columns: 1fr;
 }
 

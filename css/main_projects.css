@@ -10,7 +10,7 @@
 /*LAPTOP - DESKTOP [1025px - 1920px]*/
 @media screen and (min-width: 1025px) {
     main.main_projects {
-        grid-row: 3/6;
+        grid-row: 2/5;
         grid-column: 1/2;
         background-color: yellow;
     }
