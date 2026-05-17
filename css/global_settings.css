@@ -9,17 +9,17 @@
 /*Inter*/
 @font-face {
     font-family: 'Inter Regular';
-    src: url(../../fonts/inter/Inter-Regular.otf) format(OpenType);
+    src: url(../fonts/inter/Inter-Regular.otf) format(OpenType);
 }
 
 /*JetBrains*/
 @font-face {
     font-family: 'JetB Regular';
-    src: url(../../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf) format(TrueType);
+    src: url(../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf) format(TrueType);
 }
 @font-face {
     font-family: 'JetB NL Regular';
-    src: url(../../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMonoNL-Regular.ttf) format(TrueType);
+    src: url(../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMonoNL-Regular.ttf) format(TrueType);
 }
 
 
@@ -41,7 +41,7 @@
 
 
     /*fonts*/
-    --font_1: 'Inter Regular';
+    --font_1: 'Inter Regular'; /*Vai ser usado para títulos no main__projects*/
     --font_2: 'JetB Regular';
     --font_3: 'JetB NL Regular';
 }
@@ -53,6 +53,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: var(--font_1);
     /*Preciso deixar o scroll do site suave*/
     /*Altere o coisinha do scroll tbm, veja qual estilo fica melhor para aplicar.*/
 }
@@ -82,66 +83,6 @@ html, body {
 }
 
 
-
-
-
-/*LAPTOP - DESKTOP [1025px - 1920px]*/
-@media screen and (min-width: 1025px) {
-
-body {
-    display: grid;
-    grid-template-rows: minmax(100vh, 1fr) repeat(4, minmax(100vh, 1fr)) ;
-    grid-template-columns: 1fr;
-
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*MOBILE [0px - 480px]*/
 
 
@@ -151,15 +92,32 @@ body {
 
 }
 
-/*TV [1921px]*/
-@media screen and (min-width: 1921px) {
+/*LAPTOP [1025px - 1280px]*/
+@media screen and (min-width: 1025px) {
+
+}
+
+
+
+
+
+/*DESKTOP [1281px - 1920px]*/
+@media screen and (min-width: 1281px) {
     body {
-        display: flex;
-        background-color: black;
+        display: grid;
+        grid-template-rows: minmax(100vh, 1fr) repeat(4, minmax(100vh, 1fr)) ;
+        grid-template-columns: 1fr;
     }
 }
 
 
+
+
+
+/*TV [1921px]*/
+@media screen and (min-width: 1921px) {
+
+}
 
 
 
