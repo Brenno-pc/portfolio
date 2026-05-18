@@ -29,16 +29,23 @@
     /*Base*/
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-background: ;
+    --color-background: #2C1A2C;
 
 
     /*typography*/
     --color-text: ;
 
 
-    
     /*Palete*/
-
+    --color-violet: #2C1A2C;
+    --color-azure: #ECF8F8 ;
+    --color-green: #002500;
+    --color-blue: #0C6291;
+    --color-orange: #e09c4a;
+    /*
+    --color-orange: #ffbf71;
+    --color-orange: #ffb760;
+    */
 
     /*fonts*/
     --font_1: 'Inter Regular'; /*Vai ser usado para títulos no main__projects*/
@@ -53,6 +60,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    
     font-family: var(--font_1);
     /*Preciso deixar o scroll do site suave*/
     /*Altere o coisinha do scroll tbm, veja qual estilo fica melhor para aplicar.*/

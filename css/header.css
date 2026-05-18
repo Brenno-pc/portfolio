@@ -25,25 +25,27 @@
     header.header {
         grid-row: 1/2;
         grid-column: 1/2;
-        background-color: purple;
 
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+
+        background-color: var(--color-background);
     }
         section.about {
-            background-color: white;
+
             width: 72vw;
             min-height: 80vh;
 
             display: grid;
-            grid-template-rows: 1fr 1.8fr 1fr; /*Alterar isso conforme o tipo de fonte escolhido*/
+            grid-template-rows: 1fr 1.2fr 1fr; /*Alterar isso conforme o tipo de fonte escolhido*/
             grid-template-columns: 1fr;
             
             border-radius: 15px;
             overflow: hidden;
 
+            background-color: var(--color-orange);
         }
             div.language {
                 grid-row: 1/2;
@@ -53,8 +55,7 @@
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: end;
-                
-                background-color: black;
+
             }
                 button.language__button {
                     width: 6vw;
@@ -73,8 +74,6 @@
                     border: none;
                     border-radius: 5px;
 
-                    background-color: aqua;
-                    color: black;
                 }
 
 
@@ -86,8 +85,6 @@
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: center;
-
-                background-color: gray;
             }
                 h1.about__title {
                     font-size: 7.5vw;
@@ -100,26 +97,24 @@
 
                 display: grid;
                 grid-template-rows: 1fr;
-                grid-template-columns: 0.8fr 1fr;
+                grid-template-columns: 1fr 0.8fr;
             }
 
                 h2.about__subtitle {
                     justify-self: center;
                     align-self: flex-start;
-                    background-color: yellow;
 
                     font-size: 1.5vw;
                     font-weight: lighter;
                 }
 
                 p.about__text {
-                    margin-right: 30px;
+                    margin-right: 8vw;
 
                     justify-self: flex-start;
                     align-self: flex-start;
-                    background-color: green;
 
-                    text-align: left;
+                    text-align: justify;
                     font-size: 1.3vw;
                 }
 }
