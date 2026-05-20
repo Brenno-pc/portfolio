@@ -34,12 +34,11 @@
         background-color: var(--color-background);
     }
         section.about {
-
             width: 72vw;
             min-height: 80vh;
 
             display: grid;
-            grid-template-rows: 1fr 1.2fr 1fr; /*Alterar isso conforme o tipo de fonte escolhido*/
+            grid-template-rows: 0.8fr 1.2fr 0.8fr; /*Alterar isso conforme o tipo de fonte escolhido*/
             grid-template-columns: 1fr;
             
             border-radius: 15px;
@@ -87,7 +86,7 @@
                 align-items: center;
             }
                 h1.about__title {
-                    font-size: 7.5vw;
+                    font-size: 8vw;
                 }
 
 
@@ -97,25 +96,25 @@
 
                 display: grid;
                 grid-template-rows: 1fr;
-                grid-template-columns: 1fr 0.8fr;
+                grid-template-columns: 1fr 1fr;
             }
 
                 h2.about__subtitle {
                     justify-self: center;
                     align-self: flex-start;
 
-                    font-size: 1.5vw;
+                    font-size: 2vw;
                     font-weight: lighter;
                 }
 
                 p.about__text {
-                    margin-right: 8vw;
+                    margin-right: 8.5vw;
 
                     justify-self: flex-start;
                     align-self: flex-start;
 
-                    text-align: justify;
-                    font-size: 1.3vw;
+                    text-align: left;
+                    font-size: 1.4vw;
                 }
 }
 
