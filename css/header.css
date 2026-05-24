@@ -34,7 +34,7 @@
         background-color: var(--color-background);
     }
         section.about {
-            width: 72vw;
+            width: 75vw;
             min-height: 80vh;
 
             display: grid;
