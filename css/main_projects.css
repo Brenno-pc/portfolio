@@ -32,12 +32,12 @@
         section.area_cards {
             width: 75vw;
             min-height: 100vh;
-
-
-            display: flex;
-            flex-flow: column wrap;
-
-
+         
+            
+            display: grid;
+            /*falta arrumar as linhas grid*/
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
             background-color: white;
         }
             h2.area_cards__visually_hidden {
@@ -54,19 +54,19 @@
 
                 clip-path: inset(50%);
             }
-            /*parei aqui, determinando a altura dos cards*/
+
+            /*
+            card base == 350px 
+            card small == 540px
+            card medium == 640px
+            card large == 740px
+            */
             article.area_cards__card {
-                width: 400px;
-                height: 150px;
-                margin: 10px;
+                height: 500px;
                 border: 1px solid black;
             }
-            article.area_cards__card_teste {
-                width: 400px;
-                height: 300px;
-                margin: 10px;
-                border: 1px solid black;
-            }
+
+
 }
 
 /*TV [1921px]*/
