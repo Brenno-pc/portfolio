@@ -36,24 +36,18 @@
         /*background-color: var(--color-background);*/
     }
         section.about {
-            width: 75vw;
-            min-height: 80vh;
+            width: 72vw;
+            min-height: 670px;
 
-
+            display: grid;
+            grid-template-rows: 0.8fr 1.2fr 0.8fr; /*Alterar isso conforme o tipo de fonte escolhido
+            grid-template-columns: 1fr;*/
             
             border-radius: 9px;
             overflow: hidden;
 
             background-color: var(--color-orange);
         }
-/*
-
-            display: grid;
-            grid-template-rows: 0.8fr 1.2fr 0.8fr; /*Alterar isso conforme o tipo de fonte escolhido
-            grid-template-columns: 1fr;
-
-
-
             div.language {
                 grid-row: 1/2;
                 grid-column: 1/2;
@@ -125,7 +119,6 @@
                     font-size: 1.4vw;
                 }
 
-*/
 }
 
 
