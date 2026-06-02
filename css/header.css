@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*procure sempre padronizar no uso das medidas px e vh*/
+/*procure sempre padronizar no uso das medidas px, vw-vh, % e fr no máximo*/
 
 
 /*MOBILE [0px - 480px]*/
@@ -36,18 +36,20 @@
         /*background-color: var(--color-background);*/
     }
         section.about {
-            width: clamp(100px, 500px, 1700px);
-            height: 75vh;
-            min-height: 550px;
+            width: clamp(790px, 60vw, 1600px);
+            height: clamp(520px, 62vh, 1100px);
+            /*alterar essa altura quando alterar o tamanho do título*/
 
             display: grid;
-            grid-template-rows: 0.8fr 1.2fr 0.8fr; /*Alterar isso conforme o tipo de fonte escolhido
-            grid-template-columns: 1fr;*/
+            grid-template-rows: 28% 44% 28%; 
             
-            border-radius: 9px;
+            border-radius: 11px;
             overflow: hidden;
 
+            /*
             background-color: var(--color-orange);
+            */
+            background-color: white;
         }
             div.language {
                 grid-row: 1/2;
@@ -57,25 +59,23 @@
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: end;
-
             }
                 button.language__button {
-                    width: 0px;
-                    height: 50px;
-                    padding: 0px;
+                    width: clamp(70px, 5vw, 180px);
+                    height: clamp(36px, 4vh, 75px);
                     
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: center;
                     align-items: center;
 
-                    font-size: 1vw;
+                    font-size: minmax(12px, 1fr);
+                    font-size: clamp(12px, 1.1vw, 28px);
                     font-weight: normal;
                     text-align: center;
 
                     border: none;
                     border-radius: 5px;
-
                 }
 
 
@@ -89,7 +89,8 @@
                 align-items: center;
             }
                 h1.about__title {
-                    font-size: 8vw;
+                    /*crescendo muito*/
+                    font-size: 8vw; 
                 }
 
 
@@ -100,9 +101,11 @@
                 display: grid;
                 grid-template-rows: 1fr;
                 grid-template-columns: 1fr 1fr;
-            }
 
+                align-items: start;
+            }
                 h2.about__subtitle {
+                    /*crescendo muito*/
                     justify-self: center;
                     align-self: flex-start;
 
@@ -111,6 +114,7 @@
                 }
 
                 p.about__text {
+                    /*crescendo muito*/
                     margin-right: 8.5vw;
 
                     justify-self: flex-start;
