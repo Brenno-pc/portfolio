@@ -89,8 +89,12 @@
                 align-items: center;
             }
                 h1.about__title {
-                    /*crescendo muito*/
+                    /*
                     font-size: 8vw; 
+                    font-size: clamp();
+                    */
+                    font-size: 7vw;
+                    font-weight: lighter;
                 }
 
 
@@ -109,7 +113,7 @@
                     justify-self: center;
                     align-self: flex-start;
 
-                    font-size: 2vw;
+                    font-size: 1.5vw;
                     font-weight: lighter;
                 }
 
@@ -121,7 +125,7 @@
                     align-self: flex-start;
 
                     text-align: left;
-                    font-size: 1.4vw;
+                    font-size: 1vw;
                 }
 
 }
