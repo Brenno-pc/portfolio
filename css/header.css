@@ -61,16 +61,19 @@
                 align-items: end;
             }
                 button.language__button {
-                    width: clamp(70px, 5vw, 180px);
-                    height: clamp(36px, 4vh, 75px);
+                    width: clamp(70px, 5.35vw, 180px);
+                    height: clamp(35px, 4vh, 75px);
                     
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: center;
                     align-items: center;
 
-                    font-size: minmax(12px, 1fr);
+                    /*
                     font-size: clamp(12px, 1.1vw, 28px);
+                    */
+
+                    font-size: clamp(12px, 1.2vw, 32px);
                     font-weight: normal;
                     text-align: center;
 
@@ -90,10 +93,10 @@
             }
                 h1.about__title {
                     /*
-                    font-size: 8vw; 
-                    font-size: clamp();
+                    backup
+                    font-size: clamp(100px, 7.5vw, 200px);
                     */
-                    font-size: 7vw;
+                    font-size: clamp(112px, 8.5vw, 226px);
                     font-weight: lighter;
                 }
 
@@ -104,28 +107,38 @@
 
                 display: grid;
                 grid-template-rows: 1fr;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1.5fr; 
 
-                align-items: start;
             }
                 h2.about__subtitle {
-                    /*crescendo muito*/
                     justify-self: center;
-                    align-self: flex-start;
+                    align-self: start;
 
-                    font-size: 1.5vw;
+                    /*
+                    font-size: clamp(1.5vw, 36);
+                    */
+                    font-size: 32px;
                     font-weight: lighter;
+                                        
+                    /*
+                    margin-left: ;
+                    margin-top: 1.8vh;
+                    */
+                    margin-left: clamp(100px, 7.5vw, 200px);
                 }
-
+                
                 p.about__text {
                     /*crescendo muito*/
-                    margin-right: 8.5vw;
-
-                    justify-self: flex-start;
-                    align-self: flex-start;
-
+                    margin-right: 120px;
+                    
+                    justify-self: start;
+                    align-self: start;
+                    
                     text-align: left;
-                    font-size: 1vw;
+                    font-size: 24px;
+                    /*
+                    font-style: italic;
+                    */
                 }
 
 }
@@ -134,10 +147,13 @@
 
 
 
-/*TV [1921px]*/
+/*
+dps do clamp(), acho que não vou precisar fazer media para tv.
+TV [1921px]
 @media screen and (min-width: 1921px) {
-
 }
+*/
+
 
 
 
