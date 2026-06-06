@@ -113,7 +113,7 @@ html, body {
 @media screen and (min-width: 1281px) {
     body {
         display: grid;
-        grid-template-rows: max(100vh, 800px) 100vh 100vh;
+        grid-template-rows: max(100vh, 800px) max(100vh, 1000px) 100vh; 
         grid-template-columns: 1fr;
     }
 }
