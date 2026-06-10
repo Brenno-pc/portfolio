@@ -11,48 +11,32 @@
 
 }
 
-/*LAPTOP [1025px - 1280px]*/
+
+/*LAPTOP - DESKTOP [1025px - 1920px]*/
 @media screen and (min-width: 1025px) {
-
-}
-
-
-
-
-
-/*DESKTOP [1281px - 1920px]*/
-@media screen and (min-width: 1281px) {
     header.header {
         grid-row: 1/2;
         grid-column: 1/2;
         width: auto;
         height: auto;
-
     }
         section.about {
             width: 100%;
             height: 100%;
-            background-color: rgb(0, 34, 255);
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 36vw 1fr clamp(100px, 6.3vw, 150px);
         }
             div.about__header {
                 grid-column: 1/2;
                 grid-row: 1/2;
+                background-color: #ffffff;
 
-                
-                background-color: rgb(255, 145, 0);
-            }   
-                button.about__language-button {
-                    background-color: paleturquoise;
-                }
-
+            }
                 h1.about__title {
-                    font-size: 100px;
-                    letter-spacing: -15px;
-                    background-color: white;
+                    font-size: 120px;
                 } 
+
 
 
             div.about__content {
@@ -61,17 +45,26 @@
                 background-color: rgb(135, 94, 18);
             }
                 h2.about__subtitle {
-                    background-color: white;
+                    font-size: 30px;
                 }
 
                 p.about__text {
-                    background-color: purple;
+                    font-size: 16px;
                 }
 
+
+
+            div.about__tools {
+                grid-column: 3/4;
+                grid-row: 1/2;
+                background-color: cadetblue;
+            }
+                button.about__language-button {
+                    background-color: paleturquoise;
+                }
                 ul.about__tools-list {
                     list-style: none;
                 }
-
 
 /*
     backup do header

@@ -109,11 +109,11 @@ html, body {
 
 
 
-/*DESKTOP [1281px - 1920px]*/
-@media screen and (min-width: 1281px) {
+/*LAPTOP - DESKTOP [1025px - 1920px]*/
+@media screen and (min-width: 1025px) {
     body {
         display: grid;
-        grid-template-rows: max(100vh, 800px) max(100vh, 1000px) 100vh; 
+        grid-template-rows: max(100vh, 768px) max(100vh, 1000px) 100vh; 
         grid-template-columns: 1fr;
     }
 }
