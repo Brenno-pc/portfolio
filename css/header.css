@@ -32,32 +32,82 @@
                 grid-row: 1/2;
                 background-color: #ffffff;
 
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center; /*verificar se fica legal com ou sem essa centralização horizontal*/
+                align-items: center;
             }
                 h1.about__title {
                     font-size: 120px;
-                } 
+                    color: purple;
+                }
 
 
 
             div.about__content {
                 grid-column: 2/3;
                 grid-row: 1/2;
-                background-color: rgb(135, 94, 18);
+
+                display: grid;
+                grid-template-rows: repeat(3, 1fr); /*quase certeza que vou precisar alterar isso depois KKKKKKK*/
+                grid-template-columns: 1fr;
+
+                background-color: purple;
+                color: white;
             }
                 h2.about__subtitle {
+                    grid-row: 1/2;
+                    grid-column: 1/2;
+
+                    justify-self: center;
+                    align-self: end;
+
                     font-size: 30px;
                 }
 
                 p.about__text {
+                    grid-row: 2/3;
+                    grid-column: 1/2;
+
+                    justify-self: center;
+                    align-self: center;
+                
                     font-size: 16px;
                 }
+
+                div.buttons {
+                    grid-row: 3/4;
+                    grid-column: 1/2;
+
+                    display: grid;
+                    grid-template-rows: 1fr;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                    button.buttons__projects {
+                        width: 130px;
+                        height: 70px;
+                        justify-self: center;
+                        align-self: center;
+                        border: none;
+                        border-radius: 10px;
+                        background-color: orange;
+                    }
+                    button.buttons__contacts {
+                        width: 130px;
+                        height: 70px;
+                        justify-self: center;
+                        align-self: center;
+                        border: none;
+                        border-radius: 10px;
+                        background-color: springgreen;
+                    }
 
 
 
             div.about__tools {
                 grid-column: 3/4;
                 grid-row: 1/2;
-                background-color: cadetblue;
+                background-color: crimson;
             }
                 button.about__language-button {
                     background-color: paleturquoise;
