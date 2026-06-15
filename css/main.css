@@ -13,7 +13,7 @@
 
 /*LAPTOP - DESKTOP [1025px - 1920px]*/
 @media screen and (min-width: 1025px) {
-    main.main_projects {
+    main.main{
         grid-row: 2/3;
         grid-column: 1/2;
         background-color: black;
