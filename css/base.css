@@ -1,17 +1,18 @@
 @charset "utf-8";
 /*procure sempre padronizar no uso das medidas px e vh*/
 
+/*
+responsável por fazer a ligação dos estilos css das respectivas partes do código a um todo "base.css"
+*/
 
 
 
 @import url(global_settings.css);
 @import url(header.css);
-@import url(main_projects.css);
-
+@import url(main.css);
 /*
 @import url(footer.css);
 */
-
 
 
 
