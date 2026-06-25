@@ -75,34 +75,6 @@
                     font-size: 16px;
                 }
 
-                div.buttons {
-                    grid-row: 3/4;
-                    grid-column: 1/2;
-
-                    display: grid;
-                    grid-template-rows: 1fr;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-                    button.buttons__projects {
-                        width: 130px;
-                        height: 70px;
-                        justify-self: center;
-                        align-self: center;
-                        border: none;
-                        border-radius: 10px;
-                        background-color: orange;
-                    }
-                    button.buttons__contacts {
-                        width: 130px;
-                        height: 70px;
-                        justify-self: center;
-                        align-self: center;
-                        border: none;
-                        border-radius: 10px;
-                        background-color: springgreen;
-                    }
-
-
 
             div.about__tools {
                 grid-column: 3/4;
