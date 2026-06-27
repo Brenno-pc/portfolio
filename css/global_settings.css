@@ -105,7 +105,12 @@ html, body {
 @media screen and (min-width: 1025px) {
     body {
         display: grid;
+        grid-template-rows:repeat(5, max(100vh, 768px));
+
+        /*
+        max(300vh, 2304px)
         grid-template-rows: max(100vh, 768px) max(200vh, 1536px) 100vh; 
+        */
         grid-template-columns: 1fr;
     }
 }

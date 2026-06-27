@@ -10,9 +10,8 @@ responsável por fazer a ligação dos estilos css das respectivas partes do có
 @import url(global_settings.css);
 @import url(header.css);
 @import url(main.css);
-/*
 @import url(footer.css);
-*/
+
 
 
 
