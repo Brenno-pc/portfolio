@@ -78,7 +78,7 @@ html, body {
 /*Altera a scrollbar, exceto no firefox*/
 ::-webkit-scrollbar {
     /*altera a scrollbar inteira*/
-    width: 7px;
+    width: 0px;
 }
 ::-webkit-scrollbar-track {
     /*altera o fundo do scrollbar*/
