@@ -26,7 +26,7 @@
             height: 100%;
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: 48vw 1fr clamp(155px, 8vw, 200px); /*problema aq em dispositivo menor*/
+            grid-template-columns: 48vw 1fr clamp(155px, 8vw, 200px); 
             /*
             clamp(160px, 8vw, 200px)
             backup
@@ -76,7 +76,7 @@
                 p.about__text {
                     grid-row: 2/3;
                     grid-column: 1/2;
-                    width: 650px;
+                    /*width: 650px; problema aq em dispositivo menor*/
 
                     font-size: 30px;
 
@@ -90,14 +90,18 @@
                 grid-row: 1/2;
                 background-color: crimson;
             }
-                ul.about__tools-list {
+                .about__tools-list {
                     width: auto;
-                    height: auto;
+                    height: 100%;
                     display: grid;
-                    grid-template-rows: repeat(6, 10%);
+                    grid-template-rows: repeat(6, 16.6%);
                     grid-template-columns: 1fr;
                     list-style: none;
                 }
+                    .about__tools-item {
+                        justify-self: center;
+                        align-self: center;
+                    }
 }
 /*
 dps do clamp(), acho que não vou precisar fazer media para tv.
