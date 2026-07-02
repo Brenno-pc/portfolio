@@ -26,7 +26,7 @@
             height: 100%;
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: 48vw 1fr clamp(110px, 8vw, 200px);
+            grid-template-columns: 45vw 1fr clamp(100px, 8vw, 200px);
             background-color: var(--color-violet); 
             /* backup: 
                 grid-template-columns: 36vw 1fr clamp(140px, 6.4vw, 190px); 
@@ -44,12 +44,11 @@
             }
                 .about__title {
                     font-family: var(--font_1); /*altere*/
-                    font-size: clamp(100px, 9vw, 240px);
+                    font-size: clamp(100px, 10vw, 240px);
                     font-weight: bolder;
-                    line-height: clamp(110px, 9.4vw, 250px);
+                    line-height: clamp(110px, 10.4vw, 250px);
                     color: var(--color-violet);
                 }
-
 
 
             .about__content {
@@ -59,24 +58,53 @@
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
-
+                background-color: var(--color-violet);
             }
-                h2.about__subtitle {
+                .about__subtitle {
                     grid-row: 1/2;
                     grid-column: 1/2;
-                    font-size: 45px;
-                    margin-bottom: 20px;
+                    /*
+                    margin-bottom: clamp(25px, 1vw, 20px);
+                    */
+                    margin-bottom: 30px;
+                    
+                    font-family: var(--font_1);
+                    font-size: clamp(27px, 2.5vw, 58px);
+                    font-weight: bolder;
+
+                    letter-spacing: 2px;
+
+                    /*
+                    clamp(x, 2px, x) - letter spacing
+                    */
+                    color: var(--color-azure);
                 }
 
                 p.about__text {
                     grid-row: 2/3;
                     grid-column: 1/2;
-                    /*width: 650px; problema aq em dispositivo meno*/
 
-                    font-size: 30px;
+                    padding-right: 20px;
+                    padding-left: 20px;
 
-                    letter-spacing: 2.5px;
+
+                    font-family: var(--font_1);
+                    font-size: clamp(24px, 1.7vw, 50px);
+                    font-weight: lighter;
+                    
+                    letter-spacing: 3px;
+                    line-height: 28px;
+                    /*
+                    padding-right: 100px;
+                    padding-left: 100px;
+
+                    clamp( )
+                    clamp( , 3px, ) - letter spacing
+                    clamp( , 48px, ) - line height
+                    */
+                    
                     text-align: center;
+                    color: var(--color-azure);
                 }
 
 
