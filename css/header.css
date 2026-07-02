@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*procure sempre padronizar no uso das medidas px, vw-vh, % e fr no máximo*/
 
-
+ 
 /*MOBILE [0px - 480px]*/
 
 
@@ -26,30 +26,28 @@
             height: 100%;
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: 48vw 1fr clamp(155px, 8vw, 200px); 
-            /*
-            clamp(160px, 8vw, 200px)
-            backup
-            grid-template-columns: 36vw 1fr clamp(140px, 6.4vw, 190px);
+            grid-template-columns: 48vw 1fr clamp(110px, 8vw, 200px);
+            background-color: var(--color-violet); 
+            /* backup: 
+                grid-template-columns: 36vw 1fr clamp(140px, 6.4vw, 190px); 
             */
         }
             .about__header {
                 grid-column: 1/2;
                 grid-row: 1/2;
-                background-color: #ffffff;
-
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: center;
+
+                background-color: var(--color-azure);
             }
                 .about__title {
-                    font-family: var(--font_1);
-                    font-size: 175px;
+                    font-family: var(--font_1); /*altere*/
+                    font-size: clamp(100px, 9vw, 240px);
                     font-weight: bolder;
-                    line-height: 185px;
-
-                    color: purple;
+                    line-height: clamp(110px, 9.4vw, 250px);
+                    color: var(--color-violet);
                 }
 
 
@@ -57,14 +55,11 @@
             .about__content {
                 grid-column: 2/3;
                 grid-row: 1/2;
-
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
 
-                background-color: purple;
-                color: white;
             }
                 h2.about__subtitle {
                     grid-row: 1/2;
@@ -76,7 +71,7 @@
                 p.about__text {
                     grid-row: 2/3;
                     grid-column: 1/2;
-                    /*width: 650px; problema aq em dispositivo menor*/
+                    /*width: 650px; problema aq em dispositivo meno*/
 
                     font-size: 30px;
 
