@@ -109,6 +109,7 @@
                     .about__tools-item {
                         justify-self: center;
                         align-self: center;
+                        background-color: green;
                     }
 }
 /*
