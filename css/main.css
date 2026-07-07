@@ -16,41 +16,35 @@
     .main{
         grid-row: 2/5;
         grid-column: 1/2;
-
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, max(100vh, 768px));
         grid-template-columns: 1fr;
     }
         .project {
             display: grid;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 50%);
+            grid-template-columns: repeat(2, 50%);
         }
         .project_page_1 {
             grid-row: 1/2;
             grid-column: 1/2;
-            background-color: rgb(103, 217, 255);
+            background-color: rgb(13, 255, 0);
         }
         .project_page_2 {
             grid-row: 2/3;
             grid-column: 1/2;
-            background-color: blue;
+            background-color: rgb(255, 234, 0);
         }
         .project_page_3 {
             grid-row: 3/4;
             grid-column: 1/2;
-            background-color: blueviolet;
+            background-color: rgb(132, 0, 255);
         }
 
 
             .project__about {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                /*
-                display: grid;
-                grid-template-rows: 20% 80%;
-                grid-template-columns: 1fr;
-                */
                 justify-self: center;
                 align-self: center;
             }
@@ -59,10 +53,6 @@
                 grid-column: 2/3;
             }
                 .project__title {
-                    /*
-                    grid-row: 1/2;
-                    grid-column: 1/2;
-                    */
                     justify-self: center;
                     align-self: center;
                     padding: 20px;
@@ -70,16 +60,9 @@
                     text-align: center;
                 }
                 .project__description {
-                    /*
-                    grid-row: 2/3;
-                    grid-column: 1/2;
-                    
-                    justify-self: center;
-                    align-self: start;
-                    */
                     justify-self: center;
                     align-self: center;
-                    width: 650px;
+
                     padding: 20px;
                     font-size: 25px;
                     text-align: center;
@@ -96,9 +79,11 @@
             }
                 .project__cover-image {
                     background-color: black;
-                    width: 70%;
-                    height: 70%;
+                    width: 100%;
+                    height: 100%;
+                    /*
                     border-bottom-left-radius: 5px;
+                    */
                 }
 
 
@@ -112,9 +97,11 @@
             }
                 .project__content-image {
                     background-color: black;
-                    width: 70%;
-                    height: 70%;
+                    width: 100%;
+                    height: 100%;
+                    /*
                     border-top-right-radius: 5px;
+                    */
                 }
 
 
