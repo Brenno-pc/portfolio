@@ -24,11 +24,14 @@
 /*PALETE*/
 :root {
     /*Colors
-    --color-violet: #2C1A2C; - cor original
+    --color-violet: #351f35; /*clarear ou escurecer
     */
-    --color-violet: #351f35; /*clarear ou escurecer*/
+    --color-violet: #2C1A2C; /*cor original*/
     --color-azure: #ECF8F8 ;
-    --color-green: #002500; /*talvez eu troque essa cor*/
+    --color-green: #002500; 
+
+    --color-blue: #00678c; /*vai ser usado nos botões*/
+
     --color-white: #ffffff;
     --color-black: #000000;
 
