@@ -33,7 +33,13 @@
 
     --color-white: #ffffff;
     --color-black: #000000;
-
+    
+    /* Paleta de cores para degradê
+    #723C72
+    #4B214D
+    #2C1A2C
+    #241424
+    */
 
     /*Fonts*/
     --font_1: 'Inter Regular';
