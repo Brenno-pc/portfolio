@@ -1,18 +1,52 @@
 @charset "utf-8";
 /*procure sempre padronizar no uso das medidas px, vw-vh, % e fr no máximo*/
 
- 
-/*MOBILE [0px - 480px]*/
 
 
+/*MOBILE [0px - 599px]*/
+@media screen and (min-width: 0px) and (max-width: 599px){
+    .header {
+        grid-row: 1/2;
+        grid-column: 1/2;
 
-/*TABLET [481px - 1024px]*/
-@media screen and (min-width: 481px) {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        /*align-items: center;*/
+
+        background: linear-gradient(
+            to bottom,
+            var(--color-violet_light), 
+            var(--color-violet_medium), 
+            var(--color-violet_dark), 
+            var(--color-violet_super_dark)
+        );
+    }
+        .about {
+            width: auto;
+            height: auto;
+        }
+            .about__header {
+                width: auto;
+                height: auto;
+                margin-bottom: 10px;/*clamp()*/
+                color: var(--color-azure);
+            }
+            .about__content {}
+            .about__tools {}
+            .about__links {}
 
 }
 
 
-/*LAPTOP - DESKTOP [1025px - 1920px]*/
+
+/*TABLET [600px - 1024px]*/
+@media screen and (min-width: 600px) {
+    
+}
+
+
+/*LAPTOP - DESKTOP - TV [1025px - 1920px]*/
 @media screen and (min-width: 1025px) {
     .header {
         grid-row: 1/2;
@@ -20,6 +54,7 @@
 
         width: auto;
         height: auto;
+
     }
         .about {
             width: 100%;
@@ -30,7 +65,6 @@
             /* backup: 
                 grid-template-columns: 36vw 1fr clamp(140px, 6.4vw, 190px); 
             */
-
             background-color: var(--color-violet); 
         }
             .about__header {
@@ -114,12 +148,7 @@
                         align-self: center;
                     }
 }
-/*
-dps do clamp(), acho que não vou precisar fazer media para tv.
-TV [1921px]
-@media screen and (min-width: 1921px) {
-}
-*/
+
 
 
 

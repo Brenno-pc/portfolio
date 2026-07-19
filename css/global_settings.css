@@ -4,6 +4,7 @@
 
 
 /*FONTS*/
+/*
 @font-face {
     font-family: 'Inter Regular';
     src: url(../fonts/inter/Inter-Regular.otf) format(OpenType);
@@ -17,22 +18,33 @@
     font-family: 'JetB NL Regular';
     src: url(../fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMonoNL-Regular.ttf) format(TrueType);
 }
+*/
+@font-face {
+    font-family: 'montserrat normal';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'montserrat italic';
+    src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
 
 
 
 /*PALETE*/
 :root {
-    /*Colors
-    --color-violet: #351f35; /*clarear ou escurecer
-    */
-    --color-violet: #2C1A2C; /*cor original*/
-    --color-azure: #ECF8F8 ;
-    --color-green: #002500; 
+    /*Colors*/
+    --color-violet_light: #723C72;
+    --color-violet_medium: #4B214D;
+    --color-violet_dark: #2C1A2C;
+    --color-violet_super_dark: #241424;
 
-    --color-blue: #00678c; /*vai ser usado nos botões*/
+    --color-azure: #ECF8F8 ;
 
     --color-white: #ffffff;
     --color-black: #000000;
+
+
     
     /* Paleta de cores para degradê
     #723C72
@@ -40,11 +52,19 @@
     #2C1A2C
     #241424
     */
-
+    /*
+    --color-green: #002500; 
+    --color-blue: #00678c;
+    */
     /*Fonts*/
+    --font_normal: 'montserrat normal';
+    --font_italic: 'montserrat italic';
+
+    /*
     --font_1: 'Inter Regular';
     --font_2: 'JetB Regular';
     --font_3: 'JetB NL Regular';
+    */
 }
 
 
@@ -52,9 +72,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    
-    font-family: var(--font_1); /*alterar essa fonte*/
-    /*scroll será igual slide, section por section*/
+    font-family: var(--font_normal);
 }
 
 
@@ -69,52 +87,35 @@ html, body {
 
 /*SCROLLBAR SETTINGS*/
 ::-webkit-scrollbar {
-    /*altera a scrollbar inteira*/
     width: 0px;
 }
-/*
-::-webkit-scrollbar-track {
-    background-color: green;
-}
-::-webkit-scrollbar-thumb {
-    background-color: red;
-    border-radius: 5px;
-}
-*/
 
 
-/*MOBILE [0px - 480px] - deixa quieto*/
+
 /*MOBILE [0px - 599px]*/
 @media screen and (min-width: 0px) and (max-width: 599px){
-    
+    body {
+        display: grid;
+        grid-template-rows: repeat(5, max(100vh, 600px));
+        grid-template-columns: 1fr;
+    }
 }
 
 
-/*TABLET [481px - 1024px] - deixa quieto*/
 /*TABLET [600px - 1024px]*/
 @media screen and (min-width: 600px) {
     
 }
 
 
-/*LAPTOP - DESKTOP [1025px - 1920px]*/
+/*LAPTOP - DESKTOP - TV [1025px - 1920px]*/
 @media screen and (min-width: 1025px) {
     body {
         display: grid;
         grid-template-rows:repeat(5, max(100vh, 768px));
         grid-template-columns: 1fr;
-        /*
-        max(300vh, 2304px)
-        grid-template-rows: max(100vh, 768px) max(200vh, 1536px) 100vh; 
-        */
     }
 }
-
-
-/*
-MEDIA DELETADO == TV [1921px]
-@media screen and (min-width: 1921px) {}
-*/
 
 
 
