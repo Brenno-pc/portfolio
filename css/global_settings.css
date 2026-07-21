@@ -108,7 +108,7 @@ html, body {
 }
 
 
-/*LAPTOP - DESKTOP - TV [1025px - 1920px]*/
+/*LAPTOP - DESKTOP - TV [1025px - 1920px - > 1920px]*/
 @media screen and (min-width: 1025px) {
     body {
         display: grid;
