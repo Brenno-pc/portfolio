@@ -173,7 +173,15 @@
 
 /*LAPTOP - DESKTOP - TV [1025px - 1920px]*/
 @media screen and (min-width: 1025px) {
-    
+    .header {
+        background: linear-gradient(
+            to bottom,
+            var(--color-violet_light), 
+            var(--color-violet_medium), 
+            var(--color-violet_dark), 
+            var(--color-violet_super_dark)
+        );
+    }
 }
 
 
