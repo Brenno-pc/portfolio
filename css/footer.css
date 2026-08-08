@@ -145,9 +145,12 @@
     .footer {
         grid-row: 5/6;
         grid-column: 1/2;
+
         display: grid;
         grid-template-rows: 20% 60% 20%;
         grid-template-columns: 1fr;
+
+        background-color: var(--color-violet_super_dark);
     }
         .footer__header {
             grid-row: 1/2;
@@ -156,13 +159,14 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
-            align-items: center;
-            background-color: var(--color-violet);
+            align-items: end;
         }
             .footer__title {
                 font-size: clamp(35px, 3vw, 76px);
                 font-weight: normal;
+
                 letter-spacing: 9px;
+
                 color: var(--color-azure);
             }
 
@@ -175,63 +179,39 @@
             flex-flow: row nowrap;
             justify-content: space-evenly;
             align-items: center;
-
-            background-color: var(--color-violet);
         }
             .footer__link {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                width: 100px;
+                height: 100px;
 
-                width: clamp(150px, 13vw, 340px);
-                height: clamp(150px, 13vw, 340px);
+                justify-self: center;
+                align-self: center;
 
-                text-decoration: none;
-                border-radius: 42px;
-                overflow: hidden;
-                background-color: var(--color-green);
+                border-radius: 12px;
+
+                color: var(--color-azure);
+                background-color: white;
             }
-                .footer__icon { 
-                    width: 55%;
-                    height: 55%;
-                    background-color: #005900;
-                }
 
 
         .footer__bottom {
             grid-row: 3/4;
             grid-column: 1/2;
-            background-color: var(--color-violet);
 
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-
+            
             background-color: var(--color-azure);
+
         }
             .footer__author {
-                margin-bottom: clamp(12px, 0.8vw, 20px);
-                font-size: clamp(21px, 1.3vw, 36px);
-                /*
-                    clamp(21px, 1.3vw, 36px)
-                    clamp(12px, 0.8vw, 20px) (margin)
-                */
-                font-style: italic;
-                font-weight: bold;
-                letter-spacing: 4px;
-
-                color: var(--color-violet);
+                color: var(--color-violet_super_dark);
             }
             .footer__copyright {
-                font-size: clamp(16px, 1.1vw, 32px);
-                font-style: italic;
-                font-weight: bold;
-                letter-spacing: 3.2px;
-
-                color: var(--color-violet);
+                color: var(--color-violet_super_dark);
             }
-        /*font-size: clamp(35px, 2.9vw, 75px);*/
 }
 
 
