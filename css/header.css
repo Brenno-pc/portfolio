@@ -13,8 +13,11 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        
         /*
-        padding: 0px 28px;
+        choice which is better, padding or align
+            padding: 0px 28px;
+            align-items: center;
         */
 
         background: linear-gradient(
@@ -26,15 +29,31 @@
         );
     }
         .about {
-            width: auto;
+            /*
+            with the align-items, define the width.
+            without align-items, width and height == auto
+            */
+            width: clamp(250px, 85vw, 390px); /*probably i will use this clamp for all (main, projects, footer, ...)*/
             height: auto;
         }
             .about__header {
                 width: auto;
                 height: auto;
+
                 margin-bottom: 10px;/*clamp()*/
-                color: var(--color-azure);
+                
             }
+                .about__apresentation {
+                    color: var(--color-azure);
+                }
+                .about__title {
+                    color: var(--color-azure);
+                }
+
+            
+
+
+
             .about__content {
                 width: auto;
                 height: auto;
