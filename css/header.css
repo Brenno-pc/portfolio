@@ -36,12 +36,12 @@
             width: clamp(250px, 85vw, 390px); /*probably i will use this clamp for all (main, projects, footer, ...)*/
             height: auto;
         }
+
             .about__header {
                 width: auto;
                 height: auto;
 
                 margin-bottom: 10px;/*clamp()*/
-                
             }
                 .about__apresentation {
                     color: var(--color-azure);
