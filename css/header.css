@@ -41,24 +41,42 @@
                 width: auto;
                 height: auto;
 
-                margin-bottom: 10px;/*clamp()*/
+                /*
+                margin-bottom: 10px; clamp()
+                */
             }
                 .about__apresentation {
+                    font-size: 16px;
+                    font-family: var(--font_normal);
+                    padding-bottom: 2px;
+
                     color: var(--color-azure);
                 }
                 .about__title {
+                    font-size: 42px;
+                    font-family: var(--font_normal);
+                    letter-spacing: 5px;
+                    line-height: 32px;
+
                     color: var(--color-azure);
                 }
-
-            
-
-
 
             .about__content {
                 width: auto;
                 height: auto;
+                margin: 20px 0px;
                 color: var(--color-azure);
             }
+                .about__text-1 {
+                    font-family: var(--font_italic);
+                    padding-bottom: 3.5px;
+                }
+                .about__text-2 {
+                    font-family: var(--font_italic);
+                }
+
+
+
             .about__tools {
                 width: auto;
                 height: auto;
@@ -69,7 +87,9 @@
                     justify-content: space-between;
                     list-style: none;
 
+                    /*
                     margin: 35px 0px;
+                    */
 
                 }
                 .about__tools-item {
