@@ -40,23 +40,58 @@
             .about__header {
                 width: auto;
                 height: auto;
-
-                /*
-                margin-bottom: 10px; clamp()
-                */
             }
                 .about__apresentation {
-                    font-size: 16px;
+                    font-size: clamp(12.5px, 3.7vw, 15.7px);
+                    /*
+                    font-size: 12.5px; min
+                    font-size: 13px; min
+                    font-size: 14.5px; min
+                    
+                    font-size: 15px - 3.7vw; default
+                    
+                    font-size: 15.7px; max
+                    font-size: 16px; max
+                    font-size: 17px; max
+                    */
                     font-family: var(--font_normal);
-                    padding-bottom: 2px;
+                    padding-bottom: clamp(1px, 0.5vw, 2px);
+                    /*
+                    padding-bottom: 1px; min
+                    
+                    padding-bottom: 2px - 0.5vw; default
+                    
+                    padding-bottom: 2.2px; max
+                    padding-bottom: 3px; max
+                    padding-bottom: 4px; max
+                    */
 
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: 42px;
+                    font-size: clamp(32px, 10.25vw, 44px);
+                    /*
+                    font-size: 32px; min 
+                    font-size: 41px - 10.25vw; default (use)
+                    
+                    font-size: 42px; max
+                    font-size: 44px; max
+                    */
                     font-family: var(--font_normal);
-                    letter-spacing: 5px;
-                    line-height: 32px;
+                    letter-spacing: clamp(3px, 1.25vw, 6px);
+                    /*
+                    letter-spacing: 1.25vw;
+                    letter-spacing: 3px; min
+                    
+                    letter-spacing: 5px - 1.25vw; default
+
+                    letter-spacing: 6px; max
+                    */
+                    line-height: clamp(30px, 7.75vw, 31px);
+                    /*
+                    line-height: 30px; min
+                    line-height: 31px - 7.75vw; default/max
+                    */
 
                     color: var(--color-azure);
                 }
@@ -64,22 +99,41 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin: 20px 0px;
+                margin: clamp(17px ,5vw, 22px) 0px;
+                /*
+                margin: 17px 0px; min
+                margin: 20px - 5vw   0px; default
+                margin: 22px 0px; max
+                */
                 color: var(--color-azure);
             }
-                .about__text-1 {
+                .about__text {
                     font-family: var(--font_italic);
-                    padding-bottom: 3.5px;
+                    font-size: clamp(14px, 4.25vw, 19px);
+                    /*
+                    font-size: 14px; min
+                    font-size: 17px - 4.25vw; default
+                    font-size: 19px; max
+                    */
                 }
-                .about__text-2 {
+                .about__text--1 {
                     font-family: var(--font_italic);
+                    padding-bottom: 2px;
+                    /*
+                    padding-bottom: 2px; min/default/max
+                    */
                 }
 
             .about__tools {
                 width: auto;
                 height: auto;
 
-                margin: 33px 0px;
+                margin: clamp(25px, 8.25vw, 35px) 0px; 
+                /*
+                margin: 25px 0px; min min
+                margin: 31px - 8.25vw    0px; default 
+                margin: 35px 0px; max 
+                */
             }
                 .about__tools-list {
                     display: flex;
@@ -94,14 +148,35 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 38px;
-                        height: 38px;
+                        width: clamp(36px, 10vw, 45px);
+                        height: clamp(36px, 10vw, 45px);
+                        
+                        /*
+                        width: 36px; min
+                        height: 36px; min
+
+                        width: 40px - 10vw; default
+                        height: 40px - 10vw; default
+                        
+                        width: 45px; max
+                        height: 45px; max
+                        */
                         border-radius: 50%;
                         background-color: var(--color-azure);
                     }
                         .tools_icon {
-                            width: 80%;
-                            height: 80%;
+                            width: clamp(75%, 80%, 82%);
+                            height: clamp(75%, 80%, 82%);
+                            /*
+                            width: 75%; min
+                            height: 75%; min
+                            
+                            width: 80%; default
+                            height: 80%; default
+                            
+                            width: 82%; max
+                            height: 82%; max
+                            */
                             border-radius: 50%;
                             background-color: var(--color-violet_dark);
                         }
@@ -117,8 +192,20 @@
                     align-items: center;
 
                     width: 100%;
-                    height: 48px;
+                    height: clamp(42px, 12vw, 52px);
+                    /*
+                    height: 42px; min
+                    height: 48px - 12vw; default
+                    height: 52px; max
+                    */
 
+                    font-family: var(--font_normal);
+                    font-size: clamp(14px, 4vw, 17.5px);
+                    /*
+                    font-size: 14px; min
+                    font-size: 16px - 4vw; default
+                    font-size: 17.5px; max
+                    */
                     text-decoration: none;
                     background-color: var(--color-azure);
                     border-radius: 3px;
