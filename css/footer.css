@@ -12,9 +12,14 @@
         
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 15% 70% 15%;
+        grid-template-rows: 22% 66% 12%;
         /*
-        grid-template-rows: 16% 72% 12%;
+        grid-template-rows: 22% 66% 12%;
+        grid-template-rows: 22% 68% 10%;
+        grid-template-rows: 25% 65% 10%;
+        grid-template-rows: 25% 60% 15%;
+        grid-template-rows: 16% 73% 11%;
+        grid-template-rows: 15% 70% 15%;
         */
         background-color: var(--color-violet_super_dark);
     }
@@ -28,12 +33,18 @@
             align-items: end;
         }
             .footer__title {
+                font-size: 22px;
                 /*
-                font-size: 16px;
+                font-size: 22px; default
+                font-size: 24px;
                 */
                 font-family: var(--font_normal);
                 font-weight: normal;
                 
+                letter-spacing: 5px;
+                line-height: 34px;
+                /*
+                */
                 text-align: center;
                 color: var(--color-azure);
             }
@@ -43,22 +54,35 @@
             grid-row: 2/3;
             grid-column: 1/2;
 
+            width: 100%;
+            height: 100%;
+
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(2, 1fr);
         }
             .footer__link {
+                width: 80px;
+                height: 80px;
+                /*
                 width: 100px;
                 height: 100px;
-
+                */
                 justify-self: center;
                 align-self: center;
-
+                
                 border-radius: 12px;
+                
+                overflow: hidden;
 
                 color: var(--color-azure);
                 background-color: white;
             }
+                .footer__link:nth-of-type(3), .footer__link:nth-of-type(4) {
+                    align-self: start ;
+                    margin-top: 30px;
+                } 
+
 
         .footer__bottom {
             grid-row: 3/4;
@@ -72,9 +96,16 @@
             background-color: var(--color-azure);
         }
             .footer__author {
+                font-size: 16px;
+                font-style: italic;
+                letter-spacing: 2px;
                 color: var(--color-violet_super_dark);
+                padding-bottom: 5px;
             }
             .footer__copyright {
+                font-size: 16px;
+                font-style: italic;
+                letter-spacing: 2px;
                 color: var(--color-violet_super_dark);
             }
 }
