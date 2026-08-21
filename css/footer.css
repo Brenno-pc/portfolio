@@ -33,17 +33,33 @@
             align-items: end;
         }
             .footer__title {
-                font-size: 22px;
+
+                width: 500px;
                 /*
+                width: 500px; max
+                */
+
+                font-size: 27px;
+                /*
+                font-size: 19px ou 18.5px; min
                 font-size: 22px; default
-                font-size: 24px;
+                font-size: 27px; max
                 */
                 font-family: var(--font_normal);
                 font-weight: normal;
                 
-                letter-spacing: 5px;
-                line-height: 34px;
+                letter-spacing: 8px;
                 /*
+                letter-spacing: 3px; min
+                letter-spacing: 5px; default
+                letter-spacing: 8px; max
+                */
+
+                line-height: 38px;
+                /*
+                line-height: 30px ou 28px; min (esse)
+                line-height: 34px; default
+                line-height: 38px; max
                 */
                 text-align: center;
                 color: var(--color-azure);
@@ -62,11 +78,17 @@
             grid-template-columns: repeat(2, 1fr);
         }
             .footer__link {
-                width: 80px;
-                height: 80px;
+                width: 93px;
+                height: 93px;
                 /*
-                width: 100px;
-                height: 100px;
+                width: 70px ou 66px; min
+                height: 70px ou 66px; min
+
+                width: 80px; default
+                height: 80px; default
+
+                width: 93px; max
+                height: 93px; max
                 */
                 justify-self: center;
                 align-self: center;
@@ -78,11 +100,60 @@
                 color: var(--color-azure);
                 background-color: white;
             }
+                .footer__link:nth-of-type(1) {
+                    margin-left: 65px;
+                    /*
+                    margin-left: 65px; max
+                    */
+                    
+                }
+                .footer__link:nth-of-type(2) {
+                    margin-right: 65px;
+                    /*
+                    margin-right: 65px; max
+                    */
+
+                }
+                .footer__link:nth-of-type(3) {
+                    margin-top: 35px;
+                    /*
+                    margin-top: 20px; min
+                    margin-top: 30px; default (revisar)
+                    margin-top: 35px ou 25px; max
+                    */
+                    
+                    margin-left: 65px;
+                    /*
+                    margin-left: 65px; max
+                    */
+                    align-self: start ;
+                }
+                .footer__link:nth-of-type(4) {
+                    margin-top: 35px;
+                    /*
+                    margin-top: 20px; min
+                    margin-top: 30px; default (revisar)
+                    margin-top: 35px ou 25px; max
+                    */
+                    
+                    margin-right: 65px;
+                    /*
+                    margin-right: 65px; max
+                    */
+                    align-self: start ;
+                }
+
+                /*
                 .footer__link:nth-of-type(3), .footer__link:nth-of-type(4) {
                     align-self: start ;
-                    margin-top: 30px;
-                } 
-
+                    margin-top: 35px;
+                    /*
+                    margin-top: 20px; min
+                    margin-top: 30px; default (revisar)
+                    margin-top: 35px ou 25px; max
+                    
+                }
+                */
 
         .footer__bottom {
             grid-row: 3/4;
@@ -96,16 +167,34 @@
             background-color: var(--color-azure);
         }
             .footer__author {
-                font-size: 16px;
+                font-size: 1px;
+                /*
+                font-size: 14px; min
+                font-size: 16px; default
+                font-size: 17px; max
+                */
                 font-style: italic;
                 letter-spacing: 2px;
+                /*
+                letter-spacing: 1.5px; min
+                letter-spacing: 2px; default
+                */
                 color: var(--color-violet_super_dark);
                 padding-bottom: 5px;
             }
             .footer__copyright {
-                font-size: 16px;
+                font-size: 1px;
+                /*
+                font-size: 14px; min
+                font-size: 16px; default
+                font-size: 17px; max
+                */
                 font-style: italic;
                 letter-spacing: 2px;
+                /*
+                letter-spacing: 1.5px; min
+                letter-spacing: 2px; default
+                */
                 color: var(--color-violet_super_dark);
             }
 }
