@@ -33,37 +33,15 @@
             align-items: end;
         }
             .footer__title {
-
                 width: clamp(260px, 87.5vw, 500px);
-                /*
-                width: 260px; min
-                width: 350px - 87.5vw; default
-                width: 500px; max
-                */
 
                 font-size: clamp(18.5px, 5.4vw, 26px);
-                
-                /*
-                font-size: 18.5px; min
-                font-size: 21.5px - 5,4vw; default
-                font-size: 26px; max
-                */
                 font-family: var(--font_normal);
                 font-weight: normal;
                 
                 letter-spacing: clamp(3px, 1.5vw, 8px);
-                /*
-                letter-spacing: 3px; min
-                letter-spacing: 6px - 1.5vw; default
-                letter-spacing: 8px; max
-                */
-
                 line-height: clamp(28px, 8.5vw, 38px);
-                /*
-                line-height: 28px; min
-                line-height: 34px - 8.5vw; default
-                line-height: 38px; max
-                */
+
                 text-align: center;
                 color: var(--color-azure);
             }
@@ -83,16 +61,7 @@
             .footer__link {
                 width: clamp(66px, 19.5vw, 93px);
                 height: clamp(66px, 19.5vw, 93px);
-                /*
-                width: 66px; min
-                height: 66px; min
 
-                width: 78px; default
-                height: 78px; default
-
-                width: 93px; max
-                height: 93px; max
-                */
                 justify-self: center;
                 align-self: center;
                 
@@ -105,53 +74,18 @@
             }
                 .footer__link:nth-of-type(1) {
                     margin-left: clamp(25px, 6.5vw, 60px);
-                    /*
-                    margin-left: 25px;
-                    margin-left: 20px; min
-                    margin-left: 25px - 6.5vw; default
-                    margin-left: 60px; max
-                    */
                 }
                 .footer__link:nth-of-type(2) {
                     margin-right: clamp(25px, 6.5vw, 60px);
-                    /*
-                    margin-right: 20px; min
-                    margin-right: 25px - 6.5vw; default
-                    margin-right: 60px; max
-                    */
-
                 }
                 .footer__link:nth-of-type(3) {
                     margin-top: clamp(20px, 7vw, 35px);
-                    /*
-                    margin-top: 20px; min
-                    margin-top: 28px - 7vw; default 
-                    margin-top: 35px; max
-                    */
-                    
                     margin-left: clamp(25px, 6.5vw, 60px);
-                    /*
-                    margin-left: 20px; min
-                    margin-left: 25px - 6.5vw; default
-                    margin-left: 60px; max
-                    */
                     align-self: start ;
                 }
                 .footer__link:nth-of-type(4) {
                     margin-top: clamp(20px, 7vw, 35px);
-                    /*
-                    margin-top: 28px;
-                    margin-top: 20px; min
-                    margin-top: 28px - 7vw; default
-                    margin-top: 35px; max
-                    */
-                    
                     margin-right: clamp(25px, 6.5vw, 60px);
-                    /*
-                    margin-right: 20px; min
-                    margin-right: 25px - 6.5vw; default
-                    margin-right: 60px; max
-                    */
                     align-self: start ;
                 }
 
@@ -170,6 +104,7 @@
             .footer__author {
                 font-size: clamp(14px, 2.9vw, 17px);
                 font-style: italic;
+
                 letter-spacing: clamp(1.5px, 0.35vw, 2px);
                 color: var(--color-violet_super_dark);
                 padding-bottom: 5px;
@@ -177,6 +112,7 @@
             .footer__copyright {
                 font-size: clamp(14px, 2.9vw, 17px);
                 font-style: italic;
+
                 letter-spacing: clamp(1.5px, 0.35vw, 2px);
                 color: var(--color-violet_super_dark);
             }
