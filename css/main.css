@@ -16,22 +16,37 @@
     }
         .project {
             display: grid;
-            grid-template-rows: 10% 34% 10% 20% 26%;
+            grid-template-rows: 11% 33% 9% 18% 29%;
             grid-template-columns: 1fr;
         }
+
+
             .project__title {
                 grid-row: 1/2;
                 grid-column: 1/2;
 
-                font-size: 22px;
-                /*
-                */
-
                 justify-self: center;
                 align-self: center;
 
+                font-size: 20.5px;
+                /*
+                font-size: 20px; min
+                font-size: 22px; default
+                */
+                letter-spacing: 2.5px;
+                /*
+                letter-spacing: 2.5px; min
+                */
+
+                margin-top: 23.5px;
+                /*
+                margin-top: 20px - 23.5px - 24px; min
+                margin-top: 0px; default
+                */
+
                 color: var(--color-azure);
             }
+
 
             .project__image {
                 grid-row: 2/3;
@@ -41,18 +56,21 @@
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: center;
-
-                background-color: pink;
             }
                 .img_project {
-                    width: 300px;
+                    width: 260px;
+                    height: 90%;
                     /*
-                    width: 300px; default
-                    */
-                    height: 100%;
+                    width: 260px; min
+                    height: 90%; min
 
+                    width: 300px; default
+                    height: 100%; default
+                    */
+                    border-radius: 5px;
                     background-color: green;
                 }
+
 
             .project__tech {
                 grid-row: 3/4;
@@ -62,47 +80,64 @@
                 height: 100%;
             }
                 .project__tech-list {
-                    width: 300px; 
-                    /*
-                    width: 300px; default
-                    */
-                    height: 100%;
-
                     justify-self: center;
                     align-self: center;
 
-                    list-style: none;
+                    width: 260px; 
+                    height: 100%;
+                    /*
+                    width: 260px; min (mesmo da img) 
+                    height: 100%; min
+
+                    width: 300px; default (mesmo da img)
+                    height: 100%; default
+                    */
 
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: space-between;
                     align-items: center;
-                }
 
+                    list-style: none;
+                }
                 .project__tech-item {
-                    width: 30px;
-                    height: 30px;
+                    width: 28px;
+                    height: 28px;
                     /*
+                    width: 28px; min
+                    height: 28px; min
+
                     width: 30px; default
                     height: 30px; default
                     */
                     background-color: white;
                 }
 
+
             .project__about {
                 grid-row: 4/5;
                 grid-column: 1/2;
 
-                width: 300px; 
-                /*
-                width: 300px; default 
-                */
-
                 justify-self: center;
                 align-self: center;
+
+                width: 260px; 
+                height: 100%;
+                
+                /*
+                width: 260px; min 
+                height: 100%; min
+
+                width: 300px; default (mesmo da img)
+                height: 100%; default
+                */
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
             }
                 .project__description {
-                    margin: 10px;
                     text-align: center;
                     color: var(--color-azure);
                 }
@@ -112,19 +147,48 @@
                 grid-row: 5/6;
                 grid-column: 1/2;
 
+                justify-self: center;
+                align-self: start;
+
+                margin-top: 25px;
+                /*
+                margin-top: 25px; min
+                */
+
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
             }
                 .button {
-                    width: 300px; /*300px*/
-                    margin-bottom: 20px;
-                    padding: 10px;
-                    text-align: center;
+                    width: 260px;
+                    height: 38px;
+                    /*
+                    width: 260px; min
+                    height: 38px; min
 
+                    width: 300px; default (mesmo da img)
+                    height: 39px; default
+                    */
+
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    text-align: center;
                     background-color: white;
                 }
+                    .button--open {
+                        margin-bottom: 20px;
+                        /*
+                        margin-bottom: 20px; default - min
+                        */
+                        background-color: white;
+                    }
+                    .button--github {
+                        background-color: white;
+                    }
 }
 
 
