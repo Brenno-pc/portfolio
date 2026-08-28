@@ -45,25 +45,16 @@
                     font-size: clamp(12.5px, 3.7vw, 15.7px);
                     /*
                     font-size: 12.5px; min
-                    font-size: 13px; min
-                    font-size: 14.5px; min
-                    
                     font-size: 15px - 3.7vw; default
-                    
                     font-size: 15.7px; max
-                    font-size: 16px; max
-                    font-size: 17px; max
                     */
+
                     font-family: var(--font_normal);
                     padding-bottom: clamp(1px, 0.5vw, 2px);
                     /*
                     padding-bottom: 1px; min
-                    
                     padding-bottom: 2px - 0.5vw; default
-                    
-                    padding-bottom: 2.2px; max
-                    padding-bottom: 3px; max
-                    padding-bottom: 4px; max
+                    padding-bottom: 2px; max
                     */
 
                     color: var(--color-azure);
@@ -80,11 +71,8 @@
                     font-family: var(--font_normal);
                     letter-spacing: clamp(3px, 1.25vw, 6px);
                     /*
-                    letter-spacing: 1.25vw;
                     letter-spacing: 3px; min
-                    
                     letter-spacing: 5px - 1.25vw; default
-
                     letter-spacing: 6px; max
                     */
                     line-height: clamp(30px, 7.75vw, 31px);
@@ -105,7 +93,6 @@
                 margin: 20px - 5vw   0px; default
                 margin: 22px 0px; max
                 */
-                color: var(--color-azure);
             }
                 .about__text {
                     font-family: var(--font_italic);
@@ -115,6 +102,7 @@
                     font-size: 17px - 4.25vw; default
                     font-size: 19px; max
                     */
+                    color: var(--color-azure);
                 }
                 .about__text--1 {
                     font-family: var(--font_italic);
@@ -140,9 +128,8 @@
                     flex-flow: row nowrap;
                     justify-content: space-between;
                     list-style: none;
-
                 }
-                .about__tools-item {
+                    .about__tools-item {
                         display: flex;
                         flex-flow: row nowrap;
                         justify-content: center;
@@ -207,6 +194,7 @@
                     font-size: 17.5px; max
                     */
                     text-decoration: none;
+
                     background-color: var(--color-azure);
                     border-radius: 3px;
                 }
@@ -329,48 +317,100 @@
             width: 450px;
             height: auto;
         }
+
             .about__header {
                 width: auto;
                 height: auto;
-                margin-bottom: 10px;
-                color: var(--color-azure);
             }
+                .about__apresentation {
+                    font-size: 16.5px;
+                    /*
+                    */
+
+                    font-family: var(--font_normal);
+                    /*padding-bottom: 1px; não acho q precise*/
+                    color: var(--color-azure);
+                }
+                .about__title {
+                    margin-top: -8px;
+                    font-size: 52px;
+                    font-family: var(--font_normal);
+                    letter-spacing: 8px;
+                    /*line-height: 30px; não acho q precise*/
+
+                    color: var(--color-azure);
+                }
+
+
             .about__content {
                 width: auto;
                 height: auto;
-                margin-bottom: 10px;
-                color: var(--color-azure);
+                margin: 17px 0px;
             }
+                .about__text {
+                    font-family: var(--font_italic);
+                    font-size: 19.5px;
+                    color: var(--color-azure);
+                }
+                .about__text--1 {
+                    padding-bottom: 3px;
+                }
+
+
             .about__tools {
                 width: auto;
                 height: auto;
-                color: var(--color-azure);
+
+                margin: 25px 0px 41px 0px; /*pega o margin do .about__content e add +8px do top e +16px do bottom*/
             }
                 .about__tools-list {
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: space-between;
-                    
-                    margin-bottom: 20px;
                     list-style: none;
                 }
                     .about__tools-item {
-                        width: 40px;
-                        height: 40px;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: 50px;
+                        height: 50px;
+
                         border-radius: 50%;
                         background-color: var(--color-azure);
                     }
+                        .tools_icon {
+                            width: 75%;
+                            height: 75%;
+
+                            border-radius: 50%;
+                            background-color: var(--color-violet_dark);
+                        }
+                    
 
             .about__links {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
-                background-color: var(--color-azure);
+                gap: 50px;
             }
-                .links { /*parei aqui*/
+                .links {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 100%;
+                    height: 42px;
+
+                    font-family: var(--font_normal);
+                    font-size: 14px;
                     text-decoration: none;
-                    justify-self: center;
-                    align-self: center;
+                    
+                    border-radius: 3px;
+                    background-color: var(--color-azure);
                 }
 }
 
