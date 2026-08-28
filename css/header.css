@@ -314,7 +314,7 @@
         );
     }
         .about {
-            width: 450px;
+            width: 470px;
             height: auto;
         }
 
@@ -324,8 +324,6 @@
             }
                 .about__apresentation {
                     font-size: 16.5px;
-                    /*
-                    */
 
                     font-family: var(--font_normal);
                     /*padding-bottom: 1px; não acho q precise*/
@@ -345,7 +343,7 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin: 17px 0px;
+                margin: 9px 0px 17px 0px; /*reduzi o top em 8px pq apliquei -8px no h1*/
             }
                 .about__text {
                     font-family: var(--font_italic);
@@ -382,8 +380,8 @@
                         background-color: var(--color-azure);
                     }
                         .tools_icon {
-                            width: 75%;
-                            height: 75%;
+                            width: 80%;
+                            height: 80%;
 
                             border-radius: 50%;
                             background-color: var(--color-violet_dark);
@@ -394,7 +392,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
-                gap: 50px;
+                gap: 60px;
             }
                 .links {
                     display: flex;
@@ -403,13 +401,13 @@
                     align-items: center;
 
                     width: 100%;
-                    height: 42px;
+                    height: 59px;
 
                     font-family: var(--font_normal);
-                    font-size: 14px;
+                    font-size: 17px;
                     text-decoration: none;
                     
-                    border-radius: 3px;
+                    border-radius: 2px;
                     background-color: var(--color-azure);
                 }
 }
