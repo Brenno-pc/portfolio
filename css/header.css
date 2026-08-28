@@ -3,7 +3,7 @@
 
 
 
-/*MOBILE [0px - 599px]*/
+/*MOBILE [0px - 599px] PRONTO*/ 
 @media screen and (min-width: 0px) and (max-width: 599px){
     .header {
         grid-row: 1/2;
@@ -326,7 +326,7 @@
         );
     }
         .about {
-            width: auto;
+            width: 450px;
             height: auto;
         }
             .about__header {
