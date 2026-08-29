@@ -346,25 +346,17 @@
             justify-self: center;
             align-self: center;
 
-            width: 800px;
+            width: 850px;
             height: 450px;
             /*
-            width: 800px;
-            height: 450px;
+            width: 850px; min
+            height: 450px; min
 
-            width: 85%;
-            height: 62%;
             */
 
             display: grid;
             grid-template-rows: repeat(4, 1fr);
             grid-template-columns: repeat(2, 1fr);
-
-
-
-            /*
-            padding: 90px 80px;
-            */
         }
             .project__title {
                 grid-row: 1/2;
@@ -373,15 +365,26 @@
                 justify-self: center;
                 align-self: center;
 
+                
+                /*
+                margin-bottom: 15px;
+                font-size: ;
+                letter-spacing: ;
+                */
                 color: var(--color-azure);
             }
 
             .project__image {
                 grid-row: 1/5;
                 grid-column: 1/2;
-
-                background-color: pink;
             }
+                .img_project {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    background-color: green;
+                }
 
             .project__tech {
                 grid-row: 2/3;
@@ -391,17 +394,25 @@
                 height: auto;
             }
                 .project__tech-list {
-                    width: 100%;
+                    justify-self: center;
+                    align-self: center;
+                    
+                    width: 340px;
                     height: 100%;
-                    list-style: none;
+
                     display: flex;
                     flex-flow: row nowrap;
+                    justify-content: space-between;
+                    /*
                     justify-content: space-evenly;
+                    */
                     align-items: center;
+
+                    list-style: none;
                 }
                     .project__tech-item {
-                        width: 30px;
-                        height: 30px;
+                        width: 35px;
+                        height: 35px;
                         background-color: white;
                     }
 
@@ -409,13 +420,21 @@
                 grid-row: 3/4;
                 grid-column: 2/3;
 
-                width: auto;
+                justify-self: center;
+                align-self: center;
+
+                width: 340px;
                 height: auto;
 
+                display: flex;
+                flex-flow: row nowrap;
                 justify-content: center;
-                align-self: center;
+                align-items: center;
             }
                 .project__description {
+                    /*
+                    font-size: ;
+                    */
                     text-align: center;
                     color: var(--color-azure);
                 }
@@ -424,21 +443,34 @@
                 grid-row: 4/5;
                 grid-column: 2/3;
 
-                width: 100%;
-                height: 100%;
+                justify-self: center;
+                align-self: center;
 
+                width: 340px;
+                height: 100%;
+                
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                gap: 40px; /*20 do gap + 150 do botao == 170 * 2 == 340*/
+                /*
                 display: grid;
                 grid-template-rows: 1fr;
                 grid-template-columns: repeat(2, 1fr);
+                */
+
             }
                 .button {
-                    width: 130px;
-                    justify-self: center;
-                    align-self: center;
+                    width: 150px;
+                    height: 42px;
 
-                    padding: 10px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
                     text-align: center;
-
                     background-color: aqua;
                 }
 }
