@@ -314,8 +314,18 @@
         );
     }
         .about {
-            width: 470px;
+            width: clamp(480px, 43vw, 800px);
             height: auto;
+            /*
+            width: 480px; min
+            height: auto; min
+
+            width: 550px - 43vw; default
+            height: auto; default
+
+            width: 800px; max
+            height: auto; max
+            */
         }
 
             .about__header {
@@ -323,19 +333,38 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 16.5px;
-
+                    font-size: clamp(18px, 1.48vw, 25px);
+                    /*
+                    font-size: 18px; min
+                    font-size: 19px - 1.48vw; default
+                    font-size: 25px; max
+                    */
                     font-family: var(--font_normal);
-                    /*padding-bottom: 1px; não acho q precise*/
                     color: var(--color-azure);
                 }
                 .about__title {
-                    margin-top: -8px;
-                    font-size: 52px;
-                    font-family: var(--font_normal);
-                    letter-spacing: 8px;
-                    /*line-height: 30px; não acho q precise*/
+                    margin-top: clamp(-8px, -0.65vw, -10px);
+                    /*
+                    margin-top: -8px; min
+                    margin-top: -8px -0.65vw; default
+                    margin-top: -10px; max
+                    */
 
+                    font-size: clamp(56px, 5.08vw, 83px);
+                    /*
+                    font-size: 56px; min
+                    font-size: 65px - 5.08vw; default
+                    font-size: 90px - 83px; max
+                    */
+
+                    font-family: var(--font_normal);
+                    letter-spacing: clamp(9px, 0.7vw, 12px);
+                    /*
+                    letter-spacing: 9px; min
+                    letter-spacing: 9px - 0.7vw; default
+                    letter-spacing: 12px; max
+                    */
+                    
                     color: var(--color-azure);
                 }
 
@@ -343,23 +372,49 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin: 9px 0px 17px 0px; /*reduzi o top em 8px pq apliquei -8px no h1*/
+                margin-top: clamp(11px, 1vw, 16px);
+                /*
+                margin-top: 11px; min
+                margin-top: 12.5px - 1vw; default
+                margin-top: 16px; max
+                */
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: 19.5px;
+                    font-size: clamp(21px, 1.72vw, 28px); /*3px a mais que o __apresentation*/
+                    /*
+                    font-size: 21px; min
+                    font-size: 22px - 1.72vw; default 
+                    font-size: 28px; max
+                    */
+
                     color: var(--color-azure);
                 }
                 .about__text--1 {
-                    padding-bottom: 3px;
+                    padding-bottom: clamp(3.5px, 0.31vw, 5px);
+                    /*
+                    padding-bottom: 3.5px; min
+                    padding-bottom: 4px - 0.31vw; default
+                    padding-bottom: 5px; max
+                    */
                 }
 
 
             .about__tools {
                 width: auto;
                 height: auto;
+                margin-top: clamp(32px, 2.7vw, 42px); /*dobro + 10px do margin-top do __content*/
+                margin-bottom: clamp(64px, 6.1vw, 86px); /*margin-top + 44px*/
+                /*
+                margin-top: 32px; min
+                margin-bottom: 64px; min
 
-                margin: 25px 0px 41px 0px; /*pega o margin do .about__content e add +8px do top e +16px do bottom*/
+                margin-top: 34px - 2.7vw; default
+                margin-bottom: 78px - 6.1vw; default
+
+                margin-top: 42px; max
+                margin-bottom: 86px; max
+                */
             }
                 .about__tools-list {
                     display: flex;
@@ -373,26 +428,51 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 50px;
-                        height: 50px;
+                        width: clamp(58px, 4.92vw, 83px);
+                        height: clamp(58px, 4.92vw, 83px);
+                        /*
+                        width: 58px; min
+                        height: 58px; mi6
+
+                        width: 63px - 4.92vw; default
+                        height: 63px - 4.92vw; default
+
+                        width: 83px; max
+                        height: 83px; max
+                        */
 
                         border-radius: 50%;
                         background-color: var(--color-azure);
                     }
                         .tools_icon {
-                            width: 80%;
-                            height: 80%;
+                            width: clamp(86%, 88%, 90%);
+                            height: clamp(86%, 88%, 90%);
+                            /*
+                            width: 86%; min
+                            height: 86%; min
+
+                            width: 88%; default
+                            height: 88%; default
+
+                            width: 90%; max
+                            height: 90%; max
+                            */
 
                             border-radius: 50%;
                             background-color: var(--color-violet_dark);
                         }
-                    
+
 
             .about__links {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
-                gap: 60px;
+                gap: clamp(85px, 6.9vw, 150px);
+                /*
+                gap: 85px; min
+                gap: 88px - 6.9vw; default
+                gap: 150px; max
+                */
             }
                 .links {
                     display: flex;
@@ -401,13 +481,27 @@
                     align-items: center;
 
                     width: 100%;
-                    height: 59px;
-
+                    height: clamp(68px, 6.1vw, 105px);
+                    /*
+                    height: 68px; min
+                    height: 78px - 6.1vw; default
+                    height: 105px; max
+                    */
                     font-family: var(--font_normal);
-                    font-size: 17px;
+                    font-size: clamp(18px, 1.52vw, 25px);
+                    /*
+                    font-size: 18px; min
+                    font-size: 19.5px - 1.52vw; default
+                    font-size: 25px; max
+                    */
                     text-decoration: none;
                     
-                    border-radius: 2px;
+                    border-radius: 3px;
+                    /*
+                    border-radius: 3px; min
+                    border-radius: 3px; default
+                    border-radius: 3px; max
+                    */
                     background-color: var(--color-azure);
                 }
 }
