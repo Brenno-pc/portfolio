@@ -20,7 +20,6 @@
             grid-template-columns: 1fr;
         }
 
-
             .project__title {
                 grid-row: 1/2;
                 grid-column: 1/2;
@@ -127,7 +126,7 @@
                     width: 34px; max
                     height: 34px; max
                     */
-                    
+
                     background-color: white;
                 }
 
@@ -226,6 +225,8 @@
                         background-color: white;
                     }
 }
+
+
 
 
 
@@ -330,6 +331,9 @@
 }
 
 
+
+
+
 /*LAPTOP - DESKTOP - TV[1025px - 1920px - > 1920px]*/
 @media screen and (min-width: 1025px) {
     .main{
@@ -346,18 +350,19 @@
             justify-self: center;
             align-self: center;
 
-            width: 850px;
-            height: 450px;
+            width: 900px;
+            height: 500px;
             /*
-            width: 850px; min
-            height: 450px; min
-
+            width: 850px - 900px; min (v1)
+            height: 450px - 500px; min (v1)
             */
 
             display: grid;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: 0.9fr 0.6fr 1.5fr 0.9fr; 
+
             grid-template-columns: repeat(2, 1fr);
         }
+
             .project__title {
                 grid-row: 1/2;
                 grid-column: 2/3;
@@ -365,11 +370,10 @@
                 justify-self: center;
                 align-self: center;
 
-                
+                font-size: 30px;
+                letter-spacing: 5px;
                 /*
-                margin-bottom: 15px;
-                font-size: ;
-                letter-spacing: ;
+                margin-top: 10px;
                 */
                 color: var(--color-azure);
             }
@@ -378,9 +382,13 @@
                 grid-column: 1/2;
             }
 
+
             .project__image {
                 grid-row: 1/5;
                 grid-column: 1/2;
+
+                width: 100%;
+                height: 100%;
             }
             .project--inverse > .project__image {
                 grid-row: 1/5;
@@ -388,18 +396,23 @@
             }
                 .img_project {
                     display: block;
+
                     width: 100%;
                     height: 100%;
-                    border-radius: 5px;
+                    
+                    border-radius: 3px;
                     background-color: green;
                 }
+
 
             .project__tech {
                 grid-row: 2/3;
                 grid-column: 2/3;
 
-                width: auto;
-                height: auto;
+                justify-self: center;
+                align-self: center;
+
+                width: 360px;
             }
             .project--inverse > .project__tech {
                 grid-row: 2/3;
@@ -409,24 +422,22 @@
                     justify-self: center;
                     align-self: center;
                     
-                    width: 340px;
+                    width: 360px;
                     height: 100%;
 
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: space-between;
-                    /*
-                    justify-content: space-evenly;
-                    */
                     align-items: center;
 
                     list-style: none;
                 }
                     .project__tech-item {
-                        width: 35px;
-                        height: 35px;
+                        width: 38px;
+                        height: 38px;
                         background-color: white;
                     }
+
 
             .project__about {
                 grid-row: 3/4;
@@ -435,7 +446,7 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 340px;
+                width: 360px;
                 height: auto;
 
                 display: flex;
@@ -448,12 +459,13 @@
                 grid-column: 1/2;
             }
                 .project__description {
+                    font-size: 20px;
                     /*
-                    font-size: ;
                     */
                     text-align: center;
                     color: var(--color-azure);
                 }
+
 
             .project__buttons {
                 grid-row: 4/5;
@@ -462,27 +474,26 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 340px;
+                width: 360px;
                 height: 100%;
-                
+
+                /*
+                margin-top: ;
+                */
+
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: center;
-                gap: 40px; /*20 do gap + 150 do botao == 170 * 2 == 340*/
-                /*
-                display: grid;
-                grid-template-rows: 1fr;
-                grid-template-columns: repeat(2, 1fr);
-                */
+                gap: 50px;
             }
             .project--inverse > .project__buttons {
                 grid-row: 4/5;
                 grid-column: 1/2;
             }
                 .button {
-                    width: 150px;
-                    height: 42px;
+                    width: 180px;
+                    height: 55px;
 
                     display: flex;
                     flex-flow: row nowrap;
@@ -490,7 +501,16 @@
                     align-items: center;
 
                     text-align: center;
-
+                    text-decoration: none;
                     background-color: aqua;
                 }
+                    .button--open {
+                        /*
+                        margin-bottom: ;
+                        */
+                        background-color: white;
+                    }
+                    .button--github {
+                        background-color: white;
+                    }
 }
