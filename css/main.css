@@ -350,20 +350,15 @@
             justify-self: center;
             align-self: center;
 
-            width: 1100px;
-            height: 600px;
+            width: 1630px;
+            height: 770px;
             /*
-            width: 850px - 900px; min (v1)
-            height: 450px - 500px; min (v1)
-
             width: 900px; min
             height: 550px; min
 
             width: 1100px; default
-            height: 590px; default
+            height: 600px; default
 
-            width: 1050px; default (alternative)
-            height: 570px; default (alternative)
             */
 
             display: grid;
@@ -378,14 +373,16 @@
                 justify-self: center;
                 align-self: center;
 
-                font-size: 36px;
+                font-size: 50px;
                 /*
                 font-size: 32px; min
+                font-size: 36px; default
                 */
                 
-                letter-spacing: 6.5px;
+                letter-spacing: 8px;
                 /*
-                letter-spacing: 5px;
+                letter-spacing: 5px; min
+                letter-spacing: 6.5px; default
                 */
 
                 color: var(--color-azure);
@@ -399,7 +396,6 @@
             .project__image {
                 grid-row: 1/5;
                 grid-column: 1/2;
-
                 width: 100%;
                 height: 100%;
             }
@@ -424,10 +420,10 @@
 
                 justify-self: center;
                 align-self: center;
-
-                width: 430px;
+                width: 580px;
                 /*
                 width: 360px; min
+                width: 430px; default
                 */
             }
             .project--inverse > .project__tech {
@@ -438,9 +434,10 @@
                     justify-self: center;
                     align-self: center;
                     
-                    width: 430px;
+                    width: 580px;
                     /*
-                    width: 360px; min == project__tech
+                    width: 360px; min
+                    width: 430px; default
                     */
                     height: 100%;
 
@@ -452,11 +449,14 @@
                     list-style: none;
                 }
                     .project__tech-item {
-                        width: 45px;
-                        height: 45px;
+                        width:65px;
+                        height: 65px;
                         /*
                         width: 38px; min
                         height: 38px; min
+
+                        width: 45px; default
+                        height: 45px; default
                         */
 
                         border-radius: 3px;
@@ -471,9 +471,10 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 430px;
+                width: 580px;
                 /*
                 width: 360px; min
+                width: 430px; defaukt
                 */
 
                 height: auto;
@@ -488,12 +489,14 @@
                 grid-column: 1/2;
             }
                 .project__description {
-                    font-size: 23.5px;
+                    font-size: 30px;
                     /*
                     font-size: 20px; min
+                    font-size: 23.5px; default
                     */
-                    letter-spacing: 1px;
+                    letter-spacing: 2px;
                     /*
+                    letter-spacing: 1px; default
                     */
                     text-align: center;
                     color: var(--color-azure);
@@ -507,9 +510,10 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 430px;
+                width: 580px;
                 /*
-                width: 360px; min == project__tech
+                width: 360px; min
+                width: 430px; default
                 */
                 height: 100%;
 
@@ -517,9 +521,10 @@
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: center;
-                gap: 75px;
+                gap: 115px;
                 /*
                 gap: 50px; min
+                gap: 75px; default
                 */
             }
             .project--inverse > .project__buttons {
@@ -527,11 +532,14 @@
                 grid-column: 1/2;
             }
                 .button {
-                    width: 215px;
-                    height: 68px;
+                    width: 290px;
+                    height: 85px;
                     /*
                     width: 180px; min
                     height: 55px; min
+
+                    width: 215px; default
+                    height: 68px; default
                     */
 
                     display: flex;
@@ -539,9 +547,10 @@
                     justify-content: center;
                     align-items: center;
 
-                    font-size: 18px;
+                    font-size: 21px;
                     /*
                     font-size: 16px; min
+                    font-size: 18px; default
                     */
 
                     text-align: center;
