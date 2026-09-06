@@ -126,7 +126,7 @@
                     width: 34px; max
                     height: 34px; max
                     */
-
+                    border-radius: 3px;
                     background-color: white;
                 }
 
@@ -209,6 +209,8 @@
 
                     text-align: center;
                     text-decoration: none;
+
+                    border-radius: 3px;
                     background-color: white;
                 }
                     .button--open {
@@ -350,15 +352,17 @@
             justify-self: center;
             align-self: center;
 
-            width: 1630px;
-            height: 770px;
+            width: clamp(900px, 86vw, 1650px);
+            height: clamp(550px, 46.9vw, 770px);
             /*
             width: 900px; min
             height: 550px; min
 
-            width: 1100px; default
-            height: 600px; default
+            width: 1100px - 86vw; default
+            height: 600px - 46.9vw; default
 
+            width: 1650px; max
+            height: 770px; max
             */
 
             display: grid;
@@ -373,16 +377,18 @@
                 justify-self: center;
                 align-self: center;
 
-                font-size: 50px;
+                font-size: clamp(32px, 2.81vw, 50px);
                 /*
                 font-size: 32px; min
-                font-size: 36px; default
+                font-size: 36px - 2.81vw; default
+                font-size: 50px; max
                 */
                 
-                letter-spacing: 8px;
+                letter-spacing: clamp(5px, 0.51vw, 8px);
                 /*
                 letter-spacing: 5px; min
-                letter-spacing: 6.5px; default
+                letter-spacing: 6.5px - 0.51vw; default
+                letter-spacing: 8px; max
                 */
 
                 color: var(--color-azure);
@@ -420,10 +426,11 @@
 
                 justify-self: center;
                 align-self: center;
-                width: 580px;
+                width: clamp(360px, 33.6vw, 580px);
                 /*
                 width: 360px; min
-                width: 430px; default
+                width: 430px - 33.6vw; default
+                width: 580px; max
                 */
             }
             .project--inverse > .project__tech {
@@ -434,10 +441,11 @@
                     justify-self: center;
                     align-self: center;
                     
-                    width: 580px;
+                    width: clamp(360px, 33.6vw, 580px);
                     /*
                     width: 360px; min
-                    width: 430px; default
+                    width: 430px - 33.6vw; default
+                    width: 580px; max
                     */
                     height: 100%;
 
@@ -449,14 +457,17 @@
                     list-style: none;
                 }
                     .project__tech-item {
-                        width:65px;
-                        height: 65px;
+                        width: clamp(38px, 3.52vw, 65px);
+                        height: clamp(38px, 3.52vw, 65px);
                         /*
                         width: 38px; min
                         height: 38px; min
+                        
+                        width: 45px - 3.52vw; default
+                        height: 45px - 3.52vw; default
 
-                        width: 45px; default
-                        height: 45px; default
+                        width:65px; max
+                        height: 65px; max
                         */
 
                         border-radius: 3px;
@@ -471,10 +482,11 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 580px;
+                width: clamp(360px, 33.6vw, 580px);
                 /*
                 width: 360px; min
-                width: 430px; defaukt
+                width: 430px - 33.6vw; default
+                width: 580px; max
                 */
 
                 height: auto;
@@ -489,15 +501,20 @@
                 grid-column: 1/2;
             }
                 .project__description {
-                    font-size: 30px;
+                    font-size: clamp(20px, 1.84vw, 30px);
                     /*
                     font-size: 20px; min
-                    font-size: 23.5px; default
+                    font-size: 23.5px - 1.84vw; default
+                    font-size: 30px; max
                     */
-                    letter-spacing: 2px;
+
+                    letter-spacing: clamp(1px, 0.08vw, 2px);
                     /*
-                    letter-spacing: 1px; default
+                    letter-spacing: 1px; min
+                    letter-spacing: 1px - 0.08vw; default
+                    letter-spacing: 2px; max
                     */
+                    
                     text-align: center;
                     color: var(--color-azure);
                 }
@@ -510,21 +527,25 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 580px;
+                width: clamp(360px, 33.6vw, 580px);
                 /*
                 width: 360px; min
-                width: 430px; default
+                width: 430px - 33.6vw; default
+                width: 580px; max
                 */
+
                 height: 100%;
 
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: center;
-                gap: 115px;
+
+                gap: clamp(50px, 5.85vw, 115px);
                 /*
                 gap: 50px; min
-                gap: 75px; default
+                gap: 75px - 5.85vw; default
+                gap: 115px; max
                 */
             }
             .project--inverse > .project__buttons {
@@ -532,14 +553,17 @@
                 grid-column: 1/2;
             }
                 .button {
-                    width: 290px;
-                    height: 85px;
+                    width: clamp(180px, 17vw, 290px);
+                    height: clamp(55px, 5.33vw, 85px);
                     /*
                     width: 180px; min
                     height: 55px; min
+                    
+                    width: 215px - 17vw; default
+                    height: 68px - 5.33vw; default
 
-                    width: 215px; default
-                    height: 68px; default
+                    width: 290px; max
+                    height: 85px; max
                     */
 
                     display: flex;
@@ -547,10 +571,11 @@
                     justify-content: center;
                     align-items: center;
 
-                    font-size: 21px;
+                    font-size: clamp(16px, 1.4vw, 21px);
                     /*
                     font-size: 16px; min
-                    font-size: 18px; default
+                    font-size: 18px - 1.4vw; default
+                    font-size: 21px; max
                     */
 
                     text-align: center;
