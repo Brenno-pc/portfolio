@@ -13,12 +13,6 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        
-        /*
-        choice which is better, padding or align
-            padding: 0px 28px;
-            align-items: center;
-        */
 
         background: linear-gradient(
             to bottom,
@@ -29,11 +23,12 @@
         );
     }
         .about {
+            width: clamp(250px, 85vw, 390px);
             /*
-            with the align-items, define the width.
-            without align-items, width and height == auto
+            width: 250px; min
+            width: 320px - 85vw; default
+            width: 390px; max
             */
-            width: clamp(250px, 85vw, 390px); /*probably i will use this clamp for all (main, projects, footer, ...)*/
             height: auto;
         }
 
@@ -64,8 +59,6 @@
                     /*
                     font-size: 32px; min 
                     font-size: 41px - 10.25vw; default (use)
-                    
-                    font-size: 42px; max
                     font-size: 44px; max
                     */
                     font-family: var(--font_normal);
@@ -90,7 +83,7 @@
                 margin: clamp(17px ,5vw, 22px) 0px;
                 /*
                 margin: 17px 0px; min
-                margin: 20px - 5vw   0px; default
+                margin: 20px/5vw 0px; default
                 margin: 22px 0px; max
                 */
             }
@@ -107,9 +100,6 @@
                 .about__text--1 {
                     font-family: var(--font_italic);
                     padding-bottom: 2px;
-                    /*
-                    padding-bottom: 2px; min/default/max
-                    */
                 }
 
             .about__tools {
@@ -119,7 +109,7 @@
                 margin: clamp(25px, 8.25vw, 35px) 0px; 
                 /*
                 margin: 25px 0px; min min
-                margin: 31px - 8.25vw    0px; default 
+                margin: 31px/8.25vw  0px; default 
                 margin: 35px 0px; max 
                 */
             }
@@ -137,7 +127,6 @@
 
                         width: clamp(36px, 10vw, 45px);
                         height: clamp(36px, 10vw, 45px);
-                        
                         /*
                         width: 36px; min
                         height: 36px; min
@@ -195,8 +184,8 @@
                     */
                     text-decoration: none;
 
-                    background-color: var(--color-azure);
                     border-radius: 3px;
+                    background-color: var(--color-azure);
                 }
                     .links--projects {
                         margin-bottom: 18px;
@@ -314,18 +303,17 @@
         );
     }
         .about {
-            width: clamp(480px, 43vw, 800px);
-            height: auto;
+            width: 520px;
             /*
+            width: clamp(480px, 43vw, 800px);
+            
             width: 480px; min
-            height: auto; min
-
+            width: 460px; min (v2)
+            
             width: 550px - 43vw; default
-            height: auto; default
-
             width: 800px; max
-            height: auto; max
             */
+            height: auto;
         }
 
             .about__header {
@@ -333,9 +321,13 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: clamp(18px, 1.48vw, 25px);
+                    font-size: 17px;
                     /*
+                    font-size: clamp(18px, 1.48vw, 25px);
+
                     font-size: 18px; min
+                    font-size: 16.5px; min (v2)
+                    
                     font-size: 19px - 1.48vw; default
                     font-size: 25px; max
                     */
@@ -343,23 +335,29 @@
                     color: var(--color-azure);
                 }
                 .about__title {
-                    margin-top: clamp(-8px, -0.65vw, -10px);
+                    margin-top: -8px;
                     /*
+                    margin-top: clamp(-8px, -0.65vw, -10px);
                     margin-top: -8px; min
                     margin-top: -8px -0.65vw; default
                     margin-top: -10px; max
                     */
 
-                    font-size: clamp(56px, 5.08vw, 83px);
+                    font-size: 54px;
                     /*
+                    font-size: clamp(56px, 5.08vw, 83px);
+                    
                     font-size: 56px; min
+                    font-size: 52px; min (v2)
+
                     font-size: 65px - 5.08vw; default
                     font-size: 90px - 83px; max
                     */
 
                     font-family: var(--font_normal);
-                    letter-spacing: clamp(9px, 0.7vw, 12px);
+                    letter-spacing: 10px;
                     /*
+                    letter-spacing: clamp(9px, 0.7vw, 12px);
                     letter-spacing: 9px; min
                     letter-spacing: 9px - 0.7vw; default
                     letter-spacing: 12px; max
@@ -372,8 +370,10 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin-top: clamp(11px, 1vw, 16px);
+                margin-top: 12.5px;
                 /*
+                margin-top: clamp(11px, 1vw, 16px);
+
                 margin-top: 11px; min
                 margin-top: 12.5px - 1vw; default
                 margin-top: 16px; max
@@ -381,9 +381,13 @@
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: clamp(21px, 1.72vw, 28px); /*3px a mais que o __apresentation*/
+                    font-size: 20px;
                     /*
+                    font-size: clamp(21px, 1.72vw, 28px); 3px a mais que o __apresentation
+                    
                     font-size: 21px; min
+                    font-size: 19.5px; min (v2)
+
                     font-size: 22px - 1.72vw; default 
                     font-size: 28px; max
                     */
@@ -391,9 +395,13 @@
                     color: var(--color-azure);
                 }
                 .about__text--1 {
-                    padding-bottom: clamp(3.5px, 0.31vw, 5px);
+                    padding-bottom: 4px;
                     /*
+                    padding-bottom: clamp(3.5px, 0.31vw, 5px);
+                    
                     padding-bottom: 3.5px; min
+                    padding-bottom: 3px; min (v2)
+                    
                     padding-bottom: 4px - 0.31vw; default
                     padding-bottom: 5px; max
                     */
@@ -403,11 +411,16 @@
             .about__tools {
                 width: auto;
                 height: auto;
-                margin-top: clamp(32px, 2.7vw, 42px); /*dobro + 10px do margin-top do __content*/
-                margin-bottom: clamp(64px, 6.1vw, 86px); /*margin-top + 44px*/
+                margin-top: 32px;
+                margin-bottom: 66px;
                 /*
+                margin-top: clamp(32px, 2.7vw, 42px); (*2 + 10px) do margin-top do __content
+                margin-bottom: clamp(64px, 6.1vw, 86px); margin-top + 44px
+                
                 margin-top: 32px; min
                 margin-bottom: 64px; min
+                margin-top: 28px; min (v2)
+                margin-bottom: 58px; min (v2)
 
                 margin-top: 34px - 2.7vw; default
                 margin-bottom: 78px - 6.1vw; default
@@ -428,11 +441,17 @@
                         justify-content: center;
                         align-items: center;
 
+                        width: 57px;
+                        height: 57px;
+                        /*
+                        
                         width: clamp(58px, 4.92vw, 83px);
                         height: clamp(58px, 4.92vw, 83px);
-                        /*
+                        
                         width: 58px; min
-                        height: 58px; mi6
+                        height: 58px; min
+                        width: 53px; min (v2)
+                        height: 53px; min (v2)
 
                         width: 63px - 4.92vw; default
                         height: 63px - 4.92vw; default
@@ -445,9 +464,12 @@
                         background-color: var(--color-azure);
                     }
                         .tools_icon {
+                            width: 88%;
+                            height: 88%;
+                            /*
                             width: clamp(86%, 88%, 90%);
                             height: clamp(86%, 88%, 90%);
-                            /*
+
                             width: 86%; min
                             height: 86%; min
 
@@ -467,9 +489,13 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
-                gap: clamp(85px, 6.9vw, 150px);
+                gap: 105px;
                 /*
+                gap: clamp(85px, 6.9vw, 150px);
+                
                 gap: 85px; min
+                gap: 95px; min (v2)
+                
                 gap: 88px - 6.9vw; default
                 gap: 150px; max
                 */
@@ -481,27 +507,27 @@
                     align-items: center;
 
                     width: 100%;
-                    height: clamp(68px, 6.1vw, 105px);
+                    height: 72px;
                     /*
+                    height: clamp(68px, 6.1vw, 105px);
                     height: 68px; min
                     height: 78px - 6.1vw; default
                     height: 105px; max
                     */
                     font-family: var(--font_normal);
-                    font-size: clamp(18px, 1.52vw, 25px);
+                    font-size: 18px;
                     /*
+                    font-size: clamp(18px, 1.52vw, 25px);
+                    
                     font-size: 18px; min
+                    font-size: 17px; min (v2)
+                    
                     font-size: 19.5px - 1.52vw; default
                     font-size: 25px; max
                     */
                     text-decoration: none;
-                    
+
                     border-radius: 3px;
-                    /*
-                    border-radius: 3px; min
-                    border-radius: 3px; default
-                    border-radius: 3px; max
-                    */
                     background-color: var(--color-azure);
                 }
 }
