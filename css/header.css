@@ -303,7 +303,7 @@
         );
     }
         .about {
-            width: 550px;
+            width: 700px;
             /*
             width: clamp(480px, 43vw, 800px);
             
@@ -326,7 +326,7 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 19px;
+                    font-size: 22.5px;
                     /*
                     font-size: clamp(18px, 1.48vw, 25px);
                     
@@ -345,7 +345,7 @@
                     color: var(--color-azure);
                 }
                 .about__title {
-                    margin-top: -8px;
+                    margin-top: -10px;
                     /*
                     margin-top: clamp(-8px, -0.65vw, -10px);
                     margin-top: -8px; min
@@ -353,7 +353,7 @@
                     margin-top: -10px; max
                     */
 
-                    font-size: 65px;
+                    font-size: 76px;
                     /*
                     font-size: clamp(56px, 5.08vw, 83px);
                     
@@ -370,7 +370,7 @@
                     */
 
                     font-family: var(--font_normal);
-                    letter-spacing: 9px;
+                    letter-spacing: 13.5px;
                     /*
                     letter-spacing: clamp(9px, 0.7vw, 12px);
                     
@@ -391,7 +391,7 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin-top: 12.5px;
+                margin-top: 13px;
                 /*
                 margin-top: clamp(11px, 1vw, 16px);
 
@@ -402,7 +402,7 @@
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: 22px;
+                    font-size: 26px;
                     /*
                     font-size: clamp(21px, 1.72vw, 28px); 3px a mais que o __apresentation
                     
@@ -421,7 +421,7 @@
                     color: var(--color-azure);
                 }
                 .about__text--1 {
-                    padding-bottom: 4px;
+                    padding-bottom: 5px;
                     /*
                     padding-bottom: clamp(3.5px, 0.31vw, 5px);
                     
@@ -442,8 +442,8 @@
             .about__tools {
                 width: auto;
                 height: auto;
-                margin-top: 34px;
-                margin-bottom: 78px;
+                margin-top: 40px;
+                margin-bottom: 74px;
                 /*
                 margin-top: clamp(32px, 2.7vw, 42px); (*2 + 10px) do margin-top do __content
                 margin-bottom: clamp(64px, 6.1vw, 86px); margin-top + 44px
@@ -479,8 +479,8 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 63px;
-                        height: 63px;
+                        width: 75px;
+                        height: 75px;
                         /*
                         
                         width: clamp(58px, 4.92vw, 83px);
@@ -509,8 +509,8 @@
                         background-color: var(--color-azure);
                     }
                         .tools_icon {
-                            width: 88%;
-                            height: 88%;
+                            width: 90%;
+                            height: 90%;
                             /*
                             width: clamp(86%, 88%, 90%);
                             height: clamp(86%, 88%, 90%);
@@ -537,7 +537,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
-                gap: 88px;
+                gap: 140px;
                 /*
                 gap: clamp(85px, 6.9vw, 150px);
                 
@@ -560,7 +560,7 @@
                     align-items: center;
 
                     width: 100%;
-                    height: 78px;
+                    height: 103px;
                     /*
                     height: clamp(68px, 6.1vw, 105px);
                     
@@ -575,7 +575,7 @@
                     height: 105px; max
                     */
                     font-family: var(--font_normal);
-                    font-size: 19.5px;
+                    font-size: 24px;
                     /*
                     font-size: clamp(18px, 1.52vw, 25px);
                     
