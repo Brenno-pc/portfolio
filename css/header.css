@@ -303,6 +303,7 @@
         );
     }
         .about {
+            /*parei aqui, fazendo o max (v2) (falta fazer o equivalente em vw)*/
             width: 700px;
             /*
             width: clamp(480px, 43vw, 800px);
