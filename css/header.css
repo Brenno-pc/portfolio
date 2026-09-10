@@ -303,21 +303,13 @@
         );
     }
         .about {
-            /*parei aqui, fazendo o max (v2) (falta fazer o equivalente em vw)*/
-            width: 700px;
+            width: clamp(460px, 40.6vw,700px);
             /*
-            width: clamp(480px, 43vw, 800px);
-            
-            
-            width: 480px; min
-            width: 460px; min (v2)
-            
+            width: clamp(480px, 550px/43vw, 800px); (v1)
 
-            width: 550px - 43vw; default
-            width: 520px; default (v2)
-
-
-            width: 800px; max
+            width: 460px; min
+            width: 520px-40.6vw; default
+            width: 700px; max
             */
             height: auto;
         }
@@ -327,61 +319,43 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 22.5px;
+                    font-size: clamp(16.5px, 1.33vw, 21.5px);
                     /*
-                    font-size: clamp(18px, 1.48vw, 25px);
-                    
+                    font-size: clamp(18px, 19px/1.48vw, 25px); (v1)
 
-                    font-size: 18px; min
-                    font-size: 16.5px; min (v2)
-                    
-
-                    font-size: 19px - 1.48vw; default
-                    font-size: 17px; default (v2)
-
-
-                    font-size: 25px; max
+                    font-size: 16.5px; min
+                    font-size: 17px-1.33vw; default
+                    font-size: 21.5px; max
                     */
                     font-family: var(--font_normal);
                     color: var(--color-azure);
                 }
                 .about__title {
-                    margin-top: -10px;
+                    margin-top: clamp(-8px, -0.65vw, -12px);
                     /*
-                    margin-top: clamp(-8px, -0.65vw, -10px);
+                    margin-top: clamp(-8px, -0.65vw, -10px); (v1)
+
                     margin-top: -8px; min
-                    margin-top: -8px -0.65vw; default
-                    margin-top: -10px; max
+                    margin-top: -8px-0.65vw; default
+                    margin-top: -12px; max
                     */
 
-                    font-size: 76px;
+                    font-size: clamp(52px, 4.21vw, 83px);
                     /*
-                    font-size: clamp(56px, 5.08vw, 83px);
-                    
+                    font-size: clamp(56px, 65px/5.08vw, 83px); (v1)
 
-                    font-size: 56px; min
-                    font-size: 52px; min (v2)
-                    
-
-                    font-size: 65px - 5.08vw; default
-                    font-size: 54px; default (v2)
-
-
-                    font-size: 90px - 83px; max
+                    font-size: 52px; min
+                    font-size: 54px-4.21vw; default
+                    font-size: 83px; max
                     */
 
                     font-family: var(--font_normal);
-                    letter-spacing: 13.5px;
+                    letter-spacing: clamp(9px, 0.78vw, 12px);
                     /*
-                    letter-spacing: clamp(9px, 0.7vw, 12px);
-                    
-                    letter-spacing: 9px; min
+                    letter-spacing: clamp(9px, 9px/0.7vw, 12px); (v1)
 
-                    
-                    letter-spacing: 9px - 0.7vw; default
-                    letter-spacing: 10px; default (v2)
-                    
-                    
+                    letter-spacing: 9px; min
+                    letter-spacing: 10px; default
                     letter-spacing: 12px; max
                     */
                     
@@ -392,50 +366,33 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin-top: 13px;
+                margin-top: 12.5px;
                 /*
-                margin-top: clamp(11px, 1vw, 16px);
-
+                margin-top: clamp(11px, 12.5px/1vw, 16px);
                 margin-top: 11px; min
                 margin-top: 12.5px - 1vw; default
-                margin-top: 16px; max
+                margin-top: 14px; max
                 */
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: 26px;
+                    font-size: 20px;
                     /*
-                    font-size: clamp(21px, 1.72vw, 28px); 3px a mais que o __apresentation
+                    font-size: clamp(21px, 22px/1.72vw, 28px); 3px a mais que o __apresentation (v1)
                     
-
-                    font-size: 21px; min
                     font-size: 19.5px; min (v2)
-                    
-
-                    font-size: 22px - 1.72vw; default 
                     font-size: 20px; default (v2)
-
-
-                    font-size: 28px; max
+                    font-size: 26px; max (v2)
                     */
-
                     color: var(--color-azure);
                 }
                 .about__text--1 {
-                    padding-bottom: 5px;
+                    padding-bottom: 4px;
                     /*
-                    padding-bottom: clamp(3.5px, 0.31vw, 5px);
-                    
-                    
-                    padding-bottom: 3.5px; min
+                    padding-bottom: clamp(3.5px, 4px/0.31vw, 5px); (v1)
                     padding-bottom: 3px; min (v2)
-                    
-                    
-                    padding-bottom: 4px - 0.31vw; default
-                    padding-bottom: 4px; default (v2)
-
-
-                    padding-bottom: 5px; max
+                    padding-bottom: 4px - 0.31vw; default (v2)
+                    padding-bottom: 5px; max (v2)
                     */
                 }
 
@@ -443,29 +400,20 @@
             .about__tools {
                 width: auto;
                 height: auto;
-                margin-top: 40px;
-                margin-bottom: 74px;
+                margin-top: 32px; /*(*2 + 10px) do margin-top do __content*/
+                margin-bottom: 66px; /*margin-top + 44px*/
                 /*
-                margin-top: clamp(32px, 2.7vw, 42px); (*2 + 10px) do margin-top do __content
-                margin-bottom: clamp(64px, 6.1vw, 86px); margin-top + 44px
+                margin-top: clamp(32px, 34px/2.7vw, 42px); (v1)
+                margin-bottom: clamp(64px, 78px/6.1vw, 86px); (v1)
                 
-
-                margin-top: 32px; min
-                margin-bottom: 64px; min
-                -----------------------------
                 margin-top: 28px; min (v2)
                 margin-bottom: 58px; min (v2)
-                
 
-                margin-top: 34px - 2.7vw; default
-                margin-bottom: 78px - 6.1vw; default
-                ------------------------------------
                 margin-top: 32px; default (v2)
                 margin-bottom: 66px; default (v2)
 
-
-                margin-top: 42px; max
-                margin-bottom: 86px; max
+                margin-top: 40px; max (v2)
+                margin-bottom: 78px; max (v2)
                 */
             }
                 .about__tools-list {
@@ -480,30 +428,20 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 75px;
-                        height: 75px;
+                        width: 57px;
+                        height: 57px;
                         /*
+                        width: clamp(58px, 63px/4.92vw, 83px); (v1)
+                        height: clamp(58px, 63px/4.92vw, 83px); (v1)
                         
-                        width: clamp(58px, 4.92vw, 83px);
-                        height: clamp(58px, 4.92vw, 83px);
-                        
-
-                        width: 58px; min
-                        height: 58px; min
-                        ----------------------
                         width: 53px; min (v2)
                         height: 53px; min (v2)
                         
-
-                        width: 63px - 4.92vw; default
-                        height: 63px - 4.92vw; default
-                        ------------------------------
                         width: 57px; default (v2)
                         height: 57px; default (v2)
-
-
-                        width: 83px; max
-                        height: 83px; max
+                        
+                        width: 75px; max (v2)
+                        height: 75px; max (v2)
                         */
 
                         border-radius: 50%;
@@ -512,23 +450,6 @@
                         .tools_icon {
                             width: 90%;
                             height: 90%;
-                            /*
-                            width: clamp(86%, 88%, 90%);
-                            height: clamp(86%, 88%, 90%);
-
-
-                            width: 86%; min
-                            height: 86%; min
-
-
-                            width: 88%; default
-                            height: 88%; default
-
-
-                            width: 90%; max
-                            height: 90%; max
-                            */
-
                             border-radius: 50%;
                             background-color: var(--color-violet_dark);
                         }
@@ -538,20 +459,13 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
-                gap: 140px;
+                gap: 105px;
                 /*
-                gap: clamp(85px, 6.9vw, 150px);
-                
+                gap: clamp(85px, 88px/6.9vw, 150px); (v1)
 
-                gap: 85px; min
                 gap: 95px; min (v2)
-                
-                
-                gap: 88px - 6.9vw; default
                 gap: 105px; default (v2)
-
-
-                gap: 150px; max
+                gap: 150px; max (v2)
                 */
             }
                 .links {
@@ -561,35 +475,22 @@
                     align-items: center;
 
                     width: 100%;
-                    height: 103px;
+                    height: 72px;
                     /*
-                    height: clamp(68px, 6.1vw, 105px);
+                    height: clamp(68px, 78px/6.1vw, 105px); (v1)
                     
-
-                    height: 68px; min
-                    
-
-                    height: 78px - 6.1vw; default
+                    height: 68px; min (v2)
                     height: 72px; default (v2)
-
-
-                    height: 105px; max
+                    height: 105px; max (v2)
                     */
                     font-family: var(--font_normal);
-                    font-size: 24px;
+                    font-size: 18px;
                     /*
-                    font-size: clamp(18px, 1.52vw, 25px);
-                    
+                    font-size: clamp(18px, 19.5px/1.52vw, 25px); (v1)
 
-                    font-size: 18px; min
                     font-size: 17px; min (v2)
-                    
-
-                    font-size: 19.5px - 1.52vw; default
                     font-size: 18px; default (v2)
-
-
-                    font-size: 25px; max
+                    font-size: 24px; max (v2)
                     */
                     text-decoration: none;
 
