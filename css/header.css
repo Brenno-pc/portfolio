@@ -308,12 +308,13 @@
             width: clamp(480px, 550px/43vw, 800px); (v1)
 
             width: 460px; min
-            width: 520px-40.6vw; default
+            width: 520px - 40.6vw; default
             width: 700px; max
             */
             height: auto;
         }
 
+        
             .about__header {
                 width: auto;
                 height: auto;
@@ -324,7 +325,7 @@
                     font-size: clamp(18px, 19px/1.48vw, 25px); (v1)
 
                     font-size: 16.5px; min
-                    font-size: 17px-1.33vw; default
+                    font-size: 17px - 1.33vw; default
                     font-size: 21.5px; max
                     */
                     font-family: var(--font_normal);
@@ -366,9 +367,9 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin-top: 12.5px;
+                margin-top: clamp(11px, 1vw, 14px);
                 /*
-                margin-top: clamp(11px, 12.5px/1vw, 16px);
+                margin-top: clamp(11px, 12.5px/1vw, 16px); (v1)
                 margin-top: 11px; min
                 margin-top: 12.5px - 1vw; default
                 margin-top: 14px; max
@@ -376,23 +377,24 @@
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: 20px;
+                    font-size: clamp(19.5px, 1.56vw, 26px);/*3px a mais que o __apresentation*/
                     /*
-                    font-size: clamp(21px, 22px/1.72vw, 28px); 3px a mais que o __apresentation (v1)
+                    font-size: clamp(21px, 22px/1.72vw, 28px); (v1)
                     
-                    font-size: 19.5px; min (v2)
-                    font-size: 20px; default (v2)
-                    font-size: 26px; max (v2)
+                    font-size: 19.5px; min
+                    font-size: 20px - 1.56vw; default
+                    font-size: 26px; max
                     */
                     color: var(--color-azure);
                 }
                 .about__text--1 {
-                    padding-bottom: 4px;
+                    padding-bottom: clamp(3px, 0.31vw, 5px);
                     /*
                     padding-bottom: clamp(3.5px, 4px/0.31vw, 5px); (v1)
-                    padding-bottom: 3px; min (v2)
-                    padding-bottom: 4px - 0.31vw; default (v2)
-                    padding-bottom: 5px; max (v2)
+
+                    padding-bottom: 3px; min
+                    padding-bottom: 4px - 0.31vw; default
+                    padding-bottom: 5px; max
                     */
                 }
 
@@ -400,20 +402,20 @@
             .about__tools {
                 width: auto;
                 height: auto;
-                margin-top: 32px; /*(*2 + 10px) do margin-top do __content*/
-                margin-bottom: 66px; /*margin-top + 44px*/
+                margin-top: clamp(28px, 2.5vw, 40px); /*(*2 + 10px) do margin-top do __content*/
+                margin-bottom: clamp(58px, 5.2vw, 78px); /*margin-top + 44px*/
                 /*
                 margin-top: clamp(32px, 34px/2.7vw, 42px); (v1)
                 margin-bottom: clamp(64px, 78px/6.1vw, 86px); (v1)
                 
-                margin-top: 28px; min (v2)
-                margin-bottom: 58px; min (v2)
+                margin-top: 28px; min
+                margin-bottom: 58px; min
 
-                margin-top: 32px; default (v2)
-                margin-bottom: 66px; default (v2)
+                margin-top: 32px - 2.5vw; default
+                margin-bottom: 66px - 5.2vw; default
 
-                margin-top: 40px; max (v2)
-                margin-bottom: 78px; max (v2)
+                margin-top: 40px; max
+                margin-bottom: 78px; max
                 */
             }
                 .about__tools-list {
@@ -428,20 +430,20 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 57px;
-                        height: 57px;
+                        width: clamp(57px, 4.45vw, 75px);
+                        height: clamp(57px, 4.45vw, 75px);
                         /*
                         width: clamp(58px, 63px/4.92vw, 83px); (v1)
                         height: clamp(58px, 63px/4.92vw, 83px); (v1)
                         
-                        width: 53px; min (v2)
-                        height: 53px; min (v2)
+                        width: 53px; min
+                        height: 53px; min
                         
-                        width: 57px; default (v2)
-                        height: 57px; default (v2)
+                        width: 57px - 4.45vw; default
+                        height: 57px - 4.45vw; default
                         
-                        width: 75px; max (v2)
-                        height: 75px; max (v2)
+                        width: 75px; max
+                        height: 75px; max
                         */
 
                         border-radius: 50%;
@@ -459,13 +461,13 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
-                gap: 105px;
+                gap: clamp(95px, 8.25vw, 150px);
                 /*
                 gap: clamp(85px, 88px/6.9vw, 150px); (v1)
 
-                gap: 95px; min (v2)
-                gap: 105px; default (v2)
-                gap: 150px; max (v2)
+                gap: 95px; min
+                gap: 105px - 8.25vw; default
+                gap: 150px; max
                 */
             }
                 .links {
@@ -475,22 +477,22 @@
                     align-items: center;
 
                     width: 100%;
-                    height: 72px;
+                    height: clamp(68px, 5.6vw, 105px);
                     /*
                     height: clamp(68px, 78px/6.1vw, 105px); (v1)
                     
-                    height: 68px; min (v2)
-                    height: 72px; default (v2)
-                    height: 105px; max (v2)
+                    height: 68px; min
+                    height: 72px - 5.6vw; default
+                    height: 105px; max
                     */
                     font-family: var(--font_normal);
-                    font-size: 18px;
+                    font-size: clamp(17px, 1.4vw, 24px);
                     /*
                     font-size: clamp(18px, 19.5px/1.52vw, 25px); (v1)
 
-                    font-size: 17px; min (v2)
-                    font-size: 18px; default (v2)
-                    font-size: 24px; max (v2)
+                    font-size: 17px; min
+                    font-size: 18px - 1.4vw; default
+                    font-size: 24px; max
                     */
                     text-decoration: none;
 
