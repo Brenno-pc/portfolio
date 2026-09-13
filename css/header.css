@@ -1,9 +1,10 @@
 @charset "utf-8";
-/*procure sempre padronizar no uso das medidas px, vw-vh, % e fr no máximo*/
 
 
 
-/*MOBILE [0px - 599px] PRONTO*/ 
+
+
+/*MOBILE [0px - 599px]*/
 @media screen and (min-width: 0px) and (max-width: 599px){
     .header {
         grid-row: 1/2;
@@ -37,11 +38,11 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: clamp(12.5px, 3.7vw, 15.7px);
+                    font-size: clamp(12px, 3.7vw, 14px);
                     /*
                     font-size: 12.5px; min
                     font-size: 15px - 3.7vw; default
-                    font-size: 15.7px; max
+                    font-size: 15.7px - 14px; max
                     */
 
                     font-family: var(--font_normal);
@@ -141,18 +142,8 @@
                         background-color: var(--color-azure);
                     }
                         .tools_icon {
-                            width: clamp(75%, 80%, 82%);
-                            height: clamp(75%, 80%, 82%);
-                            /*
-                            width: 75%; min
-                            height: 75%; min
-                            
-                            width: 80%; default
-                            height: 80%; default
-                            
-                            width: 82%; max
-                            height: 82%; max
-                            */
+                            width: 90%;
+                            height: 90%;
                             border-radius: 50%;
                             background-color: var(--color-violet_dark);
                         }
@@ -201,13 +192,200 @@
 
 /*TABLET SMALL [600px - 900px] (900px é pra ter uma base)*/
 @media screen and (min-width: 600px) and (max-width: 900px) {
+    .header {
+        grid-row: 1/2;
+        grid-column: 1/2;
 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(
+            to bottom,
+            var(--color-violet_light), 
+            var(--color-violet_medium), 
+            var(--color-violet_dark), 
+            var(--color-violet_super_dark)
+        );
+    }
+        .about {
+            width: clamp(430px, 60vw, 485px);
+            /*
+            width: 430px; min
+            width: 450px - 60vw; default
+            width: 485px; max
+            */
+            height: auto;
+        }
+
+            .about__header {
+                width: auto;
+                height: auto;
+            }
+                .about__apresentation {
+                    font-size: clamp(15.79px, 2.2vw, 17.5px);
+                    /*
+                    font-size: 15.79px; min
+                    font-size: 16.5px - 2.2vw; default
+                    font-size: 17.5px; max
+                    */
+
+                    font-family: var(--font_normal);
+                    font-weight: normal;
+                    padding-bottom: clamp(6px, 1vw, 7px);
+                    /*
+                    padding-bottom: 6px; min
+                    padding-bottom: 7px - 1vw; default
+                    padding-bottom: 7px; max
+                    */
+
+                    color: var(--color-azure);
+                }
+                .about__title {
+                    font-size: clamp(54.5px, 7.47vw, 59.5px);
+                    /*
+                    font-size: 54.5px; min 
+                    font-size: 56px - 7.47vw; default
+                    font-size: 59.5px; max
+                    */
+                    
+                    font-family: var(--font_normal);
+                    letter-spacing: clamp(6px, 0.93vw, 8px);
+                    /*
+                    letter-spacing: 6px; min
+                    letter-spacing: 7px - 1vw (0.93vw); default
+                    letter-spacing: 8px; max
+                    */
+
+                    line-height: clamp(33px, 4.7vw, 37px);
+                    /*
+                    line-height: 33px; min
+                    line-height: 35px - 4.7vw; default
+                    line-height: 37px; max
+                    */
+
+                    color: var(--color-azure);
+                }
+
+            .about__content {
+                width: auto;
+                height: auto;
+                margin: clamp(27px, 4vw, 33px) 0px;
+                /*
+                margin: 27px 0px; min
+                margin: 30px-4vw 0px; default
+                margin: 33px 0px; max
+                */
+            }
+                .about__text {
+                    font-family: var(--font_italic);
+                    font-weight: normal;
+                    font-size: clamp(20.2px, 2.83vw, 22px);
+                    /*
+                    font-size: 20.2px; min
+                    font-size: 21.2px - 2.83vw; default
+                    font-size: 22px; max
+                    */
+
+                    color: var(--color-azure);
+                }
+                .about__text--1 {
+                    padding-bottom: clamp(1px, 0.3vw, 3px);
+                    /*
+                    padding-bottom: 1px; min
+                    padding-bottom: 2px - 0.3vw; default
+                    padding-bottom: 3px; max
+                    */
+                }
+
+            .about__tools {
+                width: auto;
+                height: auto;
+
+                margin-bottom: clamp(55px, 7.75vw, 61px);
+                /*
+                margin-bottom: 55px; min
+                margin-bottom: 58px - 7.75vw; default
+                margin-bottom: 61px; max
+                */
+            }
+                .about__tools-list {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    list-style: none;
+                }
+                    .about__tools-item {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: clamp(50px, 7.63vw, 59px);
+                        height: clamp(50px, 7.63vw, 59px);
+                        /*
+                        width = height: 50px; min
+                        width = height: 57px - 7.63vw; default
+                        width = height: 59px; max
+                        */
+                        
+                        border-radius: 50%;
+                        background-color: var(--color-azure);
+                    }
+                        .tools_icon {
+                            width: 90%;
+                            height: 90%;
+                            border-radius: 50%;
+                            background-color: var(--color-violet_dark);
+                        }
+
+            .about__links {
+                width: auto;
+                height: auto;
+            }
+                .links {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 100%;
+                    height: clamp(65px, 9.4vw, 80px);
+                    /*
+                    height: 65px; min
+                    height: 70px - 9.4vw; default
+                    height: 80px; max
+                    */
+
+                    font-family: var(--font_normal);
+                    font-size: clamp(19px, 2.6vw, 20px);
+                    /*
+                    font-size: 19px; min
+                    font-size: 19.5px - 2.6vw; default
+                    font-size: 20px; max
+                    */
+
+                    text-decoration: none;
+
+                    border-radius: 3px;
+                    background-color: var(--color-azure);
+                }
+                    .links--projects {
+                        margin-bottom: 17px;
+                    }
+                    .links--contacts {
+                        margin: 0px; /*adicionei só pra não ficar vazio*/
+                    }
 }
 
 /*TABLET BIG [901px - 1024px]*/
 @media screen and (min-width: 901px) and (max-width: 1024px) {
 
 }
+
 
 
 
@@ -429,65 +607,3 @@
                     background-color: var(--color-azure);
                 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
