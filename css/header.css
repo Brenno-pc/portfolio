@@ -210,10 +210,10 @@
         );
     }
         .about {
-            width: clamp(430px, 60vw, 485px);
+            width: clamp(435px, 62vw, 485px);
             /*
-            width: 430px; min
-            width: 450px - 60vw; default
+            width: 435px; min
+            width: 465px - 62vw; default
             width: 485px; max
             */
             height: auto;
