@@ -192,7 +192,7 @@
 
 /*TABLET SMALL [600px - 1000px] */
 @media screen and (min-width: 600px) and (max-width: 1000px) {
-    .header {
+.header {
         grid-row: 1/2;
         grid-column: 1/2;
 
@@ -210,12 +210,11 @@
         );
     }
         .about {
-            
-            width: clamp(435px, 62vw, 485px);
+            width: 390px;
             /*
-            width: 435px; min
-            width: 465px - 62vw; default
-            width: 485px; max
+            width: 390px; min
+            width: ; default
+            width: ; max
             */
             height: auto;
         }
@@ -225,45 +224,42 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: clamp(15.79px, 2.2vw, 17.5px);
+                    font-size: 14px;
                     /*
-                    font-size: 15.79px; min
-                    font-size: 16.5px - 2.2vw; default
-                    font-size: 17.5px; max
+                    font-size: 14px; min
+                    font-size: ; default
+                    font-size: ; max
                     */
 
                     font-family: var(--font_normal);
-                    font-weight: normal;
-                    padding-bottom: clamp(6px, 1vw, 7px);
+                    padding-bottom: 2px;
                     /*
-                    padding-bottom: 6px; min
-                    padding-bottom: 7px - 1vw; default
-                    padding-bottom: 7px; max
+                    padding-bottom: 2px; min
+                    padding-bottom: ; default
+                    padding-bottom: ; max
                     */
 
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: clamp(54.5px, 7.47vw, 59.5px);
+                    font-size: 44px;
                     /*
-                    font-size: 54.5px; min 
-                    font-size: 56px - 7.47vw; default
-                    font-size: 59.5px; max
+                    font-size: 44px; min 
+                    font-size: ; default
+                    font-size: ; max
                     */
-                    
                     font-family: var(--font_normal);
-                    letter-spacing: clamp(6px, 0.93vw, 8px);
+                    letter-spacing: 6px;
                     /*
                     letter-spacing: 6px; min
-                    letter-spacing: 7px - 1vw (0.93vw); default
-                    letter-spacing: 8px; max
+                    letter-spacing: ; default
+                    letter-spacing: ; max
                     */
-
-                    line-height: clamp(33px, 4.7vw, 37px);
+                    line-height: 31px;
                     /*
-                    line-height: 33px; min
-                    line-height: 35px - 4.7vw; default
-                    line-height: 37px; max
+                    line-height: 31px; min
+                    line-height: ; default
+                    line-height: ; max
                     */
 
                     color: var(--color-azure);
@@ -272,31 +268,31 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin: clamp(27px, 4vw, 33px) 0px;
+                margin: 22px 0px;
                 /*
-                margin: 27px 0px; min
-                margin: 30px-4vw 0px; default
-                margin: 33px 0px; max
+                margin: 22px 0px; min
+                margin: x 0px; default
+                margin: x 0px; max
                 */
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-weight: normal;
-                    font-size: clamp(20.2px, 2.83vw, 22px);
+                    font-size: 19px;
                     /*
-                    font-size: 20.2px; min
-                    font-size: 21.2px - 2.83vw; default
-                    font-size: 22px; max
+                    font-size: 19px; min
+                    font-size: ; default
+                    font-size: ; max
                     */
-
                     color: var(--color-azure);
                 }
                 .about__text--1 {
-                    padding-bottom: clamp(1px, 0.3vw, 3px);
+                    font-family: var(--font_italic);
+                    padding-bottom: 2px;
                     /*
-                    padding-bottom: 1px; min
-                    padding-bottom: 2px - 0.3vw; default
-                    padding-bottom: 3px; max
+                    padding-bottom: 2px; min
+                    padding-bottom: ; default
+                    padding-bottom: ; max
+                    
                     */
                 }
 
@@ -304,19 +300,17 @@
                 width: auto;
                 height: auto;
 
-                margin-bottom: clamp(55px, 7.75vw, 61px);
+                margin: 35px 0px; 
                 /*
-                margin-bottom: 55px; min
-                margin-bottom: 58px - 7.75vw; default
-                margin-bottom: 61px; max
+                margin: 35px; min min
+                margin: x 0px; default 
+                margin: x 0px; max 
                 */
             }
                 .about__tools-list {
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: space-between;
-                    align-items: center;
-
                     list-style: none;
                 }
                     .about__tools-item {
@@ -325,14 +319,13 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: clamp(50px, 7.63vw, 59px);
-                        height: clamp(50px, 7.63vw, 59px);
+                        width: clamp(36px, 10vw, 45px);
+                        height: clamp(36px, 10vw, 45px);
                         /*
-                        width = height: 50px; min
-                        width = height: 57px - 7.63vw; default
-                        width = height: 59px; max
+                        width = height: 45px; min
+                        width = height: ; default
+                        width = height: ; max
                         */
-                        
                         border-radius: 50%;
                         background-color: var(--color-azure);
                     }
@@ -354,31 +347,40 @@
                     align-items: center;
 
                     width: 100%;
-                    height: clamp(65px, 9.4vw, 80px);
+                    height: 52px;
                     /*
-                    height: 65px; min
-                    height: 70px - 9.4vw; default
-                    height: 80px; max
+                    height: 52px; min
+                    height: ; default
+                    height: ; max
                     */
 
                     font-family: var(--font_normal);
-                    font-size: clamp(19px, 2.6vw, 20px);
+                    font-size: 17.5px;
                     /*
-                    font-size: 19px; min
-                    font-size: 19.5px - 2.6vw; default
-                    font-size: 20px; max
+                    font-size: ; min
+                    font-size: ; default
+                    font-size: ; max
                     */
-
                     text-decoration: none;
 
                     border-radius: 3px;
                     background-color: var(--color-azure);
                 }
                     .links--projects {
-                        margin-bottom: 17px;
+                        margin-bottom: 18px;
+                        /*
+                        margin-bottom: 18px; min
+                        margin-bottom: ; default
+                        margin-bottom: ; max
+                        */
                     }
                     .links--contacts {
                         margin: 0px; /*adicionei só pra não ficar vazio*/
+                        /*
+                        margin-bottom: ; min
+                        margin-bottom: ; default
+                        margin-bottom: ; max
+                        */
                     }
 }
 
