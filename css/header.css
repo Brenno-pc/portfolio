@@ -210,7 +210,7 @@
         );
     }
         .about {
-            width: 390px;
+            width: 400px;
             /*
             width: 390px; min
             width: ; default
@@ -224,7 +224,7 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 14px;
+                    font-size: 15px;
                     /*
                     font-size: 14px; min
                     font-size: ; default
@@ -242,20 +242,20 @@
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: 44px;
+                    font-size: 47px; /*46 ou 47 para a versão default*/
                     /*
                     font-size: 44px; min 
                     font-size: ; default
                     font-size: ; max
                     */
                     font-family: var(--font_normal);
-                    letter-spacing: 6px;
+                    letter-spacing: 7px;
                     /*
                     letter-spacing: 6px; min
                     letter-spacing: ; default
                     letter-spacing: ; max
                     */
-                    line-height: 31px;
+                    line-height: 33px;
                     /*
                     line-height: 31px; min
                     line-height: ; default
@@ -268,7 +268,7 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin: 22px 0px;
+                margin: 24px 0px;
                 /*
                 margin: 22px 0px; min
                 margin: x 0px; default
@@ -277,7 +277,7 @@
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: 19px;
+                    font-size: 19.5px;
                     /*
                     font-size: 19px; min
                     font-size: ; default
@@ -299,12 +299,12 @@
             .about__tools {
                 width: auto;
                 height: auto;
-
-                margin: 35px 0px; 
+                
+                margin-bottom: 48px;
                 /*
-                margin: 35px; min min
-                margin: x 0px; default 
-                margin: x 0px; max 
+                margin-bottom: 35px; min
+                margin-bottom: ; default
+                margin-bottom: ; max
                 */
             }
                 .about__tools-list {
@@ -319,9 +319,10 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: clamp(36px, 10vw, 45px);
-                        height: clamp(36px, 10vw, 45px);
+                        width: 47px;
+                        height: 47px;
                         /*
+                        PAREI AQUI
                         width = height: 45px; min
                         width = height: ; default
                         width = height: ; max
