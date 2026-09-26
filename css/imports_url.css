@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*
+    DOCUMENTAÇÃO:
+        -Faz a ligação dos estilos css das partes do código a um único arquivo.
+
+        -Explicação:
+            =O .header vira --> header.css
+            =O .main vira --> main.css
+            ...
+
+            =Para não ficar cheio de link:css no html, cria um arquivo base que importa todos esses arquivos.
+*/
+@import url(global_settings.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
