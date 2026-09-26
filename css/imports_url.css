@@ -10,7 +10,8 @@
 
             =Para não ficar cheio de link:css no html, cria um arquivo base que importa todos esses arquivos.
 */
-@import url(global_settings.css);
+
+@import url(settings.css);
 @import url(header.css);
 @import url(main.css);
 @import url(footer.css);
