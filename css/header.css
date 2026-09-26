@@ -4,7 +4,7 @@
 
 
 
-/*MOBILE [0px - 599px]*/
+/*Mobile [0px - 599px]*/
 @media screen and (min-width: 0px) and (max-width: 599px){
     .header {
         grid-row: 1/2;
@@ -190,7 +190,7 @@
 
 
 
-/*TABLET SMALL [600px - 1000px] */
+/*TABLET SMALL [600px - 1000px]*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
 .header {
         grid-row: 1/2;

@@ -1,8 +1,8 @@
 @charset "utf-8";
-/*procure sempre padronizar no uso das medidas px e vh*/
 
 
-/*MOBILE [0px - 599px] PRONTO*/
+
+/*mobile [0px - 599px] PRONTO*/
 @media screen and (min-width: 0px) and (max-width: 599px){
     .main {
         grid-row: 2/5;
@@ -336,7 +336,7 @@
 
 
 
-/*LAPTOP - DESKTOP - TV[1001px - 1920px - > 1920px]*/
+/*LAPTOP - DESKTOP - TV [1001px - 1920px - > 1920px]*/
 @media screen and (min-width: 1001px) {
     .main{
         grid-row: 2/5;
