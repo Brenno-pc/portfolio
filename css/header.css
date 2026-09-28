@@ -210,12 +210,11 @@
         );
     }
         .about {
-            width: 410px;
+            width: clamp(390px, 51.3vw, 430px);
             /*
             width: 390px; min
-            width: 410px; default
-            width: ; max
-            
+            width: 410px - 51.3vw; default
+            width: 430px; max
             */
             height: auto;
         }
@@ -229,7 +228,7 @@
                     /*
                     font-size: 14; min
                     font-size: 14.5px; default
-                    font-size: ; max
+                    font-size: 15px; max
                     */
 
                     font-family: var(--font_normal);
@@ -237,7 +236,7 @@
                     /*
                     padding-bottom: 2px; min
                     padding-bottom: 3px; default
-                    padding-bottom: ; max
+                    padding-bottom: 3.5px; max
                     */
 
                     color: var(--color-azure);
@@ -247,20 +246,20 @@
                     /*
                     font-size: 44px; min 
                     font-size: 46.5px; default
-                    font-size: ; max
+                    font-size: 47.5px; max
                     */
                     font-family: var(--font_normal);
                     letter-spacing: 7px;
                     /*
                     letter-spacing: 6px; min
                     letter-spacing: 7px; default
-                    letter-spacing: ; max
+                    letter-spacing: 8px; max
                     */
                     line-height: 33px;
                     /*
                     line-height: 31px; min
                     line-height: 33px; default
-                    line-height: ; max
+                    line-height: 35px; max
                     */
 
                     color: var(--color-azure);
@@ -273,8 +272,8 @@
                 /*
                 margin-top: 26px;
                 margin: 24px 0px; min
-                margin: 25x 0px; default
-                margin: x 0px; max
+                margin: 25px 0px; default
+                margin: 27px 0px; max
                 */
             }
                 .about__text {
@@ -283,7 +282,7 @@
                     /*
                     font-size: 19.3px; min
                     font-size: 19.6px; default
-                    font-size: ; max
+                    font-size: 19.8px; max
                     */
                     color: var(--color-azure);
                 }
@@ -293,7 +292,7 @@
                     /*
                     padding-bottom: 2px; min
                     padding-bottom: 3px; default
-                    padding-bottom: ; max
+                    padding-bottom: 4px; max
                     */
                 }
 
@@ -305,7 +304,7 @@
                 /*
                 margin-bottom: 48px; min
                 margin-bottom: 50px; default
-                margin-bottom: ; max
+                margin-bottom: 54px; max
                 */
             }
                 .about__tools-list {
@@ -325,7 +324,7 @@
                         /*
                         width = height: 45px; min
                         width = height: 47px; default
-                        width = height: ; max
+                        width = height: 50px; max
                         */
                         border-radius: 50%;
                         background-color: var(--color-azure);
@@ -352,15 +351,15 @@
                     /*
                     height: 56px; min
                     height: 60px; default
-                    height: ; max
+                    height: 64px; max
                     */
 
                     font-family: var(--font_normal);
                     font-size: 18px;
                     /*
                     font-size: 17.5px; min
-                    font-size: 18; default
-                    font-size: ; max
+                    font-size: 18px; default
+                    font-size: 18.5px; max
                     */
                     text-decoration: none;
 
@@ -372,7 +371,7 @@
                         /*
                         margin-bottom: 14px; min
                         margin-bottom: 15px; default
-                        margin-bottom: ; max
+                        margin-bottom: 16px; max
                         */
                     }
                     .links--contacts {
