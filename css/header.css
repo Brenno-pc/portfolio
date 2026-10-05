@@ -210,10 +210,10 @@
         );
     }
         .about {
-            width: clamp(390px, 51.3vw, 430px);
+            width: clamp(390px, 51.25vw, 430px);
             /*
             width: 390px; min
-            width: 410px - 51.3vw; default
+            width: 410px - 51.25vw; default
             width: 430px; max
             */
             height: auto;
@@ -224,41 +224,43 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 14.5px;
+                    font-size: clamp(14px, 1.83vw, 15px);
                     /*
                     font-size: 14; min
-                    font-size: 14.5px; default
+                    font-size: 14.5px-1.83vw; default
                     font-size: 15px; max
                     */
 
                     font-family: var(--font_normal);
-                    padding-bottom: 3px;
+                    padding-bottom: clamp(2px, 0.375vw, 3.5px);
                     /*
                     padding-bottom: 2px; min
-                    padding-bottom: 3px; default
+                    padding-bottom: 3px - 0.375vw; default
                     padding-bottom: 3.5px; max
                     */
 
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: 46.5px;
+                    font-size: clamp(44px, 5.8125vw, 47.5px);
                     /*
                     font-size: 44px; min 
-                    font-size: 46.5px; default
+                    font-size: 46.5px - 5.8125vw; default
                     font-size: 47.5px; max
                     */
+
                     font-family: var(--font_normal);
-                    letter-spacing: 7px;
+                    letter-spacing: clamp(6px, 0.875vw, 8px);
                     /*
                     letter-spacing: 6px; min
-                    letter-spacing: 7px; default
+                    letter-spacing: 7px - 0.875vw; default
                     letter-spacing: 8px; max
                     */
-                    line-height: 33px;
+
+                    line-height: clamp(31px, 4.125vw, 35px);
                     /*
                     line-height: 31px; min
-                    line-height: 33px; default
+                    line-height: 33px - 4.125vw; default
                     line-height: 35px; max
                     */
 
@@ -268,30 +270,31 @@
             .about__content {
                 width: auto;
                 height: auto;
-                margin: 25px 0px;
+
+                margin: clamp(24px, 3.125vw, 27px) 0px;
                 /*
-                margin-top: 26px;
                 margin: 24px 0px; min
-                margin: 25px 0px; default
+                margin: 25px-3.125vw 0px; default
                 margin: 27px 0px; max
                 */
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: 19.6px;
+                    font-size: clamp(19.3px, 2.45vw, 19.8px);
                     /*
                     font-size: 19.3px; min
-                    font-size: 19.6px; default
+                    font-size: 19.6px-2.45vw; default
                     font-size: 19.8px; max
                     */
                     color: var(--color-azure);
                 }
                 .about__text--1 {
                     font-family: var(--font_italic);
-                    padding-bottom: 3px;
+                    padding-bottom: clamp(2px, 0.375vw, 4px);
                     /*
+                    padding-bottom: 3px;
                     padding-bottom: 2px; min
-                    padding-bottom: 3px; default
+                    padding-bottom: 3px - 0.375vw; default
                     padding-bottom: 4px; max
                     */
                 }
@@ -300,10 +303,11 @@
                 width: auto;
                 height: auto;
                 
-                margin-bottom: 50px; /*dobro do about_content*/
+                margin-bottom: clamp(48px, 6.25vw, 54px);
                 /*
+                dobro do about_content
                 margin-bottom: 48px; min
-                margin-bottom: 50px; default
+                margin-bottom: 50px-6.25vw; default
                 margin-bottom: 54px; max
                 */
             }
@@ -319,11 +323,12 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 47px;
-                        height: 47px;
+                        width: clamp(45px, 5.875vw, 50px);
+                        height: clamp(45px, 5.875vw, 50px);
                         /*
+
                         width = height: 45px; min
-                        width = height: 47px; default
+                        width = height: 47px-5.875vw; default
                         width = height: 50px; max
                         */
                         border-radius: 50%;
@@ -347,18 +352,20 @@
                     align-items: center;
 
                     width: 100%;
-                    height: 60px;
+                    height: clamp(60px, 7.5vw, 64px);
                     /*
+                    height: 60px;
                     height: 56px; min
-                    height: 60px; default
+                    height: 60px-7.5vw; default
                     height: 64px; max
                     */
 
                     font-family: var(--font_normal);
-                    font-size: 18px;
+                    font-size: clamp(18px, 2.25vw, 18.5px);
                     /*
+                    font-size: 18px;
                     font-size: 17.5px; min
-                    font-size: 18px; default
+                    font-size: 18px-2.25vw; default
                     font-size: 18.5px; max
                     */
                     text-decoration: none;
@@ -367,10 +374,10 @@
                     background-color: var(--color-azure);
                 }
                     .links--projects {
-                        margin-bottom: 15px;
+                        margin-bottom: clamp(14px, 1.875vw,16px);
                         /*
                         margin-bottom: 14px; min
-                        margin-bottom: 15px; default
+                        margin-bottom: 15px-1.875vw; default
                         margin-bottom: 16px; max
                         */
                     }
