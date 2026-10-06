@@ -2,8 +2,6 @@
 
 
 
-
-
 /*Mobile [0px - 599px]*/
 @media screen and (min-width: 0px) and (max-width: 599px){
     .header {
@@ -46,6 +44,7 @@
                     */
 
                     font-family: var(--font_normal);
+
                     padding-bottom: clamp(1px, 0.5vw, 2px);
                     /*
                     padding-bottom: 1px; min
@@ -62,13 +61,16 @@
                     font-size: 41px - 10.25vw; default (use)
                     font-size: 44px; max
                     */
+
                     font-family: var(--font_normal);
+
                     letter-spacing: clamp(3px, 1.25vw, 6px);
                     /*
                     letter-spacing: 3px; min
                     letter-spacing: 5px - 1.25vw; default
                     letter-spacing: 6px; max
                     */
+
                     line-height: clamp(30px, 7.75vw, 31px);
                     /*
                     line-height: 30px; min
@@ -81,21 +83,25 @@
             .about__content {
                 width: auto;
                 height: auto;
+
                 margin: clamp(17px ,5vw, 22px) 0px;
                 /*
                 margin: 17px 0px; min
                 margin: 20px/5vw 0px; default
                 margin: 22px 0px; max
                 */
+
             }
                 .about__text {
                     font-family: var(--font_italic);
+
                     font-size: clamp(14px, 4.25vw, 19px);
                     /*
                     font-size: 14px; min
                     font-size: 17px - 4.25vw; default
                     font-size: 19px; max
                     */
+
                     color: var(--color-azure);
                 }
                 .about__text--1 {
@@ -113,6 +119,7 @@
                 margin: 31px/8.25vw  0px; default 
                 margin: 35px 0px; max 
                 */
+
             }
                 .about__tools-list {
                     display: flex;
@@ -138,6 +145,7 @@
                         width: 45px; max
                         height: 45px; max
                         */
+
                         border-radius: 50%;
                         background-color: var(--color-azure);
                     }
@@ -159,6 +167,7 @@
                     align-items: center;
 
                     width: 100%;
+
                     height: clamp(42px, 12vw, 52px);
                     /*
                     height: 42px; min
@@ -167,12 +176,14 @@
                     */
 
                     font-family: var(--font_normal);
+
                     font-size: clamp(14px, 4vw, 17.5px);
                     /*
                     font-size: 14px; min
                     font-size: 16px - 4vw; default
                     font-size: 17.5px; max
                     */
+
                     text-decoration: none;
 
                     border-radius: 3px;
@@ -182,15 +193,11 @@
                         margin-bottom: 18px;
                     }
                     .links--contacts {
-                        margin: 0px; /*adicionei só pra não ficar vazio*/
+                        margin: 0px;
                     }
 }
 
-
-
-
-
-/*TABLET SMALL [600px - 1000px]*/
+/*TABLET [600px - 1000px]*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .header {
         grid-row: 1/2;
@@ -216,6 +223,7 @@
             width: 410px - 51.25vw; default
             width: 430px; max
             */
+
             height: auto;
         }
 
@@ -232,6 +240,7 @@
                     */
 
                     font-family: var(--font_normal);
+
                     padding-bottom: clamp(2px, 0.375vw, 3.5px);
                     /*
                     padding-bottom: 2px; min
@@ -250,6 +259,7 @@
                     */
 
                     font-family: var(--font_normal);
+
                     letter-spacing: clamp(6px, 0.875vw, 8px);
                     /*
                     letter-spacing: 6px; min
@@ -277,19 +287,23 @@
                 margin: 25px-3.125vw 0px; default
                 margin: 27px 0px; max
                 */
+
             }
                 .about__text {
                     font-family: var(--font_italic);
+
                     font-size: clamp(19.3px, 2.45vw, 19.8px);
                     /*
                     font-size: 19.3px; min
                     font-size: 19.6px-2.45vw; default
                     font-size: 19.8px; max
                     */
+
                     color: var(--color-azure);
                 }
                 .about__text--1 {
                     font-family: var(--font_italic);
+
                     padding-bottom: clamp(2px, 0.375vw, 4px);
                     /*
                     padding-bottom: 3px;
@@ -297,6 +311,7 @@
                     padding-bottom: 3px - 0.375vw; default
                     padding-bottom: 4px; max
                     */
+
                 }
 
             .about__tools {
@@ -310,6 +325,7 @@
                 margin-bottom: 50px-6.25vw; default
                 margin-bottom: 54px; max
                 */
+
             }
                 .about__tools-list {
                     display: flex;
@@ -326,11 +342,11 @@
                         width: clamp(45px, 5.875vw, 50px);
                         height: clamp(45px, 5.875vw, 50px);
                         /*
-
                         width = height: 45px; min
                         width = height: 47px-5.875vw; default
                         width = height: 50px; max
                         */
+
                         border-radius: 50%;
                         background-color: var(--color-azure);
                     }
@@ -352,6 +368,7 @@
                     align-items: center;
 
                     width: 100%;
+
                     height: clamp(60px, 7.5vw, 64px);
                     /*
                     height: 60px;
@@ -361,6 +378,7 @@
                     */
 
                     font-family: var(--font_normal);
+
                     font-size: clamp(18px, 2.25vw, 18.5px);
                     /*
                     font-size: 18px;
@@ -368,6 +386,7 @@
                     font-size: 18px-2.25vw; default
                     font-size: 18.5px; max
                     */
+
                     text-decoration: none;
 
                     border-radius: 3px;
@@ -380,20 +399,12 @@
                         margin-bottom: 15px-1.875vw; default
                         margin-bottom: 16px; max
                         */
+
                     }
                     .links--contacts {
-                        margin: 0px; /*adicionei só pra não ficar vazio*/
-                        /*
-                        margin-bottom: ; min
-                        margin-bottom: ; default
-                        margin-bottom: ; max
-                        */
+                        margin: 0px;
                     }
 }
-
-
-
-
 
 /*LAPTOP - DESKTOP - TV [1001px - 1920px]*/
 @media screen and (min-width: 1001px) {
@@ -417,12 +428,11 @@
         .about {
             width: clamp(460px, 40.6vw,700px);
             /*
-            width: clamp(480px, 550px/43vw, 800px); (v1)
-
             width: 460px; min
             width: 520px - 40.6vw; default
             width: 700px; max
             */
+
             height: auto;
         }
 
@@ -434,20 +444,17 @@
                 .about__apresentation {
                     font-size: clamp(16.5px, 1.33vw, 21.5px);
                     /*
-                    font-size: clamp(18px, 19px/1.48vw, 25px); (v1)
-
                     font-size: 16.5px; min
                     font-size: 17px - 1.33vw; default
                     font-size: 21.5px; max
                     */
+
                     font-family: var(--font_normal);
                     color: var(--color-azure);
                 }
                 .about__title {
                     margin-top: clamp(-8px, -0.65vw, -12px);
                     /*
-                    margin-top: clamp(-8px, -0.65vw, -10px); (v1)
-
                     margin-top: -8px; min
                     margin-top: -8px-0.65vw; default
                     margin-top: -12px; max
@@ -455,18 +462,15 @@
 
                     font-size: clamp(52px, 4.21vw, 83px);
                     /*
-                    font-size: clamp(56px, 65px/5.08vw, 83px); (v1)
-
                     font-size: 52px; min
                     font-size: 54px-4.21vw; default
                     font-size: 83px; max
                     */
 
                     font-family: var(--font_normal);
+
                     letter-spacing: clamp(9px, 0.78vw, 12px);
                     /*
-                    letter-spacing: clamp(9px, 9px/0.7vw, 12px); (v1)
-
                     letter-spacing: 9px; min
                     letter-spacing: 10px; default
                     letter-spacing: 12px; max
@@ -479,47 +483,48 @@
             .about__content {
                 width: auto;
                 height: auto;
+
                 margin-top: clamp(11px, 1vw, 14px);
                 /*
-                margin-top: clamp(11px, 12.5px/1vw, 16px); (v1)
                 margin-top: 11px; min
                 margin-top: 12.5px - 1vw; default
                 margin-top: 14px; max
                 */
+
             }
                 .about__text {
                     font-family: var(--font_italic);
-                    font-size: clamp(19.5px, 1.56vw, 26px);/*3px a mais que o __apresentation*/
+
+                    font-size: clamp(19.5px, 1.56vw, 26px);
                     /*
-                    font-size: clamp(21px, 22px/1.72vw, 28px); (v1)
-                    
                     font-size: 19.5px; min
                     font-size: 20px - 1.56vw; default
                     font-size: 26px; max
                     */
+
                     color: var(--color-azure);
                 }
                 .about__text--1 {
                     padding-bottom: clamp(3px, 0.31vw, 5px);
                     /*
-                    padding-bottom: clamp(3.5px, 4px/0.31vw, 5px); (v1)
-
                     padding-bottom: 3px; min
                     padding-bottom: 4px - 0.31vw; default
                     padding-bottom: 5px; max
                     */
+
                 }
 
 
             .about__tools {
                 width: auto;
                 height: auto;
-                margin-top: clamp(28px, 2.5vw, 40px); /*(*2 + 10px) do margin-top do __content*/
-                margin-bottom: clamp(58px, 5.2vw, 78px); /*margin-top + 44px*/
+
+                margin-top: clamp(28px, 2.5vw, 40px);
+                margin-bottom: clamp(58px, 5.2vw, 78px);
                 /*
-                margin-top: clamp(32px, 34px/2.7vw, 42px); (v1)
-                margin-bottom: clamp(64px, 78px/6.1vw, 86px); (v1)
-                
+                margin-top == (*2 + 10px) do margin-top do __content
+                margin-bottom == margin-top + 44px
+
                 margin-top: 28px; min
                 margin-bottom: 58px; min
 
@@ -529,6 +534,7 @@
                 margin-top: 40px; max
                 margin-bottom: 78px; max
                 */
+
             }
                 .about__tools-list {
                     display: flex;
@@ -545,9 +551,6 @@
                         width: clamp(57px, 4.45vw, 75px);
                         height: clamp(57px, 4.45vw, 75px);
                         /*
-                        width: clamp(58px, 63px/4.92vw, 83px); (v1)
-                        height: clamp(58px, 63px/4.92vw, 83px); (v1)
-                        
                         width: 53px; min
                         height: 53px; min
                         
@@ -573,402 +576,13 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
+
                 gap: clamp(95px, 8.25vw, 150px);
                 /*
-                gap: clamp(85px, 88px/6.9vw, 150px); (v1)
-
                 gap: 95px; min
                 gap: 105px - 8.25vw; default
                 gap: 150px; max
                 */
-            }
-                .links {
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    width: 100%;
-                    height: clamp(68px, 5.6vw, 105px);
-                    /*
-                    height: clamp(68px, 78px/6.1vw, 105px); (v1)
-                    
-                    height: 68px; min
-                    height: 72px - 5.6vw; default
-                    height: 105px; max
-                    */
-                    font-family: var(--font_normal);
-                    font-size: clamp(17px, 1.4vw, 24px);
-                    /*
-                    font-size: clamp(18px, 19.5px/1.52vw, 25px); (v1)
-
-                    font-size: 17px; min
-                    font-size: 18px - 1.4vw; default
-                    font-size: 24px; max
-                    */
-                    text-decoration: none;
-
-                    border-radius: 3px;
-                    background-color: var(--color-azure);
-                }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-BACKUP (VERSÃO FINAL PARA DESKTOP)
-/*LAPTOP - DESKTOP - TV [1025px - 1920px]
-@media screen and (min-width: 1025px) {
-    .header {
-        grid-row: 1/2;
-        grid-column: 1/2;
-
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-
-        background: linear-gradient(
-            to bottom,
-            var(--color-violet_light), 
-            var(--color-violet_medium), 
-            var(--color-violet_dark), 
-            var(--color-violet_super_dark)
-        );
-    }
-        .about {
-            width: clamp(460px, 40.6vw,700px);
-            /*
-            width: clamp(480px, 550px/43vw, 800px); (v1)
-
-            width: 460px; min
-            width: 520px - 40.6vw; default
-            width: 700px; max
-            
-            height: auto;
-        }
-
-        
-            .about__header {
-                width: auto;
-                height: auto;
-            }
-                .about__apresentation {
-                    font-size: clamp(16.5px, 1.33vw, 21.5px);
-                    /*
-                    font-size: clamp(18px, 19px/1.48vw, 25px); (v1)
-
-                    font-size: 16.5px; min
-                    font-size: 17px - 1.33vw; default
-                    font-size: 21.5px; max
-                    
-                    font-family: var(--font_normal);
-                    color: var(--color-azure);
-                }
-                .about__title {
-                    margin-top: clamp(-8px, -0.65vw, -12px);
-                    /*
-                    margin-top: clamp(-8px, -0.65vw, -10px); (v1)
-
-                    margin-top: -8px; min
-                    margin-top: -8px-0.65vw; default
-                    margin-top: -12px; max
-                    
-
-                    font-size: clamp(52px, 4.21vw, 83px);
-                    /*
-                    font-size: clamp(56px, 65px/5.08vw, 83px); (v1)
-
-                    font-size: 52px; min
-                    font-size: 54px-4.21vw; default
-                    font-size: 83px; max
-                    
-
-                    font-family: var(--font_normal);
-                    letter-spacing: clamp(9px, 0.78vw, 12px);
-                    /*
-                    letter-spacing: clamp(9px, 9px/0.7vw, 12px); (v1)
-
-                    letter-spacing: 9px; min
-                    letter-spacing: 10px; default
-                    letter-spacing: 12px; max
-                    
-                    
-                    color: var(--color-azure);
-                }
-
-
-            .about__content {
-                width: auto;
-                height: auto;
-                margin-top: clamp(11px, 1vw, 14px);
-                /*
-                margin-top: clamp(11px, 12.5px/1vw, 16px); (v1)
-                margin-top: 11px; min
-                margin-top: 12.5px - 1vw; default
-                margin-top: 14px; max
-                
-            }
-                .about__text {
-                    font-family: var(--font_italic);
-                    font-size: clamp(19.5px, 1.56vw, 26px);/*3px a mais que o __apresentation
-                    /*
-                    font-size: clamp(21px, 22px/1.72vw, 28px); (v1)
-                    
-                    font-size: 19.5px; min
-                    font-size: 20px - 1.56vw; default
-                    font-size: 26px; max
-                    
-                    color: var(--color-azure);
-                }
-                .about__text--1 {
-                    padding-bottom: clamp(3px, 0.31vw, 5px);
-                    /*
-                    padding-bottom: clamp(3.5px, 4px/0.31vw, 5px); (v1)
-
-                    padding-bottom: 3px; min
-                    padding-bottom: 4px - 0.31vw; default
-                    padding-bottom: 5px; max
-                    
-                }
-
-
-            .about__tools {
-                width: auto;
-                height: auto;
-                margin-top: clamp(28px, 2.5vw, 40px); /*(*2 + 10px) do margin-top do __content
-                margin-bottom: clamp(58px, 5.2vw, 78px); /*margin-top + 44px*/
-                /*
-                margin-top: clamp(32px, 34px/2.7vw, 42px); (v1)
-                margin-bottom: clamp(64px, 78px/6.1vw, 86px); (v1)
-                
-                margin-top: 28px; min
-                margin-bottom: 58px; min
-
-                margin-top: 32px - 2.5vw; default
-                margin-bottom: 66px - 5.2vw; default
-
-                margin-top: 40px; max
-                margin-bottom: 78px; max
-
-            }
-                .about__tools-list {
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    list-style: none;
-                }
-                    .about__tools-item {
-                        display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: center;
-                        align-items: center;
-
-                        width: clamp(57px, 4.45vw, 75px);
-                        height: clamp(57px, 4.45vw, 75px);
-                        /*
-                        width: clamp(58px, 63px/4.92vw, 83px); (v1)
-                        height: clamp(58px, 63px/4.92vw, 83px); (v1)
-                        
-                        width: 53px; min
-                        height: 53px; min
-                        
-                        width: 57px - 4.45vw; default
-                        height: 57px - 4.45vw; default
-                        
-                        width: 75px; max
-                        height: 75px; max
-
-
-                        border-radius: 50%;
-                        background-color: var(--color-azure);
-                    }
-                        .tools_icon {
-                            width: 90%;
-                            height: 90%;
-                            border-radius: 50%;
-                            background-color: var(--color-violet_dark);
-                        }
-
-
-            .about__links {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 1fr;
-                gap: clamp(95px, 8.25vw, 150px);
-                /*
-                gap: clamp(85px, 88px/6.9vw, 150px); (v1)
-
-                gap: 95px; min
-                gap: 105px - 8.25vw; default
-                gap: 150px; max
 
             }
                 .links {
@@ -978,27 +592,26 @@ BACKUP (VERSÃO FINAL PARA DESKTOP)
                     align-items: center;
 
                     width: 100%;
+
                     height: clamp(68px, 5.6vw, 105px);
-                    /*
-                    height: clamp(68px, 78px/6.1vw, 105px); (v1)
-                    
+                    /*                    
                     height: 68px; min
                     height: 72px - 5.6vw; default
                     height: 105px; max
+                    */
 
                     font-family: var(--font_normal);
+
                     font-size: clamp(17px, 1.4vw, 24px);
                     /*
-                    font-size: clamp(18px, 19.5px/1.52vw, 25px); (v1)
-
                     font-size: 17px; min
                     font-size: 18px - 1.4vw; default
                     font-size: 24px; max
-
+                    */
+                    
                     text-decoration: none;
 
                     border-radius: 3px;
                     background-color: var(--color-azure);
                 }
 }
-*/
