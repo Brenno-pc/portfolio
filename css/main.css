@@ -2,7 +2,7 @@
 
 
 
-/*mobile [0px - 599px] PRONTO*/
+/*MOBILE [0px - 599px]*/
 @media screen and (min-width: 0px) and (max-width: 599px){
     .main {
         grid-row: 2/5;
@@ -230,8 +230,6 @@
 
 
 
-
-
 /*TABLET [600px - 1000px]*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .main {
@@ -334,8 +332,6 @@
 
 
 
-
-
 /*LAPTOP - DESKTOP - TV [1001px - 1920px - > 1920px]*/
 @media screen and (min-width: 1001px) {
     .main{
@@ -355,22 +351,14 @@
             width: clamp(900px, 86vw, 1650px);
             height: clamp(560px, 48.03vw, 820px);
             /*
-            height: clamp(550px, 46.9vw, 770px); (ficou muito pequeno)
-
             width: 900px; min
-            height: 550px; min
-            width: 900px; min (v2)
-            height: 560px; min (v2)
+            height: 560px; min
 
             width: 1100px - 86vw; default
-            height: 600px - 46.9vw; default
-            width: 1100px - 86vw; default (v2)
-            height: 615px - 48.05vw; default (v2)
+            height: 615px - 48.05vw; default
 
             width: 1650px; max
-            height: 770px; max
-            width: 1650px; max (v2)
-            height: 820px; max (v2)
+            height: 820px; max
             */
 
             display: grid;
@@ -387,17 +375,9 @@
 
                 font-size: clamp(32px, 2.85vw, 51px);
                 /*
-                font-size: clamp(32px, 2.81vw, 50px); 
-                font-size: clamp(32px, 2.85vw, 51px); (v2)
-
-                font-size: 32px; min
-                font-size: 32.5px; min (v2)
-
-                font-size: 36px - 2.81vw; default
-                font-size: 36.5px - 2.85vw; default (v2)
-
-                font-size: 50px; max
-                font-size: 51px; max (v2)
+                font-size: 32.5px; min
+                font-size: 36.5px - 2.85vw; default
+                font-size: 51px; max
                 */
                 
                 letter-spacing: clamp(5px, 0.51vw, 8px);
