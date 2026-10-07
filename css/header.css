@@ -35,17 +35,20 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: clamp(12px, 3.7vw, 14px);
+                    font-size: 12.5px;
                     /*
+                    font-size: clamp(12px, 3.33vw, 14px);
                     font-size: 12.5px; min
-                    font-size: 15px - 3.7vw; default
+                    font-size: 15px -> 3.33vw; default
                     font-size: 15.7px - 14px; max
                     */
 
                     font-family: var(--font_normal);
+                    font-weight: normal;
 
-                    padding-bottom: clamp(1px, 0.5vw, 2px);
+                    padding-bottom: 1px;
                     /*
+                    padding-bottom: clamp(1px, 0.5vw, 2px);
                     padding-bottom: 1px; min
                     padding-bottom: 2px - 0.5vw; default
                     padding-bottom: 2px; max
@@ -54,8 +57,9 @@
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: clamp(32px, 10.25vw, 44px);
+                    font-size: 32px;
                     /*
+                    font-size: clamp(32px, 10.25vw, 44px);
                     font-size: 32px; min 
                     font-size: 41px - 10.25vw; default (use)
                     font-size: 44px; max
@@ -63,15 +67,17 @@
 
                     font-family: var(--font_normal);
 
-                    letter-spacing: clamp(3px, 1.25vw, 6px);
+                    letter-spacing: 3px;
                     /*
+                    letter-spacing: clamp(3px, 1.25vw, 6px);
                     letter-spacing: 3px; min
                     letter-spacing: 5px - 1.25vw; default
                     letter-spacing: 6px; max
                     */
 
-                    line-height: clamp(30px, 7.75vw, 31px);
+                    line-height: 30px;
                     /*
+                    line-height: clamp(30px, 7.75vw, 31px);
                     line-height: 30px; min
                     line-height: 31px - 7.75vw; default/max
                     */
@@ -83,8 +89,9 @@
                 width: auto;
                 height: auto;
 
-                margin: clamp(17px, 4.4vw, 22px) 0px;
+                margin: 17px  0px;
                 /*
+                margin: clamp(17px, 4.4vw, 22px) 0px;
                 margin: 17px  0px; min
                 margin: 20px -> 4.44vw;  0px default
                 margin: 22px  0px; max
@@ -93,9 +100,11 @@
             }
                 .about__text {
                     font-family: var(--font_italic);
-
-                    font-size: clamp(14px, 4.25vw, 19px);
+                    font-weight: normal;
+                    
+                    font-size: 14px;
                     /*
+                    font-size: clamp(14px, 4.25vw, 19px);
                     font-size: 14px; min
                     font-size: 17px - 4.25vw; default
                     font-size: 19px; max
@@ -112,9 +121,10 @@
                 width: auto;
                 height: auto;
 
-                margin-bottom: clamp(34px, 8.89vw, 44px); 
+                margin-bottom: 34px;
                 /*
                 dobro content
+                margin-bottom: clamp(34px, 8.89vw, 44px); 
                 margin-bottom: 34px; min
                 margin-bottom: 40px -> 8.89vw; default 
                 margin-bottom: 44px; max 
@@ -132,17 +142,13 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: clamp(36px, 10vw, 45px);
-                        height: clamp(36px, 10vw, 45px);
+                        width: 36px;
+                        height: 36px;
                         /*
-                        width: 36px; min
-                        height: 36px; min
-
-                        width: 40px - 10vw; default
-                        height: 40px - 10vw; default
-                        
-                        width: 45px; max
-                        height: 45px; max
+                        width = height: clamp(36px, 10vw, 45px);
+                        width = height: 36px; min
+                        width = height: 40px - 10vw; default
+                        width = height: 45px; max
                         */
 
                         border-radius: 50%;
@@ -167,8 +173,9 @@
 
                     width: 100%;
 
-                    height: clamp(42px, 12vw, 52px);
+                    height: 42px;
                     /*
+                    height: clamp(42px, 12vw, 52px);
                     height: 42px; min
                     height: 48px - 12vw; default
                     height: 52px; max
@@ -176,8 +183,9 @@
 
                     font-family: var(--font_normal);
 
-                    font-size: clamp(14px, 4vw, 17.5px);
+                    font-size: 14px;
                     /*
+                    font-size: clamp(14px, 4vw, 17.5px);
                     font-size: 14px; min
                     font-size: 16px - 4vw; default
                     font-size: 17.5px; max
@@ -190,6 +198,9 @@
                 }
                     .links--projects {
                         margin-bottom: 18px;
+                        /*
+                        margin-bottom: 18px;
+                        */
                     }
                     .links--contacts {
                         margin: 0px;
