@@ -36,8 +36,9 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 12px;
+                    font-size: 11.5px;
                     /*
+                    font-size: 11.5px; min
                     font-size: 12px; min
 
 
@@ -130,7 +131,7 @@
 
                     */
                     
-                    font-size: 15px;
+                    font-size: 14.5px;
                     /*
                     font-size: 15px; min
 
@@ -141,8 +142,8 @@
                     font-size: 19px; max
                     */
 
-                    letter-spacing: 0.5px;
                     /*
+                    letter-spacing: 0.5px;
                     letter-spacing: 0.2px; min
                     letter-spacing: 0.5 px; min
                     */
