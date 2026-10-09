@@ -22,9 +22,10 @@
         );
     }
         .about {
-            width: clamp(250px, 85vw, 390px);
+            width: 255px;
             /*
-            width: 250px; min
+            width: clamp(255px, 85vw, 390px);
+            width: 255px; min
             width: 320px - 85vw; default
             width: 390px; max
             */
@@ -107,7 +108,7 @@
                 width: auto;
                 height: auto;
 
-                margin: 18px 0px;
+                margin: 20px 0px;
                 /*
                 margin: 17px  0px;
                 margin: clamp(17px, 4.4vw, 22px) 0px;
@@ -149,7 +150,7 @@
                 width: auto;
                 height: auto;
 
-                margin-bottom: 36px;
+                margin-bottom: 40px;
                 /*
                 dobro do content
                 margin-bottom: clamp(34px, 8.89vw, 44px); 
@@ -170,8 +171,8 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 34px;
-                        height: 34px;
+                        width: 36px;
+                        height: 36px;
                         /*
                         width = height: clamp(36px, 10vw, 45px);
                         width = height: 36px; min
@@ -237,7 +238,7 @@
                     background-color: var(--color-azure);
                 }
                     .links--projects {
-                        margin-bottom: 8px;
+                        margin-bottom: 10px;
                         /*
                         margin-bottom: 8px; min
 
