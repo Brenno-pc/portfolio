@@ -109,7 +109,7 @@
                 width: auto;
                 height: auto;
 
-                margin: 22px 0px;
+                margin: 20px 0px;
                 /*
                 margin: 20px 0px; min
 
@@ -180,8 +180,8 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 36px;
-                        height: 36px;
+                        width: 37px;
+                        height: 37px;
                         /*
                         width = height: clamp(36px, 10vw, 45px);
                         width = height: 36px; min
