@@ -22,25 +22,21 @@
         );
     }
         .about {
-            width: 300px;
+            width: 270px;
             /*
             width: 270px; min
             width: 300px; default (450px)
-
-            width: 320px - 85vw; default
-            width: 390px; max
-
-
-            width: clamp(255px, 85vw, 390px);
+            width: 330px; max
             */
             height: auto;
 
-            line-height: 20px; 
+            line-height: 18px;
             /*
             line-height: 18px; min (300px)
             line-height: 20px; default (450px)
+            line-height: 20px; max
 
-                -removi do about__title e deixei na seção (faz mais sentido deixar aqui)
+            -removi do about__title e deixei na seção (faz mais sentido deixar aqui)
             */
         }
             .about__header {
@@ -48,70 +44,44 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 12.5px;
+                    font-size: 12px;
                     /*
-                    font-size: 11.5px; min
                     font-size: 12px; min
                     font-size: 12.5px; default (450px)
-
-
-                    font-size: clamp(12px, 3.33vw, 14px);
-                    font-size: 15px -> 3.33vw; default
-                    font-size: 15.7px - 14px; max
+                    font-size: 13px; max
                     */
 
                     font-family: var(--font_italic);
                     font-weight: 300;
 
-                    padding-bottom: 3px;
+                    padding-bottom: 2px;
                     /*
                     padding-bottom: 2px; min
                     padding-bottom: 3px; default (450px)
-
-
-                    padding-bottom: clamp(1px, 0.5vw, 2px);
-                    padding-bottom: 1px; min
-                    padding-bottom: 2px - 0.5vw; default
-                    padding-bottom: 2px; max
+                    padding-bottom: 4px; max
                     */
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: 35px;
+                    font-size: 34px;
                     /*
                     font-size: 34px; min
                     font-size: 35px; default (450px)
-
-
-                    font-size: clamp(32px, 10.25vw, 44px);
-                    font-size: 32px; min 
-                    font-size: 41px - 10.25vw; default (use)
-                    font-size: 44px; max
+                    font-size: 38px; max
                     */
 
                     font-family: var(--font_normal);
 
-                    letter-spacing: 3px;
+                    letter-spacing: 2.6px;
                     /*
-                    letter-spacing: 2.3px; min
+                    letter-spacing: 2.3px - 2.6px; min
                     letter-spacing: 3px; default (450px)
-
-
-                    letter-spacing: clamp(3px, 1.25vw, 6px);
-                    letter-spacing: 3px; min
-                    letter-spacing: 5px - 1.25vw; default
-                    letter-spacing: 6px; max
+                    letter-spacing: 4.5px; max
                     */
 
-                    
                     /*
                     line-height: 25px; 
                     -removi do about__title e coloquei no about (section), faz mais sentido lá.
-
-
-                    line-height: clamp(30px, 7.75vw, 31px);
-                    line-height: 30px; min
-                    line-height: 31px - 7.75vw; default/max
                     */
 
                     color: var(--color-azure);
@@ -121,15 +91,11 @@
                 width: auto;
                 height: auto;
 
-                margin: 22px 0px;
+                margin: 20px 0px;
                 /*
                 margin: 20px 0px; min
-
-
-                margin: clamp(17px, 4.4vw, 22px) 0px;
-                margin: 17px  0px; min
-                margin: 20px -> 4.44vw;  0px default
-                margin: 22px  0px; max
+                margin: 22px 0px; default (450px)
+                margin: 24px 0px; max
                 */
 
             }
@@ -138,55 +104,37 @@
                     font-weight: 400;
                     /*
                     font-weight: 300 ou 400; (analisar com calma se uso 400 ou 300)
-
-                    -se eu usar 400, teria que aumentar o margin do about__content
-
+                        -se eu usar 400, teria que aumentar o margin do about__content
                     */
                     
-                    font-size: 15.5px;
+                    font-size: 14.5px;
                     /*
                     font-size: 14.5px; min (caso weight == 400)
-                    font-size: 15px; min
+                    font-size: 15px; min (caso weight == 300)
 
-
-                    font-size: clamp(14px, 4.25vw, 19px);
-                    font-size: 14px; min
-                    font-size: 17px - 4.25vw; default
-                    font-size: 19px; max
+                    font-size: 15.5px; default (450px)
+                    font-size: 16px; max
                     */
 
-                    letter-spacing: 0.3px;
+                    letter-spacing: 0.15px;
                     /*
-                    letter-spacing: ??px; min (300px)
+                    letter-spacing: 0.15px; min
                     letter-spacing: 0.3px; default (450px)
-
-
-                    letter-spacing: 0.2px; min
-                    letter-spacing: 0.5 px; min
+                    letter-spacing: 0.4px; max (599px)
                     */
                     color: var(--color-azure);
-                }
-                .about__text--1 {
-                    /*
-                    padding-bottom: 0px;
-                    */
                 }
 
             .about__tools {
                 width: auto;
                 height: auto;
 
-                margin-bottom: 44px;
+                margin-bottom: 40px;
                 /*
+                dobro do content/
                 margin-bottom: 40px; min
                 margin-bottom: 44px; default (450px)
-
-
-                dobro do content
-                margin-bottom: clamp(34px, 8.89vw, 44px); 
-                margin-bottom: 34px; min
-                margin-bottom: 40px -> 8.89vw; default 
-                margin-bottom: 44px; max 
+                margin-bottom: 48px; max
                 */
             }
                 .about__tools-list {
@@ -201,17 +149,12 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 40px;
-                        height: 40px;
+                        width: 37px;
+                        height: 37px;
                         /*
                         width = height: 37px; min
-                        width = height: 39px ou 40px(principal); default (450px)
-
-
-                        width = height: clamp(36px, 10vw, 45px);
-                        width = height: 36px; min
-                        width = height: 40px - 10vw; default
-                        width = height: 45px; max
+                        width = height: 40px; default (450px)
+                        width = height: 42px; max
                         */
 
                         border-radius: 50%;
@@ -236,38 +179,20 @@
 
                     width: 100%;
 
-                    height: 50px;
+                    height: 48px;
                     /*
                     height: 48px; min
-                    height: 50px(principal) - 52px ou 54px; default (450px)
-
-
-                    height: clamp(42px, 12vw, 52px);
-                    height: 42px; min
-                    height: 48px - 12vw; default
+                    height: 50px; default (450px)
                     height: 52px; max
                     */
 
                     font-family: var(--font_normal);
 
-                    font-size: 14px;
+                    font-size: 13.5px;
                     /*
                     font-size: 13.5px; min
                     font-size: 14px; default (450px)
-
-
-                    font-size: clamp(14px, 4vw, 17.5px);
-                    font-size: 14px; min
-                    font-size: 16px - 4vw; default
-                    font-size: 17.5px; max
-                    */
-
-                    letter-spacing: 0.8px;
-                    /*
-                    letter-spacing: 0.5px; min
-                    letter-spacing: 0.8px; default (450px)
-
-
+                    font-size: 14.5px; max (revisar)
                     */
 
                     text-decoration: none;
@@ -275,14 +200,11 @@
                     background-color: var(--color-azure);
                 }
                     .links--projects {
-                        margin-bottom: 12px;
+                        margin-bottom: 10px;
                         /*
-                        margin-bottom: 10px; min
-                        margin-bottom: 8px; min
+                        margin-bottom: 8px ou 10px; min
                         margin-bottom: 12px; default (450px)
-
-
-                        margin-bottom: 18px;
+                        margin-bottom: 12px; max
                         */
                     }
                     .links--contacts {
