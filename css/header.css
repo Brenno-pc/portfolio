@@ -1,6 +1,13 @@
 @charset "utf-8";
 
 
+/*
+-Conversão de pixel para vw:
+    vw = px/largura_tela * 100
+
+*/
+
+
 
 /*MOBILE [0px - 599px]*/
 @media screen and (min-width: 0px) and (max-width: 599px){
@@ -22,18 +29,18 @@
         );
     }
         .about {
-            width: 330px;
+            width: clamp(270px, 66.67vw, 330px);
             /*
             width: 270px; min
-            width: 300px; default (450px)
+            width: 300px/66.67vw; default
             width: 330px; max
             */
             height: auto;
 
-            line-height: 20px;
+            line-height: clamp(18px, 4.44vw, 20px);
             /*
-            line-height: 18px; min (300px)
-            line-height: 20px; default (450px)
+            line-height: 18px; min
+            line-height: 20px/4.44vw; default
             line-height: 20px; max
 
             -removi do about__title e deixei na seção (faz mais sentido deixar aqui)
@@ -44,38 +51,38 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 13px;
+                    font-size: clamp(12px, 2.78vw, 13px);
                     /*
                     font-size: 12px; min
-                    font-size: 12.5px; default (450px)
+                    font-size: 12.5px/2.78vw; default
                     font-size: 13px; max
                     */
 
                     font-family: var(--font_italic);
                     font-weight: 300;
 
-                    padding-bottom: 4px;
+                    padding-bottom: clamp(2px, 0.56vw, 4px);
                     /*
                     padding-bottom: 2px; min
-                    padding-bottom: 2.5px; default (450px)
+                    padding-bottom: 2.5px/0.56vw; default
                     padding-bottom: 4px; max
                     */
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: 38.5px;
+                    font-size: clamp(34px, 8vw, 38.5px);
                     /*
                     font-size: 34px; min
-                    font-size: 36px; default (450px)
+                    font-size: 36px/8vw; default
                     font-size: 38.5px; max
                     */
 
                     font-family: var(--font_normal);
 
-                    letter-spacing: 5px;
+                    letter-spacing: clamp(2.6px, 0.78vw, 5px);
                     /*
                     letter-spacing: 2.6px; min
-                    letter-spacing: 3.5px; default (450px)
+                    letter-spacing: 3.5px/0.78vw; default
                     letter-spacing: 5px; max
                     */
 
@@ -91,10 +98,10 @@
                 width: auto;
                 height: auto;
 
-                margin: 24px 0px;
+                margin: clamp(20px, 4.89vw, 24px) 0px;
                 /*
                 margin: 20px 0px; min
-                margin: 22px 0px; default (450px)
+                margin: 22px/4.89vw 0px; default
                 margin: 24px 0px; max
                 */
 
@@ -103,27 +110,21 @@
                     font-family: var(--font_italic);
                     font-weight: 400;
                     /*
-                    font-weight: 300 ou 400; (analisar com calma se uso 400 ou 300)
-                        -se eu usar 400, teria que aumentar o margin do about__content
+                    font-weight: 300;
                     */
                     
-                    font-size: 16px;
+                    font-size: clamp(14.5px, 3.44vw, 16px);
                     /*
-                    font-size: 14.5px; min (weight == 400)
-                    font-size: 15px; min (weight == 300)
-
-                    font-size: 15.5px; default (weight == 400)
-                    font-size: 16px; default (weight == 300) (450px)
-
-                    font-size: 16px; max (weight == 400)
-                    font-size: 16.5px max (weight == 300);
+                    font-size: 14.5px; min
+                    font-size: 15.5px/3.44vw; default
+                    font-size: 16px; max
                     */
 
-                    letter-spacing: 0.4px;
+                    letter-spacing: clamp(0.15px, 0.067vw, 0.4px);
                     /*
                     letter-spacing: 0.15px; min
-                    letter-spacing: 0.3px; default (450px)
-                    letter-spacing: 0.4px; max (599px)
+                    letter-spacing: 0.3px/0.067vw; default
+                    letter-spacing: 0.4px; max
                     */
                     color: var(--color-azure);
                 }
@@ -132,11 +133,11 @@
                 width: auto;
                 height: auto;
 
-                margin-bottom: 48px;
+                margin-bottom: clamp(40px, 9.78vw, 48px);
                 /*
                 dobro do content/
                 margin-bottom: 40px; min
-                margin-bottom: 44px; default (450px)
+                margin-bottom: 44px/9.78vw; default
                 margin-bottom: 48px; max
                 */
             }
@@ -152,11 +153,11 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 42px;
-                        height: 42px;
+                        width: clamp(37px, 8.89vw, 42px);
+                        height: clamp(37px, 8.89vw, 42px);
                         /*
                         width = height: 37px; min
-                        width = height: 40px; default (450px)
+                        width = height: 40px/8.89vw; default
                         width = height: 42px; max
                         */
 
@@ -182,19 +183,19 @@
 
                     width: 100%;
 
-                    height: 54px;
+                    height: clamp(48px, 11.11vw, 54px);
                     /*
                     height: 48px; min
-                    height: 50px; default (450px)
+                    height: 50px/11.11vw; default
                     height: 54px; max
                     */
 
                     font-family: var(--font_normal);
 
-                    font-size: 15px;
+                    font-size: clamp(13.5px, 3.11vw, 15px);
                     /*
                     font-size: 13.5px; min
-                    font-size: 14px; default (450px)
+                    font-size: 14px/3.11vw; default
                     font-size: 15px; max
                     */
 
@@ -203,10 +204,10 @@
                     background-color: var(--color-azure);
                 }
                     .links--projects {
-                        margin-bottom: 10px;
+                        margin-bottom: clamp(8px, 2.22vw, 10px);
                         /*
-                        margin-bottom: 8px ou 10px; min
-                        margin-bottom: 10px; default (450px)
+                        margin-bottom: 8px; min
+                        margin-bottom: 10px; default
                         margin-bottom: 10px; max
                         */
                     }
