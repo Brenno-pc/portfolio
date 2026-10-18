@@ -22,7 +22,7 @@
         );
     }
         .about {
-            width: 270px;
+            width: 330px;
             /*
             width: 270px; min
             width: 300px; default (450px)
@@ -30,7 +30,7 @@
             */
             height: auto;
 
-            line-height: 18px;
+            line-height: 20px;
             /*
             line-height: 18px; min (300px)
             line-height: 20px; default (450px)
@@ -44,7 +44,7 @@
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: 12px;
+                    font-size: 13px;
                     /*
                     font-size: 12px; min
                     font-size: 12.5px; default (450px)
@@ -54,29 +54,29 @@
                     font-family: var(--font_italic);
                     font-weight: 300;
 
-                    padding-bottom: 2px;
+                    padding-bottom: 4px;
                     /*
                     padding-bottom: 2px; min
-                    padding-bottom: 3px; default (450px)
+                    padding-bottom: 2.5px; default (450px)
                     padding-bottom: 4px; max
                     */
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: 34px;
+                    font-size: 38.5px;
                     /*
                     font-size: 34px; min
-                    font-size: 35px; default (450px)
-                    font-size: 38px; max
+                    font-size: 36px; default (450px)
+                    font-size: 38.5px; max
                     */
 
                     font-family: var(--font_normal);
 
-                    letter-spacing: 2.6px;
+                    letter-spacing: 5px;
                     /*
-                    letter-spacing: 2.3px - 2.6px; min
-                    letter-spacing: 3px; default (450px)
-                    letter-spacing: 4.5px; max
+                    letter-spacing: 2.6px; min
+                    letter-spacing: 3.5px; default (450px)
+                    letter-spacing: 5px; max
                     */
 
                     /*
@@ -91,7 +91,7 @@
                 width: auto;
                 height: auto;
 
-                margin: 20px 0px;
+                margin: 24px 0px;
                 /*
                 margin: 20px 0px; min
                 margin: 22px 0px; default (450px)
@@ -107,16 +107,19 @@
                         -se eu usar 400, teria que aumentar o margin do about__content
                     */
                     
-                    font-size: 14.5px;
+                    font-size: 16px;
                     /*
-                    font-size: 14.5px; min (caso weight == 400)
-                    font-size: 15px; min (caso weight == 300)
+                    font-size: 14.5px; min (weight == 400)
+                    font-size: 15px; min (weight == 300)
 
-                    font-size: 15.5px; default (450px)
-                    font-size: 16px; max
+                    font-size: 15.5px; default (weight == 400)
+                    font-size: 16px; default (weight == 300) (450px)
+
+                    font-size: 16px; max (weight == 400)
+                    font-size: 16.5px max (weight == 300);
                     */
 
-                    letter-spacing: 0.15px;
+                    letter-spacing: 0.4px;
                     /*
                     letter-spacing: 0.15px; min
                     letter-spacing: 0.3px; default (450px)
@@ -129,7 +132,7 @@
                 width: auto;
                 height: auto;
 
-                margin-bottom: 40px;
+                margin-bottom: 48px;
                 /*
                 dobro do content/
                 margin-bottom: 40px; min
@@ -149,8 +152,8 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: 37px;
-                        height: 37px;
+                        width: 42px;
+                        height: 42px;
                         /*
                         width = height: 37px; min
                         width = height: 40px; default (450px)
@@ -179,20 +182,20 @@
 
                     width: 100%;
 
-                    height: 48px;
+                    height: 54px;
                     /*
                     height: 48px; min
                     height: 50px; default (450px)
-                    height: 52px; max
+                    height: 54px; max
                     */
 
                     font-family: var(--font_normal);
 
-                    font-size: 13.5px;
+                    font-size: 15px;
                     /*
                     font-size: 13.5px; min
                     font-size: 14px; default (450px)
-                    font-size: 14.5px; max (revisar)
+                    font-size: 15px; max
                     */
 
                     text-decoration: none;
@@ -203,8 +206,8 @@
                         margin-bottom: 10px;
                         /*
                         margin-bottom: 8px ou 10px; min
-                        margin-bottom: 12px; default (450px)
-                        margin-bottom: 12px; max
+                        margin-bottom: 10px; default (450px)
+                        margin-bottom: 10px; max
                         */
                     }
                     .links--contacts {
@@ -212,7 +215,9 @@
                     }
 }
 
-/*TABLET [600px - 1000px]*/
+
+
+/*TABLET [600px - 1000px] FAZER*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .header {
         grid-row: 1/2;
@@ -421,7 +426,9 @@
                     }
 }
 
-/*LAPTOP - DESKTOP - TV [1001px - 1920px]*/
+
+
+/*LAPTOP - DESKTOP - TV [1001px - 1920px] FAZER*/
 @media screen and (min-width: 1001px) {
     .header {
         grid-row: 1/2;
