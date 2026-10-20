@@ -15,9 +15,25 @@
         background-color: var(--color-violet_super_dark);
     }
         .project {
+            justify-self: center;
+            align-self: center;
+            
             display: grid;
             grid-template-rows: 11% 33% 9% 19% 28%;
             grid-template-columns: 1fr;
+
+
+
+            width: clamp(270px, 66.67vw, 330px);
+            /*
+            
+            width: 270px; min
+            width: 300px/66.67vw; default
+            width: 330px; max
+            */
+
+            height: 440px;
+            background-color: red;
         }
 
             .project__title {
