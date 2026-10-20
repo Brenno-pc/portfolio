@@ -17,197 +17,55 @@
         .project {
             justify-self: center;
             align-self: center;
-            
+
             display: grid;
-            grid-template-rows: 11% 33% 9% 19% 28%;
+            grid-template-rows: 70% 30%;
             grid-template-columns: 1fr;
 
-
-
-            width: clamp(270px, 66.67vw, 330px);
+            width: 270px;
             /*
-            
+            width: clamp(270px, 66.67vw, 330px);
             width: 270px; min
             width: 300px/66.67vw; default
             width: 330px; max
             */
-
             height: 440px;
+
+            border-radius: 5px;
+            overflow: hidden;
             background-color: red;
         }
 
-            .project__title {
+            .card {
                 grid-row: 1/2;
-                grid-column: 1/2;
-
-                justify-self: center;
-                align-self: end;
-
-                font-size: clamp(20px, 5.5vw, 23px); /*213.89*/
-                /*
-                font-size: clamp(20px, 5.5vw, 23px) 5.5vw;
-
-                font-size: 20px; min
-                font-size: 22px - 5.5vw; default 
-                font-size: 23px; max
-                */
-                
-                letter-spacing: clamp(2.5px, 0.75vw, 3.5px);
-                /*
-                letter-spacing: 2.5px; min
-                letter-spacing: 3px - 0.75vw; default
-                letter-spacing: 3.5px; max
-                */
-
-                margin-bottom: clamp(4px, 3vw, 15px);
-                /*
-                margin-bottom: 4px; min
-                margin-bottom: 12px - 3vw; default
-                margin-bottom: 15px; max
-                */
-
-                color: var(--color-azure);
-            }
-
-
-            .project__image {
-                grid-row: 2/3;
-                grid-column: 1/2;
-
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-            }
-                .img_project {
-                    width: clamp(250px, 85vw, 390px);
-                    height: 100%;
-                    /*
-                    width: 250px; min
-                    height: 90%; min
-                    
-                    width: 340px - 85vw; default
-                    height: 100%; default
-                    
-                    width: 390px; max
-                    height: 100%; max
-                    */
-
-                    border-radius: 5px;
-                    background-color: green;
-                }
-
-
-            .project__tech {
-                grid-row: 3/4;
                 grid-column: 1/2;
 
                 width: 100%;
                 height: 100%;
+
+                background-color: aquamarine;
             }
-                .project__tech-list {
-                    justify-self: center;
-                    align-self: center;
-
-                    width: clamp(250px, 85vw, 390px);
-                    height: 100%;
-                    /*
-                    width: 250px; min
-                    height: 100%; min
-
-                    width: 340px - 85vw;  default
-                    height: 100%;  default
-
-                    width: 390px; max
-                    height: 100%; max
-                    */
-
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    list-style: none;
-                }
-                .project__tech-item {
-                    width: clamp(28px, 8vw, 34px);
-                    height: clamp(28px, 8vw, 34px);
-                    /*
-                    width: 28px; min
-                    height: 28px; min
-
-                    width: 32px - 8vw; default
-                    height: 32px- 8vw; default
-
-                    width: 34px; max
-                    height: 34px; max
-                    */
-                    border-radius: 3px;
-                    background-color: white;
-                }
-
-
-            .project__about {
-                grid-row: 4/5;
-                grid-column: 1/2;
-
-                justify-self: center;
-                align-self: center;
-
-                width: clamp(250px, 85vw, 390px);
-                height: 100%;
-                /*
-                width: 250px; min 
-                height: 100%; min
-
-                width: 340px - 85vw; default
-                height: 100%; default
-
-                width: 390px; max
-                height: 100%; max
-                */
-
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-            }
-                .project__description {
-                    font-size: clamp(16px, 4.3vw, 19px);
-                    /*
-                    font-size: 16px; min
-                    font-size: 17.2px - 4.3vw; default
-                    font-size: 19px; max
-                    */
-
-                    text-align: center;
-                    color: var(--color-azure);
-                }
-
 
             .project__buttons {
-                grid-row: 5/6;
+                grid-row: 2/3;
                 grid-column: 1/2;
 
-                justify-self: center;
-                align-self: start;
-
-                margin-top: clamp(25px, 7vw, 30px);
-                /*
-                margin-top: 25px; min
-                margin-top: 28px - 7vw; default
-                margin-top: 30px; max
-                */
+                width: 100%;
+                height: 100%;
 
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
+
+                background-color: purple;
             }
                 .button {
+                    width: 250px;
+                    height: 38px;
+                    /*
                     width: clamp(250px, 85vw, 390px);
                     height: clamp(38px, 10.5vw, 44px);
-                    /*
                     width: 255px; min
                     height: 38px; min
 
@@ -230,8 +88,8 @@
                     background-color: white;
                 }
                     .button--open {
-                        margin-bottom: clamp(18px, 4.8vw, 20px);
                         /*
+                        margin-bottom: clamp(18px, 4.8vw, 20px);
                         margin-bottom: 18px; min
                         margin-bottom: 19px - 4.8vw; default
                         margin-bottom: 20px; max
