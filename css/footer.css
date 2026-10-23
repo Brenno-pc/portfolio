@@ -24,6 +24,14 @@
             align-items: end;
         }
             .footer__title {
+                /*
+                width: clamp(270px, 66.67vw, 330px);
+                width: 270px; min
+                width: 300px/66.67vw; default
+                width: 330px; max
+                */
+
+                
                 width: clamp(250px, 85vw, 390px);
                 /*
                 width: 250px; min
