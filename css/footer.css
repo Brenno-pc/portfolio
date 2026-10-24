@@ -35,15 +35,15 @@
                 */
 
                 
-                width: 250px;
                 /*
+                width: 250px;
                 width: clamp(250px, 85vw, 390px);
                 width: 250px; min
                 width: 340px - 85vw; default
                 width: 390px; max
                 */
 
-                font-size: 18px;
+                font-size: 16px;
                 /*
                 font-size: clamp(18px, 4.88vw, 22px);
                 font-size: 18px; min
@@ -54,7 +54,7 @@
                 font-family: var(--font_normal);
                 font-weight: normal;
                 
-                letter-spacing: 3px;
+                letter-spacing: 2px;
                 /*
                 letter-spacing: clamp(3px, 1.25vw, 8px);
                 letter-spacing: 3px; min
@@ -62,17 +62,10 @@
                 letter-spacing: 8px; max
                 */
 
-                line-height: 25px;
-                /*
-                line-height: clamp(25px, 7vw, 34px);
-                line-height: 25px; min
-                line-height: 28px - 7vw; default
-                line-height: 34px; max
-                */
-
                 text-align: center;
                 color: var(--color-azure);
             }
+
 
 
         .footer__social {
@@ -93,16 +86,10 @@
                 width: 66px;
                 height: 66px;
                 /*
-                width: clamp(66px, 19.5vw, 93px);
-                height: clamp(66px, 19.5vw, 93px);
-                width: 66px; min
-                height: 66px; min
-
-                width: 78px - 19.5vw; default
-                height: 78px - 19.5vw; default
-                
-                width: 93px; max
-                height: 93px; max
+                width = height: clamp(66px, 19.5vw, 93px);
+                width = height: 66px; min
+                width = height: 78px - 19.5vw; default
+                width = height: 93px; max
                 */
                 
                 overflow: hidden;
@@ -173,14 +160,17 @@
             grid-row: 3/4;
             grid-column: 1/2;
 
+            /*
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
-            align-items: center;
-            /*
-            
+            align-items: start;
             */
             
+            display: grid;
+            grid-template-rows: 25% 50% 25%;
+            grid-template-columns: 1fr;
+
             background-color: var(--color-azure);
         }
             .footer__author {
