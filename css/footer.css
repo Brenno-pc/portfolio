@@ -27,7 +27,7 @@
             align-items: end;
         }
             .footer__title {
-                width: 250px;
+                width: 220px;
 
                 /*
                 width: clamp(270px, 66.67vw, 330px);
@@ -45,7 +45,7 @@
                 width: 390px; max
                 */
 
-                font-size: 16.5px;
+                font-size: 17.7px;
                 /*
                 font-size: clamp(18px, 4.88vw, 22px);
                 font-size: 18px; min
@@ -54,13 +54,12 @@
                 */
                 
                 font-family: var(--font_italic);
-                font-weight: normal;
+                font-weight: 500;
                 
                 
                 
+                letter-spacing: 1.5px;
                 /*
-                line-height: 25px;
-                letter-spacing: 2px;
                 letter-spacing: clamp(3px, 1.25vw, 8px);
                 letter-spacing: 3px; min
                 letter-spacing: 5px - 1.25vw; default
@@ -88,8 +87,8 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 66px;
-                height: 66px;
+                width: 60px;
+                height: 60px;
                 /*
                 width = height: clamp(66px, 19.5vw, 93px);
                 width = height: 66px; min
@@ -97,8 +96,13 @@
                 width = height: 93px; max
                 */
                 
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+
                 overflow: hidden;
-                border-radius: 12px;
+                border-radius: 10px;
 
                 color: var(--color-azure);
                 background-color: white;
@@ -122,7 +126,7 @@
                     */
                 }
                 .footer__link:nth-of-type(3) {
-                    margin-top: 20px;
+                    margin-top: 10px;
                     /*
                     margin-top: clamp(20px, 7vw, 35px);
                     margin-top: 20px; min
@@ -141,7 +145,7 @@
                     align-self: start ;
                 }
                 .footer__link:nth-of-type(4) {
-                    margin-top: 20px;
+                    margin-top: 10px;
                     /*
                     margin-top: clamp(20px, 7vw, 35px);
                     margin-top: 20px; min
@@ -158,6 +162,15 @@
                     */
                     
                     align-self: start ;
+                }
+
+                .footer__icon {
+                    display: block;
+                    width: 90%;
+                    height: 90%;
+
+                    border-radius: 50%;
+                    background-color: aqua;
                 }
 
 
@@ -178,50 +191,13 @@
 
             background-color: var(--color-azure);
         }
-            .footer__author {
-                padding-bottom: 5px;
+           .return_top {
 
-                font-family: var(--font_italic);
+           }
 
-                font-size: 14px;
-                /*
-                font-size: clamp(14px, 4vw, 17px);
-                font-size: 14px; min
-                font-size: 16px - 4vw; default
-                font-size: 17px; max
-                */
 
-                letter-spacing: 1px;
-                /*
-                letter-spacing: clamp(1px, 0.38vw, 2px);
-                letter-spacing: 1px; min
-                letter-spacing: 1.5px - 0.38vw; min - default
-                letter-spacing: 2px; max
-                */
-
-                color: var(--color-violet_super_dark);
-            }
-            .footer__copyright {
-                font-family: var(--font_italic);
-
-                font-size: 14px;
-                /*
-                font-size: clamp(14px, 4vw, 17px);
-                font-size: 14px; min
-                font-size: 16px; default
-                font-size: 17px; max
-                */
-
-                letter-spacing: 1px;
-                /*
-                letter-spacing: clamp(1px, 0.38vw, 2px);
-                letter-spacing: 1px; min
-                letter-spacing: 1.5px; min - default
-                letter-spacing: 2px; max
-                */
-
-                color: var(--color-violet_super_dark);
-            }
+           .tags {}
+        
 }
 
 
