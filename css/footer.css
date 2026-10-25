@@ -10,7 +10,7 @@
         
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20vh 80vh 40vh;
+        grid-template-rows: 20vh 80vh 50vh;
         /*
         grid-template-rows: 22% 66% 12%;
         */
@@ -186,17 +186,96 @@
             */
             
             display: grid;
-            grid-template-rows: 25% 50% 25%;
+            grid-template-rows: 30% 50% 20%;
             grid-template-columns: 1fr;
 
             background-color: var(--color-azure);
         }
-           .return_top {
+            .return_top {
+                justify-self: center;
+                align-self: center;
 
-           }
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
 
+                width: 270px;
+                /*
+                width: clamp(270px, 66.67vw, 330px);
+                width: 270px; min
+                width: 300px/66.67vw; default
+                width: 330px; max
+                */
 
-           .tags {}
+                height: 48px;
+                /*
+                height: clamp(48px, 11.11vw, 54px);
+                height: 48px; min
+                height: 50px/11.11vw; default
+                height: 54px; max
+                */
+
+                font-size: 13.5px;
+                /*
+                font-size: 13.5px; min
+                font-size: 14px/3.11vw; default
+                font-size: 15px; max
+                */
+                
+                text-decoration: none;
+                text-align: center;
+                
+                border-radius: 3px;
+                color: var(--color-azure);
+                background-color: var(--color-violet_super_dark);
+            }
+
+            .tags {
+                justify-self: center;
+                align-self: center;
+
+                width: 100%;
+                height: 70%;
+
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                .tag {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    padding: 8px;
+
+                    font-size: 13.5px;
+                    /*
+                    font-size: 13.5px; min
+                    font-size: 14px/3.11vw; default
+                    font-size: 15px; max
+                    */
+
+                    border-radius: 5px;
+                    color: var(--color-azure);
+                    background-color: var(--color-violet_super_dark);
+
+                }
+
+            .copyright {
+                justify-self: center;
+                align-self: center;
+                font-size: 13.5px;
+                /*
+                font-size: 13.5px; min
+                font-size: 14px/3.11vw; default
+                font-size: 15px; max
+                */
+            }
+            
+        
         
 }
 
