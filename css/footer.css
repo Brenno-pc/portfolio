@@ -257,6 +257,16 @@
                 
                 justify-self: center;
                 align-self: center;
+
+
+                font-family: var(--font_italic);
+                font-size: clamp(13px, 3.11vw, 15px);
+                /*
+                font-size: 13px; min
+                font-size: 14px/3.11vw; default
+                font-size: 15px; max
+                */
+                font-weight: 500;
             }
 
 
@@ -276,9 +286,6 @@
                 */
                 font-weight: 500;
             }
-
-
-
 }
 
 
