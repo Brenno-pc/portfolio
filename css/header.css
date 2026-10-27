@@ -220,7 +220,7 @@
 
 /*TABLET [600px - 1000px] FAZER*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
-    .header {
+.header {
         grid-row: 1/2;
         grid-column: 1/2;
 
@@ -238,61 +238,60 @@
         );
     }
         .about {
-            width: clamp(390px, 51.25vw, 430px);
+            width: 355px;
             /*
-            width: 390px; min
-            width: 410px - 51.25vw; default
-            width: 430px; max
+            width: 330px; min
+            width: 355px; default
             */
-
             height: auto;
-        }
 
+            line-height: 21px;
+            /*
+            line-height: 20px; min
+            line-height: 21px; default (800px)
+
+            -removi do about__title e deixei na seção (faz mais sentido deixar aqui)
+            */
+        }
             .about__header {
                 width: auto;
                 height: auto;
             }
                 .about__apresentation {
-                    font-size: clamp(14px, 1.83vw, 15px);
+                    font-size: 14px;
                     /*
-                    font-size: 14; min
-                    font-size: 14.5px-1.83vw; default
-                    font-size: 15px; max
+                    font-size: 13px; min
+                    font-size: 14px; default
                     */
 
-                    font-family: var(--font_normal);
+                    font-family: var(--font_italic);
+                    font-weight: 300;
 
-                    padding-bottom: clamp(2px, 0.375vw, 3.5px);
+                    padding-bottom: 5px;
                     /*
-                    padding-bottom: 2px; min
-                    padding-bottom: 3px - 0.375vw; default
-                    padding-bottom: 3.5px; max
+                    padding-bottom: 4px; min
+                    padding-bottom: 5px; default
                     */
-
                     color: var(--color-azure);
                 }
                 .about__title {
-                    font-size: clamp(44px, 5.8125vw, 47.5px);
+                    font-size: 42px;
                     /*
-                    font-size: 44px; min 
-                    font-size: 46.5px - 5.8125vw; default
-                    font-size: 47.5px; max
+                    font-size: 38.5px; min
+                    font-size: 42px; default
                     */
 
                     font-family: var(--font_normal);
 
-                    letter-spacing: clamp(6px, 0.875vw, 8px);
+                    letter-spacing: 6.5px;
                     /*
-                    letter-spacing: 6px; min
-                    letter-spacing: 7px - 0.875vw; default
-                    letter-spacing: 8px; max
+                    letter-spacing: 5px; min
+                    letter-spacing: 6.5px; default
                     */
 
-                    line-height: clamp(31px, 4.125vw, 35px);
                     /*
-                    line-height: 31px; min
-                    line-height: 33px - 4.125vw; default
-                    line-height: 35px; max
+                    line-height: 25px; 
+                    -removi do about__title e coloquei no about (section), faz mais sentido lá.
                     */
 
                     color: var(--color-azure);
@@ -302,51 +301,44 @@
                 width: auto;
                 height: auto;
 
-                margin: clamp(24px, 3.125vw, 27px) 0px;
+                margin: 26px 0px;
                 /*
                 margin: 24px 0px; min
-                margin: 25px -> 3.125vw 0px; default
-                margin: 27px 0px; max
+                margin: 26px 0px; default
                 */
 
             }
                 .about__text {
                     font-family: var(--font_italic);
-
-                    font-size: clamp(19.3px, 2.45vw, 19.8px);
+                    font-weight: 400;
                     /*
-                    font-size: 19.3px; min
-                    font-size: 19.6px-2.45vw; default
-                    font-size: 19.8px; max
+                    font-weight: 300;
+                    */
+                    
+                    font-size: 17.5px;
+                    /*
+                    font-size: 16px; min
+                    font-size: 17.5px; default
                     */
 
+                    letter-spacing: 0.7px;
+                    /*
+                    letter-spacing: 0.4px; min
+                    letter-spacing: 0.7px; default
+                    */
                     color: var(--color-azure);
-                }
-                .about__text--1 {
-                    font-family: var(--font_italic);
-
-                    padding-bottom: clamp(2px, 0.375vw, 4px);
-                    /*
-                    padding-bottom: 3px;
-                    padding-bottom: 2px; min
-                    padding-bottom: 3px - 0.375vw; default
-                    padding-bottom: 4px; max
-                    */
-
                 }
 
             .about__tools {
                 width: auto;
                 height: auto;
-                
-                margin-bottom: clamp(48px, 6.25vw, 54px);
-                /*
-                dobro do about_content
-                margin-bottom: 48px; min
-                margin-bottom: 50px-6.25vw; default
-                margin-bottom: 54px; max
-                */
 
+                margin-bottom: 52px;
+                /*
+                dobro do content/
+                margin-bottom: 48px; min
+                margin-bottom: 52px; default
+                */
             }
                 .about__tools-list {
                     display: flex;
@@ -360,12 +352,11 @@
                         justify-content: center;
                         align-items: center;
 
-                        width: clamp(45px, 5.875vw, 50px);
-                        height: clamp(45px, 5.875vw, 50px);
+                        width: 47px;
+                        height: 47px;
                         /*
-                        width = height: 45px; min
-                        width = height: 47px-5.875vw; default
-                        width = height: 50px; max
+                        width = height: 42px; min
+                        width = height: 47px; default
                         */
 
                         border-radius: 50%;
@@ -390,37 +381,30 @@
 
                     width: 100%;
 
-                    height: clamp(60px, 7.5vw, 64px);
+                    height: 58px;
                     /*
-                    height: 60px;
-                    height: 56px; min
-                    height: 60px-7.5vw; default
-                    height: 64px; max
+                    height: 54px; min
+                    height: 58px; default
                     */
 
                     font-family: var(--font_normal);
 
-                    font-size: clamp(18px, 2.25vw, 18.5px);
+                    font-size: 15.8px;
                     /*
-                    font-size: 18px;
-                    font-size: 17.5px; min
-                    font-size: 18px-2.25vw; default
-                    font-size: 18.5px; max
+                    font-size: 15px; min
+                    font-size: 15.8px; default
                     */
 
                     text-decoration: none;
-
                     border-radius: 3px;
                     background-color: var(--color-azure);
                 }
                     .links--projects {
-                        margin-bottom: clamp(14px, 1.875vw,16px);
+                        margin-bottom: 10px;
                         /*
-                        margin-bottom: 14px; min
-                        margin-bottom: 15px-1.875vw; default
-                        margin-bottom: 16px; max
+                        margin-bottom: 10px; min
+                        margin-bottom: 10px; default
                         */
-
                     }
                     .links--contacts {
                         margin: 0px;
