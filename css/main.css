@@ -158,27 +158,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*TABLET [600px - 1000px]*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .main {
@@ -191,78 +170,99 @@
 
         background-color: var(--color-violet_super_dark);
     }
-        .project {
+        .card {
+            justify-self: center;
+            align-self: center;
+
             display: grid;
-            grid-template-rows: 8% 33% 12% 21% 26%;
+            grid-template-rows: 70% 30%;
             grid-template-columns: 1fr;
 
-            background-color: var(--color-violet_super_dark);
+            width: clamp(330px, 44.375vw, 375px);
+            /*
+            width: 330px; min
+            width: 355px/44.375vw; default
+            width: 375px; max
+            */
+
+            height: clamp(460px, 60vw, 500px);
+            /*
+            height: 460px; min
+            height: 480px/60vw; default
+            height: 500px; max
+            */
+
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: var(--color-violet_medium);
         }
-            .project__title {
+
+
+            .card_header {
                 grid-row: 1/2;
                 grid-column: 1/2;
 
-                justify-self: center;
-                align-self: center;
+                width: 100%;
+                height: 100%;
 
-                color: var(--color-azure);
+                display: grid;
+                grid-template-rows: 85% 15%;
+                grid-template-columns: 1fr;
             }
-            .project__image {
+                .proj_img {
+                    grid-row: 1/2;
+                    grid-column: 1/2;
+
+                    justify-self: center;
+                    align-self: center;
+
+                    width: 100%;
+                    height: 100%;
+
+                    background-color: blue;
+                }
+                .proj_title {
+                    grid-row: 2/3;
+                    grid-column: 1/2;
+
+                    justify-self: center;
+                    align-self: center;
+
+                    width: 95%;
+                    height: 100%;
+
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-size: clamp(19px, 2.5vw, 21px);
+                    /*
+                    font-size: 19px; min
+                    font-size: 20px/2.5vw; default
+                    font-size: 21px; max
+                    */
+
+                    letter-spacing: clamp(3px, 0.4375vw, 4px);
+                    /*
+                    letter-spacing: 3px; min
+                    letter-spacing: 3.5px/0.4375vw; default
+                    letter-spacing: 4px; max
+                    */
+
+                    color: white;
+                }
+
+
+            .card_footer {
                 grid-row: 2/3;
                 grid-column: 1/2;
 
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-
-                background-color: pink;
-            }
-
-            .project__tech {
-                grid-row: 3/4;
-                grid-column: 1/2;
-            }
-                .project__tech-list {
-                    width: 80%;
-                    height: 100%;
-
-                    justify-self: center;
-
-                    list-style: none;
-
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                }
-
-                .project__tech-item {
-                    width: 30px;
-                    height: 30px;
-                    margin: 8px;
-                    background-color: white;
-                }
-
-            .project__about {
-                grid-row: 4/5;
-                grid-column: 1/2;
-
-                width: 300px;
-
                 justify-self: center;
                 align-self: center;
-            }
-                .project__description {
-                    margin: 10px;
-                    text-align: center;
-                    color: var(--color-azure);
-                }
 
-
-            .project__buttons {
-                grid-row: 5/6;
-                grid-column: 1/2;
+                width: 95%;
+                height: 100%;
 
                 display: flex;
                 flex-flow: column nowrap;
@@ -270,14 +270,57 @@
                 align-items: center;
             }
                 .button {
-                    width: 300px;
-                    margin-bottom: 20px;
-                    padding: 10px;
-                    text-align: center;
+                    width: 100%;
+                    height: clamp(48px, 6.5vw, 56px);
+                    /*
+                    height: 48px; min
+                    height: 52px/6.5vw; default
+                    height: 56px; max
+                    */
 
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-size: clamp(15px, 1.9375vw, 16px);
+                    /*
+                    font-size: 15px; min
+                    font-size: 15.5px/1.9375; default
+                    font-size: 16px; max
+                    */
+
+                    text-align: center;
+                    text-decoration: none;
+
+                    border-radius: 3px;
                     background-color: white;
                 }
+                    .button--open {
+                        margin-bottom: clamp(7px, 1vw, 9px);
+                        /*
+                        margin-bottom: 7px; min
+                        margin-bottom: 8px/1vw; default
+                        margin-bottom: 9px; max
+                        */
+                        background-color: white;
+                    }
+                    .button--doc {
+                        background-color: white;
+                    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
