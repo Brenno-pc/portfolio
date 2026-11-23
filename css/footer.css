@@ -295,10 +295,10 @@
     .footer {
         grid-row: 5/6;
         grid-column: 1/2;
-        
+
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 22% 66% 12%;
+        grid-template-rows: 20vh 80vh 60vh;
 
         background-color: var(--color-violet_super_dark);
     }
@@ -306,38 +306,28 @@
             grid-row: 1/2;
             grid-column: 1/2;
 
-            justify-self: center;
-
-            width: clamp(250px, 85vw, 390px);
-
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
             align-items: end;
         }
             .footer__title {
-                font-size: clamp(18px, 4.88vw, 22px);
+                width: 300px;
                 /*
-                font-size: 18px; min
-                font-size: 19.5px - 4.88vw; default
-                font-size: 22px; max
-                */
-                
-                font-family: var(--font_normal);
-                font-weight: normal;
-                
-                letter-spacing: clamp(3px, 1.25vw, 8px);
-                /*
-                letter-spacing: 3px; min
-                letter-spacing: 5px - 1.25vw; default
-                letter-spacing: 8px; max
+                width: 280px; min
                 */
 
-                line-height: clamp(25px, 7vw, 34px);
+                font-size: 22.5px;
                 /*
-                line-height: 25px; min
-                line-height: 28px - 7vw; default
-                line-height: 34px; max
+                font-size: 21.5px; min
+                */
+                
+                font-family: var(--font_italic);
+                font-weight: 500;
+                
+                letter-spacing: 3.5px;
+                /*
+                letter-spacing: 2.5px; min
                 */
 
                 text-align: center;
@@ -345,7 +335,9 @@
             }
 
 
+
         .footer__social {
+            /*refatorar isso aq, vc sabe só de bater o olho q fazer um grid sem delimitar o width daqui ficou estranho...*/
             grid-row: 2/3;
             grid-column: 1/2;
 
@@ -357,77 +349,73 @@
             grid-template-columns: repeat(2, 1fr);
         }
             .footer__link {
-                width: clamp(66px, 19.5vw, 93px);
-                height: clamp(66px, 19.5vw, 93px);
-                /*
-                width: 66px; min
-                height: 66px; min
-
-                width: 78px - 19.5vw; default
-                height: 78px - 19.5vw; default
-                
-                width: 93px; max
-                height: 93px; max
-                */
-
                 justify-self: center;
                 align-self: center;
+
+                width: 80px;
+                height: 80px;
+                /*
+                width = height: 70px; min
+                */
                 
-                border-radius: 12px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+
                 overflow: hidden;
+                border-radius: 10px;
 
                 color: var(--color-azure);
                 background-color: white;
             }
                 .footer__link:nth-of-type(1) {
-                    margin-left: clamp(25px, 6.5vw, 60px);
+                    margin-left: 82px;
                     /*
-                    margin-left: 25px; min
-                    margin-left: 25px - 6.5vw; min - default
-                    margin-left: 60px; max
+                    margin-right: 60px; min
                     */
                 }
                 .footer__link:nth-of-type(2) {
-                    margin-right: clamp(25px, 6.5vw, 60px);
+                    margin-right: 82px;
                     /*
-                    margin-right: 25px; min
-                    margin-right: 25px - 6.5vw; min - default
-                    margin-right: 60px; max
+                    margin-right: 60px; min
                     */
                 }
                 .footer__link:nth-of-type(3) {
-                    margin-top: clamp(20px, 7vw, 35px);
+                    margin-top: 45px;
                     /*
-                    margin-top: 20px; min
-                    margin-top: 28px - 7vw; default
-                    margin-top: 35px; max
+                    margin-top: 30px; min
                     */
                     
-                    margin-left: clamp(25px, 6.5vw, 60px);
+                    margin-left: 82px;
                     /*
-                    margin-left: 25px; min
-                    margin-left: 25px - 6.5vw; min - default
-                    margin-left: 60px; max
+                    margin-right: 60px; min
                     */
                     
                     align-self: start ;
                 }
                 .footer__link:nth-of-type(4) {
-                    margin-top: clamp(20px, 7vw, 35px);
+                    margin-top: 45px;
                     /*
-                    margin-top: 20px; min
-                    margin-top: 28px - 7vw; default
-                    margin-top: 35px; max
+                    margin-top: 30px; min
                     */
                     
-                    margin-right: clamp(25px, 6.5vw, 60px);
+                    margin-right: 82px;
                     /*
-                    margin-right: 25px; min
-                    margin-right: 25px - 6.5vw; min - default
-                    margin-right: 60px; max
+                    margin-right: 60px; min
                     */
                     
                     align-self: start ;
+                }
+
+                .footer__icon {
+                    display: block;
+
+                    width: 90%;
+                    height: 90%;
+
+                    border-radius: 50%;
+                    background-color: aqua;
                 }
 
 
@@ -435,52 +423,133 @@
             grid-row: 3/4;
             grid-column: 1/2;
 
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            
+            display: grid;
+            grid-template-rows: 30% 42% 14% 14%;
+            grid-template-columns: 1fr;
+
             background-color: var(--color-azure);
         }
-            .footer__author {
-                padding-bottom: 5px;
+            .return_top {
+                grid-row: 1/2;
+                grid-column: 1/2;
 
-                font-family: var(--font_italic);
-                font-size: clamp(14px, 4vw, 17px);
+                justify-self: center;
+                align-self: center;
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+
+                width: 355px;
                 /*
-                font-size: 14px; min
-                font-size: 16px - 4vw; default
-                font-size: 17px; max
+                width: 330px; max
+                width: 355px/44.375vw; default
+                width: 375px; max
                 */
 
-                letter-spacing: clamp(1px, 0.38vw, 2px);
+                height: 58px;
                 /*
-                letter-spacing: 1px; min
-                letter-spacing: 1.5px - 0.38vw; min - default
-                letter-spacing: 2px; max
+                height: 54px; min
                 */
 
-                color: var(--color-violet_super_dark);
+                font-size: 15.5px;
+                /*
+                font-size: 15px; min
+                */
+                
+                text-decoration: none;
+                text-align: center;
+                
+                border-radius: 3px;
+                color: var(--color-azure);
+                background-color: var(--color-violet_super_dark);
             }
-            .footer__copyright {
+
+            .tags {
+                grid-row: 2/3;
+                grid-column: 1/2;
+
+                justify-self: center;
+                align-self: center;
+
+                width: 355px;
+                /*
+                width: 330px; max
+                width: 355px/44.375vw; default
+                width: 375px; max
+                */
+
+                height: 70%;
+
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+                .tag {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    padding: 12px;
+                    /*
+                    padding: 10px; min
+                    */
+
+                    font-size: 15.5px;
+                    /*
+                    font-size: 15px; min
+                    */
+
+                    border-radius: 5px;
+                    color: var(--color-azure);
+                    background-color: var(--color-violet_super_dark);
+                }
+
+
+            .footer_credits {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                
+                justify-self: center;
+                align-self: center;
+
+
                 font-family: var(--font_italic);
-                font-size: clamp(14px, 4vw, 17px);
+                font-size: 15.5px;
                 /*
-                font-size: 14px; min
-                font-size: 16px; default
-                font-size: 17px; max
+                font-size: 15px; min
                 */
+                font-weight: 500;
+            }
 
-                letter-spacing: clamp(1px, 0.38vw, 2px);
+
+            .copyright {
+                grid-row: 4/5;
+                grid-column: 1/2;
+
+                justify-self: center;
+                align-self: center;
+
+                font-family: var(--font_italic);
+                font-size: 15.5px;
                 /*
-                letter-spacing: 1px; min
-                letter-spacing: 1.5px; min - default
-                letter-spacing: 2px; max
+                font-size: 15px; min
                 */
-
-                color: var(--color-violet_super_dark);
+                font-weight: 500;
             }
 }
+
+
+
+
+
+
+
+
+
 
 
 
