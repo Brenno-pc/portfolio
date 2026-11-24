@@ -290,6 +290,8 @@
 
 
 
+
+
 /*TABLET [600px - 1000px]*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .footer {
@@ -312,22 +314,28 @@
             align-items: end;
         }
             .footer__title {
-                width: 300px;
+                width: clamp(280px, 37.5vw, 320px);
                 /*
                 width: 280px; min
+                width: 300px/37.5vw; default
+                width: 320px; max
                 */
 
-                font-size: 22.5px;
+                font-size: clamp(21.5px, 2.8125vw, 23.5px);
                 /*
                 font-size: 21.5px; min
+                font-size: 22.5px/2.8125vw; default
+                font-size: 23.5px; max
                 */
                 
                 font-family: var(--font_italic);
                 font-weight: 500;
                 
-                letter-spacing: 3.5px;
+                letter-spacing: clamp(2.5px, 0.4375vw, 4px);
                 /*
                 letter-spacing: 2.5px; min
+                letter-spacing: 3.5px/0.4375vw; default
+                letter-spacing: 4px; max
                 */
 
                 text-align: center;
@@ -352,10 +360,12 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 80px;
-                height: 80px;
+                width: clamp(70px, 10vw, 85px);
+                height: clamp(70px, 10vw, 85px);
                 /*
                 width = height: 70px; min
+                width = height: 80px/10vw; default
+                width = height: 85px; max
                 */
                 
                 display: flex;
@@ -370,39 +380,51 @@
                 background-color: white;
             }
                 .footer__link:nth-of-type(1) {
-                    margin-left: 82px;
+                    margin-left: clamp(60px, 10.25vw, 104px);
                     /*
                     margin-right: 60px; min
+                    margin-left: 82px/10.25vw; default
+                    margin-left: 104px; max
                     */
                 }
                 .footer__link:nth-of-type(2) {
-                    margin-right: 82px;
+                    margin-right: clamp(60px, 10.25vw, 104px);
                     /*
                     margin-right: 60px; min
+                    margin-right: 82px/10.25vw; default
+                    margin-right: 104px; max
                     */
                 }
                 .footer__link:nth-of-type(3) {
-                    margin-top: 45px;
+                    margin-top: clamp(30px, 5.625vw, 60px);
                     /*
                     margin-top: 30px; min
+                    margin-top: 45px/5.625vw; default
+                    margin-top: 60px; max
                     */
                     
-                    margin-left: 82px;
+                    margin-left: clamp(60px, 10.25vw, 104px);
                     /*
                     margin-right: 60px; min
+                    margin-left: 82px/10.25vw; default
+                    margin-left: 104px; max
                     */
                     
                     align-self: start ;
                 }
                 .footer__link:nth-of-type(4) {
-                    margin-top: 45px;
+                    margin-top: clamp(30px, 5.625vw, 60px);
                     /*
                     margin-top: 30px; min
+                    margin-top: 45px/5.625vw; default
+                    margin-top: 60px; max
                     */
                     
-                    margin-right: 82px;
+                    margin-right: clamp(60px, 10.25vw, 104px);
                     /*
                     margin-right: 60px; min
+                    margin-right: 82px/10.25vw; default
+                    margin-right: 104px; max
                     */
                     
                     align-self: start ;
@@ -441,21 +463,25 @@
                 justify-content: center;
                 align-items: center;
 
-                width: 355px;
+                width: clamp(330px, 44.375vw, 375px);
                 /*
-                width: 330px; max
+                width: 330px; min
                 width: 355px/44.375vw; default
                 width: 375px; max
                 */
 
-                height: 58px;
+                height: clamp(54px, 7.25vw, 62px);
                 /*
                 height: 54px; min
+                height: 58px/7.25vw; default
+                height: 62px; max
                 */
 
-                font-size: 15.5px;
+                font-size: clamp(15px, 1.9375vw, 16px);
                 /*
                 font-size: 15px; min
+                font-size: 15.5px/1.9375vw; default
+                font-size: 16px; max
                 */
                 
                 text-decoration: none;
@@ -473,9 +499,9 @@
                 justify-self: center;
                 align-self: center;
 
-                width: 355px;
+                width: clamp(330px, 44.375vw, 375px);
                 /*
-                width: 330px; max
+                width: 330px; min
                 width: 355px/44.375vw; default
                 width: 375px; max
                 */
@@ -484,7 +510,7 @@
 
                 display: flex;
                 flex-flow: row wrap;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
             }
                 .tag {
@@ -493,14 +519,18 @@
                     justify-content: center;
                     align-items: center;
 
-                    padding: 12px;
+                    padding: clamp(10px, 1.375vw, 12px);
                     /*
                     padding: 10px; min
+                    padding: 11px/1.375vw; default
+                    padding: 12px; max
                     */
 
-                    font-size: 15.5px;
+                    font-size: clamp(15px, 1.9375vw, 16px);
                     /*
                     font-size: 15px; min
+                    font-size: 15.5px/1.9375vw; default
+                    font-size: 16px; max
                     */
 
                     border-radius: 5px;
@@ -518,9 +548,11 @@
 
 
                 font-family: var(--font_italic);
-                font-size: 15.5px;
+                font-size: clamp(15px, 1.9375vw, 16px);
                 /*
                 font-size: 15px; min
+                font-size: 15.5px/1.9375vw; default
+                font-size: 16px; max
                 */
                 font-weight: 500;
             }
@@ -534,9 +566,11 @@
                 align-self: center;
 
                 font-family: var(--font_italic);
-                font-size: 15.5px;
+                font-size: clamp(15px, 1.9375vw, 16px);
                 /*
                 font-size: 15px; min
+                font-size: 15.5px/1.9375vw; default
+                font-size: 16px; max
                 */
                 font-weight: 500;
             }
